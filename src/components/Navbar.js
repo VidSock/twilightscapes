@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import logo from '../img/ad2inc-logo-round.svg'
+import logo from '../img/tw-logo-white.svg'
 import Headroom from "react-headroom"
 import { ThemeToggler } from 'gatsby-plugin-dark-mode'
 import { GoArrowUp } from 'react-icons/go';
@@ -20,7 +20,7 @@ const Navbar = class extends React.Component {
     <header className="header">
     
     <Link to="/" className="logolink" title="Logo - Back To Home">
-    <img className="logo" src={logo} alt="Ad2Inc Logo" style={{position:'absolute', height:'200',}} />
+    <img className="logo fadeInDown" src={logo} alt="Twilightscapes Logo" />
     </Link>
     
    
@@ -31,9 +31,22 @@ const Navbar = class extends React.Component {
 <label className="menu-icon" htmlFor="menu-btn"><span className="navicon"></span></label>
 
             <ul id="menu" className="menu">
+            
+            <li>
+              <Link className="navbar-item" to="/gallery1">
+               Galleries
+              </Link>
+              </li>
+              
+            <li>
+              <Link className="navbar-item" to="/example">
+                About
+              </Link>
+              </li>
+              
                <li>
               <Link className="navbar-item" to="/capabilities">
-                About Ad2
+                Gear Talk
               </Link>
               </li>
               
@@ -43,29 +56,21 @@ const Navbar = class extends React.Component {
               </Link>
               </li> */}
               
-              <li>
-              <Link className="navbar-item" to="/gallery1">
-               Portfolio
-              </Link>
-              </li>
+              
               
               <li>
               <Link className="navbar-item" to="/about">
-                Services
+                Articles
               </Link>
               </li>
               
-              <li>
-              <Link className="navbar-item" to="/example">
-                Test
-              </Link>
-              </li>
+              
               
               
 
               <li>
              
-             <label className="modal-btn" htmlFor="modal-toggle" style={{textShadow: '1px 2px 0px black',}}>Contact Us</label> 
+             <label className="modal-btn" htmlFor="modal-toggle" style={{textShadow: '1px 2px 0px black',}}>Contact</label> 
               </li>
               
               

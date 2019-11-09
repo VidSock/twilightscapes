@@ -122,7 +122,7 @@ export const IndexPageTemplate = ({
         backgroundImage: `url(${
           !!image.childImageSharp ? image.childImageSharp.fluid.src : image
         })`,
-        backgroundPosition: `center center`,
+        backgroundPosition: `bottom right`,
         width: '100%',
         backgroundSize: 'cover',
         height: '100vh',
@@ -152,9 +152,9 @@ export const IndexPageTemplate = ({
 </label>
 </ScrollAnimation>
     
+
     
-    
- <ScrollAnimation animateIn="bounceInDown"  delay={100} animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={true}>
+ <ScrollAnimation animateIn="fadeIn"  delay={1300} animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={true}>
         <h1
           className="normal txtshadow-header mobile-txt"
           style={{

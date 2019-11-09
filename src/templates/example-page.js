@@ -19,7 +19,7 @@ export const ExamplePageTemplate = ({
   intro,
 }) => (
   
-  <div className="outer intro" style={{paddingTop:'80px',}}>
+  <div className="outer intro" style={{paddingTop:'0',}}>
   
   
   

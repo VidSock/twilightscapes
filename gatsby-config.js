@@ -2,14 +2,35 @@ var proxy = require('http-proxy-middleware')
 
 module.exports = {
   siteMetadata: {
-    title: 'Ad2Inc | Effective Marketing | Online and Off',
-    siteUrl: `https://ad2inc.netlify.com`,
+    title: 'Follow Me Into The Night | Unique Photography by Twilightscapes',
+    siteUrl: `https://twilightscapes.netlify.com`,
     description:
-      'Ad2, Inc. offers creative development and campaign management services, as well as brand consulting and other marketing communications services, such as marketing research, strategic planning, direct and interactive marketing.',
+      'Twilightscapes brings new definitions to the genre of night photography. Experience some of the most remote, desolate locations photographed in the dead of night by world renown night photographer Todd Lambert.',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',
+    `gatsby-plugin-styled-components`,
+    'gatsby-plugin-sharp',
+    'gatsby-transformer-sharp',
+    
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/src/img`,
+        name: 'images',
+      },
+    },
+   
+    
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/src/img/gallery1`,
+        name: 'gallery',
+      },
+    },
+    
     {
       // keep as first gatsby-source-filesystem plugin for gatsby image support
       resolve: 'gatsby-source-filesystem',
@@ -18,6 +39,7 @@ module.exports = {
         name: 'uploads',
       },
     },
+    
     {
       resolve: 'gatsby-source-filesystem',
       options: {
@@ -25,47 +47,8 @@ module.exports = {
         name: 'pages',
       },
     },
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        path: `${__dirname}/src/img`,
-        name: 'images',
-      },
-    },
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `hytron.com`,
-        short_name: `Hytron`,
-        start_url: `/`,
-        background_color: `#FFF`,
-        theme_color: `#FAE042`,
-        display: `standalone`,
-        icon: `src/img/ad2inc-logo-round.svg`,
-      },
-    },
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        TrackingId: '',
-      }
-    },
-    { 
-      resolve: `gatsby-plugin-purgecss`,
-      options: {
-        printRejected: true, // Print removed selectors and processed file names
-        develop: true, // Enable while using `gatsby develop`
-        // tailwind: true, // Enable tailwindcss support
-        // whitelist: ['headroom', 'headroom--unfixed'], // Don't remove this selector
-         //ignore: ['index.css'], // Ignore files/folders
-         purgeOnly : ['/animate.css'], // Purge only these files/folders
-      }
-    },
-    'gatsby-plugin-sharp',
-    'gatsby-transformer-sharp',
-    'gatsby-plugin-dark-mode',
-    `gatsby-plugin-sitemap`,
-    `gatsby-plugin-styled-components`,
+
+
     {
       resolve: 'gatsby-transformer-remark',
       options: {
@@ -91,8 +74,45 @@ module.exports = {
               destinationDir: 'static',
             },
           },
+          {
+        resolve: "gatsby-remark-external-links",
+        options: {
+          target: "_self",
+          rel: "nofollow"
+        }
+      }
         ],
       },
+    },
+    
+    
+    
+    
+    
+    
+    
+    'gatsby-plugin-dark-mode',
+    `gatsby-plugin-sitemap`,
+    
+    
+    
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `hytron.com`,
+        short_name: `Hytron`,
+        start_url: `/`,
+        background_color: `#FFF`,
+        theme_color: `#FAE042`,
+        display: `standalone`,
+        icon: `src/img/tw-logo-white.svg`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        TrackingId: 'UA-49869143-1',
+      }
     },
     `gatsby-plugin-offline`,
     {
