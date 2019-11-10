@@ -20,7 +20,7 @@ import styled from "styled-components"
 const CustomBox = styled.div`
 *, *:before, *:after { box-sizing: border-box; }
 
-
+.intro img{border-radius:6px !important;}
 
 .intro:before{
 	content: "A Pioneer In Night Photography";
@@ -241,7 +241,7 @@ export const IndexPageTemplate = ({
     
 
 <ScrollAnimation animateIn="bounceInLeft" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={false}>
-<div className="container">
+<div id="desc" className="container">
 <div className="content" style={{padding:'1rem 1rem', display:'flex', flexDirection:'row',}}>
 
 <div style={{width:'60%',}}>
@@ -257,6 +257,19 @@ export const IndexPageTemplate = ({
 </div>
 </div>
 </ScrollAnimation>
+
+
+
+<ScrollAnimation animateIn="bounceInLeft" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={false}>
+<div className="container">
+<div className="content" style={{padding:'1rem 1rem',}}>
+<Image alt="Todd Lambert Web development for photographers" filename="workshop.jpg" /><br />
+<h2>Unique Night Photography</h2>
+<p>Finding obscure locations and unusual subject matter, Todd has excelled at capturing rarely seen moments of time. The night is misunderstood and often feared.  Let his award winning portfolio prove to you that the night is indeed beautiful.</p>
+</div>
+</div>
+</ScrollAnimation>
+
 
 <ScrollAnimation animateIn="bounceInRight" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={false}>
 
@@ -277,28 +290,13 @@ export const IndexPageTemplate = ({
 </div>
 </ScrollAnimation>
 
-<ScrollAnimation animateIn="bounceInLeft" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={false}>
-<div className="container">
-<div className="content" style={{padding:'1rem 1rem',}}>
-<Image alt="Todd Lambert Web development for photographers" filename="workshop.jpg" /><br />
-<h2>Unique Night Photography</h2>
-<p>Finding obscure locations and unusual subject matter that is atypical to the normal landscape genre, Todd has excelled at capturing the beauty of the night. Browse the galleries and let his award winning portfolio prove to you that the night is indeed beautiful.
-
-
-</p>
-</div>
-</div>
-</ScrollAnimation>
 
 
 
-
-
-<h2 style={{textAlign: 'center', margin: '1rem 0 2rem 0',}}>Some of our clients:</h2>
     
         <div
       className="full-width-image margin-top-0"
-      style={{display: 'block',
+      style={{display: 'none',
 	      position: 'relative',
         backgroundImage: `url(${
           !!image2.childImageSharp ? image2.childImageSharp.fluid.src : image2
@@ -429,7 +427,7 @@ export const IndexPageTemplate = ({
     
     <div
       className="full-width-image margin-top-0"
-      style={{display: 'block',
+      style={{display: 'none',
 	      position: 'relative',
         backgroundImage: `url(${
           !!image3.childImageSharp ? image3.childImageSharp.fluid.src : image

@@ -86,6 +86,7 @@ const KnifeGallery = ({ photos, ...rest }) => {
           </Modal>
         ) : null}
       </ModalGateway>
+      
     </div>
   )
 }
