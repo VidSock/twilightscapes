@@ -32,6 +32,47 @@ justify-content: center;
 font-size:180%; color:#f8f8fc; text-shadow: 12px 7px 15px 12px black;
 }
 
+/*
+.boom{
+ 	  background: -webkit-gradient(radial, 40% 90%, 10, 50% 50%, 90, from(rgba(0,28,78, 1)), to(rgba(31,169,244,1)) );
+ 	  
+background:linear-gradient(to bottom, #cfc09f 22%,#634f2c 24%, #cfc09f 26%, #cfc09f 27%,#ffecb3 40%,#3a2c0f 78%); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: 
+	}
+*/
+	
+/*
+	h3 {
+    background: linear-gradient(to bottom, #fff 50%,yellow 40%, #a0c3cf 96%, #a0bdcf 27%,#ff0000 40%,white 100%); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #fff;
+    position: relative;
+	text-transform: uppercase;	
+}
+*/
+
+.hit-the-floor {
+  color: #fff;
+  font-weight: bold;
+  font-family: Helvetica;
+  text-shadow: 
+    0 1px 0 #ccc, 
+    0 2px 0 #c9c9c9, 
+    0 3px 0 #bbb, 
+    0 4px 0 #b9b9b9, 
+    0 5px 0 #aaa, 
+    0 6px 1px rgba(0,0,0,.1), 
+    0 0 5px rgba(0,0,0,.1), 
+    0 1px 3px rgba(0,0,0,.3), 
+    0 3px 5px rgba(0,0,0,.2), 
+    0 5px 10px rgba(0,0,0,.25), 
+    0 10px 10px rgba(0,0,0,.2), 
+    0 20px 20px rgba(0,0,0,.15);
+}
+
+
 
 
 .fullscreen-bg {
@@ -158,7 +199,7 @@ export const IndexPageTemplate = ({
     
     <ScrollAnimation animateIn="bounceInDown" delay={1000}>
         <h1
-          className="normal txtshadow-header mobile-txt"
+          className="normal txtshadow-header hit-the-floor"
           style={{
             color: '#fff',
             fontSize: '5rem',
@@ -192,7 +233,7 @@ export const IndexPageTemplate = ({
         
         <ScrollAnimation animateIn="bounceInUp" delay={1200}>
         <h3
-          className="black txtshadow-3d mobile-txt"
+          className="boom"
           style={{
            fontSize:'7rem',
            color: 'white',

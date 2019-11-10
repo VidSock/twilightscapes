@@ -27,7 +27,11 @@ const CustomBox = styled.div`
     text-align: center;
     box-shadow: 0 5px 5px -5px #333;  
     transition: background 0.3s ease-in;
-    &:hover { background: #000; cursor:pointer; 
+    &:hover { 
+    background: #000; cursor:pointer;
+      background: -moz-radial-gradient(center 80px 45deg, circle cover, rgba(31,169,244,1) 0%, rgba(0,28,78, 1) 100%);
+
+  background: -webkit-gradient(radial, 50% 100%, 10, 50% 50%, 90, from(rgba(31,169,244,1)), to(rgba(0,28,78, 1)) ); 
     }
   }
   
