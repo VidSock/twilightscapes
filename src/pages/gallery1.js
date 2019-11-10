@@ -9,14 +9,24 @@ import styled from "styled-components"
 const CustomBox = styled.div`
 
 .intro:before{
-	content: "Galleries of Work";
+	content: "Galleries";
 
 position:absolute;
 display: flex;
 align-items: center;
 justify-content: center;
-font-size:180%; color:#f8f8fc; text-shadow: 12px 7px 15px 12px black;
+font-size:480%; color:#f8f8fc; text-shadow: 12px 7px 15px 12px black;
 }
+
+.gatsby-image-wrapper{transform: scale(1.25);}
+	
+/*
+	.gatsby-image-wrapper:after{
+	content: "+ click to zoom";
+	position:absolute; bottom:10px; right:10px;
+	color:#fff;
+	}
+*/
 
 `
 

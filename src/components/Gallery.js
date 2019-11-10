@@ -61,7 +61,7 @@ const KnifeGallery = ({ photos, ...rest }) => {
   }
 
   return (
-    <div style={{ margin: '4rem auto' }}>
+    <div style={{ margin: '0 auto' }}>
       {photos.length > 1 && (
         <Gallery
           photos={images}
