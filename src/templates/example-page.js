@@ -9,6 +9,21 @@ import Features from '../components/Features'
 import ScrollAnimation from 'react-animate-on-scroll'
 import { IoIosArrowDropdownCircle } from 'react-icons/io'
 
+import styled from "styled-components"
+const CustomBox = styled.div`
+
+.intro:before{
+	content: "About Twilightscapes";
+
+position:absolute;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size:180%; color:#f8f8fc; text-shadow: 12px 7px 15px 12px black;
+}
+
+`
+
 export const ExamplePageTemplate = ({
   image,
   title,
@@ -166,6 +181,7 @@ const ExamplePage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
 
   return (
+	  <CustomBox>
     <Layout>
       <ExamplePageTemplate
         image={frontmatter.image}
@@ -177,6 +193,7 @@ const ExamplePage = ({ data }) => {
         intro={frontmatter.intro}
       />
     </Layout>
+    </CustomBox>
   )
 }
 

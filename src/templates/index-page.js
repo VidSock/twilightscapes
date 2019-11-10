@@ -20,6 +20,20 @@ import styled from "styled-components"
 const CustomBox = styled.div`
 *, *:before, *:after { box-sizing: border-box; }
 
+
+
+.intro:before{
+	content: "A Pioneer In Night Photography";
+
+position:absolute;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size:180%; color:#f8f8fc; text-shadow: 12px 7px 15px 12px black;
+}
+
+
+
 .fullscreen-bg {
   position: fixed;
   top: 0;
@@ -76,6 +90,7 @@ const CustomBox = styled.div`
 
 
 
+
 `
 
 
@@ -112,7 +127,7 @@ export const IndexPageTemplate = ({
     
 	<CustomBox>
 	
-  <div className="outer intro" style={{content:'(WOOT)',}}>
+  <div className="outer intro">
   
 
   

@@ -5,6 +5,21 @@ import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
 // import FsLightbox from 'fslightbox-react';
 
+import styled from "styled-components"
+const CustomBox = styled.div`
+
+.intro:before{
+	content: "Articles";
+
+position:absolute;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size:180%; color:#f8f8fc; text-shadow: 12px 7px 15px 12px black;
+}
+
+`
+
 export const AboutPageTemplate = ({ title, content, contentComponent }) => {
   const PageContent = contentComponent || Content
 //   const [toggler, setToggler] = useState(false);
@@ -41,6 +56,7 @@ const AboutPage = ({ data }) => {
   const { markdownRemark: post } = data
 
   return (
+	  <CustomBox>
     <Layout>
       <AboutPageTemplate
         contentComponent={HTMLContent}
@@ -48,6 +64,7 @@ const AboutPage = ({ data }) => {
         content={post.html}
       />
     </Layout>
+    </CustomBox>
   )
 }
 

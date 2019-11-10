@@ -5,12 +5,28 @@ import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
 import ScrollAnimation from 'react-animate-on-scroll';
 
+import styled from 'styled-components'
+
+const CustomBox = styled.div`
+
+.intro:before{
+	content: "Gear Talk";
+
+position:absolute;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size:180%; color:#f8f8fc; text-shadow: 12px 7px 15px 12px black;
+}
+
+`
 
 export const CapabilitiesPageTemplate = ({ title, content, contentComponent }) => {
   const PageContent = contentComponent || Content
 
 
   return (
+	 
     <section className="outer intro section" style={{paddingTop:'0',}}>
     
     <ScrollAnimation animateIn="bounceInRight" animateOnce={true} delay={100}>
@@ -45,6 +61,7 @@ const CapabilitiesPage = ({ data }) => {
   const { markdownRemark: post } = data
 
   return (
+	  <CustomBox>
     <Layout>
       <CapabilitiesPageTemplate
         contentComponent={HTMLContent}
@@ -52,6 +69,7 @@ const CapabilitiesPage = ({ data }) => {
         content={post.html}
       />
     </Layout>
+   </CustomBox>
   )
 }
 
