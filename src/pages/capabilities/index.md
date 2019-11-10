@@ -1,25 +1,42 @@
 ---
 templateKey: capabilities-page
-title: Our Capabilities
+title: Overlanding road trip setup
 ---
-![]()
+![](/img/twilightscapes-rig.jpg "Todd in the field")
 
-### My Test
+I get a lot of questions from people about overlanding and my road-trip setup. So, I thought I’d post a bit more about the “ABT”rig and my setup.
 
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+![](/img/overlanding.jpg "Todd in the field")
 
-### Single origin
+### Night Photographer’s Dream Overlanding Setup
 
-Single-origin coffee is coffee grown within a single known geographic origin. Sometimes, this is a single farm or a specific collection of beans from a single country. The name of the coffee is then usually the place it was grown to whatever degree available.
+Up front is a 2014 Subaru Outback with H6 Boxer engine. It’s got everything to go wherever I want to go and is complete with full-size spare, farm jack, shovel, 12ft. ladder, and Rigid Industries LED flood/spot combo light bar. All of this is on top of the Yakima large cargo rack.
+The lights are controlled from a toggle switch on the dashboard.
+The Outback has had electronic brake controls added, a sway bar, and transmission cooler.
 
-### Sustainable farming
+![](/img/overlanding2.jpg "Todd in the field")
 
-Sustainable agriculture is farming in sustainable ways based on an understanding of ecosystem services, the study of relationships between organisms and their environment. What grows where and how it is grown are a matter of choice and careful consideration for nature and communities.
+My living quarters and office is in the back: an 18ft. Aliner Expedition pop-up hard-sided A-Frame. It’s got running water, fridge, heater/AC, stove, shower/toilet, queen bed and my office area.
 
-### Direct sourcing
+### Rollin'
 
-Direct trade is a form of sourcing practiced by some coffee roasters. Advocates of direct trade practices promote direct communication and price negotiation between buyer and farmer, along with systems that encourage and incentivize quality.
+Overall, it allows me to roll anywhere I want, even in backcountry. While overlanding, I can be completely off the grid for over a month, with dual deep cycle marine batteries, dual propane tanks and soon to come, solar panels.
 
-### Reinvest profits
+In addition to the inside shower, there is also an outside shower which comes in handy to hose things down, or for taking nude showers out in the middle of nowhere. 
 
-We want to truly empower the communities that bring amazing coffee to you. That’s why we reinvest 20% of our profits into farms, local businesses and schools everywhere our coffee is grown. You can see the communities grow and learn more about coffee farming on our blog.
+![](/img/overlanding4.jpg "Todd in the field")
+
+### Grillin' & Chillin'
+
+My setup even has indoor and outdoor speakers and bluetooth stereo which I use a lot with my iPhone to control.
+
+Lastly, there is also a propane access port and there is a “sidekick” BBQ unit that attaches to the side rear. I use this a lot to make toast and grill up quick burgers and what not. Life in the field, doesn’t have to be harsh! It’s certainly not 5-star accommodations, but the views can’t be beat!
+
+![](/img/overlanding3.jpg "Todd in the field")
+
+
+### Conclusion
+
+I’ve successfully managed, living in this through Colorado snow storms, Utah sandstorms, Oregon rainstorms, you name it, this setup has not failed me yet.
+
+

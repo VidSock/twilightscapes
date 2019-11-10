@@ -20,7 +20,11 @@ justify-content: center;
 font-size:380%; color:#f8f8fc; text-shadow: 12px 7px 15px 12px black;
 }
 
+
+
 `
+
+
 
 export const AboutPageTemplate = ({ title, content, contentComponent }) => {
   const PageContent = contentComponent || Content
@@ -109,6 +113,20 @@ But then it all came crashing down for Todd. Quickly, his body succumbed from th
        </ScrollAnimation>
        
        
+       
+       
+       <ScrollAnimation animateIn="bounceInUp" animateOnce={false} delay={100}>
+       <div className="container">
+              <h2 className="">
+              [cue dramatic music]
+              </h2>
+              <br /><h4>[this passage spoken with the VH-1 announcer’s voice]</h4>
+
+<p>
+But then it all came crashing down for Todd. Quickly, his body succumbed from the years of excessive 1 and 0’s</p>
+   
+       </div>
+       </ScrollAnimation>
       
       
       

@@ -260,7 +260,7 @@ export const IndexPageTemplate = ({
 
 
 
-<ScrollAnimation animateIn="bounceInLeft" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={false}>
+<ScrollAnimation animateIn="bounceInRight" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={false}>
 <div className="container">
 <div className="content" style={{padding:'1rem 1rem',}}>
 <Image alt="Todd Lambert Web development for photographers" filename="workshop.jpg" /><br />
@@ -271,7 +271,7 @@ export const IndexPageTemplate = ({
 </ScrollAnimation>
 
 
-<ScrollAnimation animateIn="bounceInRight" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={false}>
+<ScrollAnimation animateIn="bounceInLeft" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={false}>
 
 <div className="container">
 <div className="content" style={{padding:'1rem 1rem', display:'flex', flexDirection:'row',}}>
@@ -513,9 +513,9 @@ export const IndexPageTemplate = ({
     
     
     
-    
+    <ScrollAnimation animateIn="bounceInUp" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={false}>
     <Contact />
-
+</ScrollAnimation>
 
 
 
