@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Contact from '../components/Contact-inc'
-// import Image from '../components/Image';
+import Image from '../components/Image';
 // import Intro from '../components/intro-home'
 //  import Gallery1 from '../components/Gallery1'
 import Layout from '../components/Layout'
@@ -220,7 +220,8 @@ export const IndexPageTemplate = ({
         
         
         
-        
+        <ScrollAnimation animateOut="fadeOut" initiallyVisible={true} animateOnce={true} animatePreScroll={true} style={{position:'absolute', left:'3%', right:'3%', textAlign: 'center', bottom:'15%', fontSize: '80%', color: '#fff', zIndex: '0',}}>
+        <div className="scrolldown txtshadow-header">SCROLL <IoIosArrowDropdownCircle /> MORE</div></ScrollAnimation>
         
         
         
@@ -241,24 +242,37 @@ export const IndexPageTemplate = ({
 
 <ScrollAnimation animateIn="bounceInLeft" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={false}>
 <div className="container">
-<div className="content" style={{padding:'1rem 1rem',}}>
-<img src="" alt="Placeholder" width="220" height="220" style={{float: 'right', margin:'0 0 1rem 1rem',}} />
-<h2>Main Spotlight</h2>
-<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+<div className="content" style={{padding:'1rem 1rem', display:'flex', flexDirection:'row',}}>
 
-<p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+<div style={{width:'60%',}}>
+<h2>Meet Todd Lambert</h2>
+<p>Todd is a new breed of photographer focusing on remote and mostly "unknown" locations such as graveyards and other abandoned places at night. Todd is an adventurous spirit who lives full-time on the road while traveling across the country.
+</p>
+</div>
+
+<div style={{width:'40%', margin:'0 0 0 1rem', }}>
+<Image alt="Todd Lambert Web development for photographers" filename="todd.jpg" />Todd Lambert on location
+</div>
+
 </div>
 </div>
 </ScrollAnimation>
 
 <ScrollAnimation animateIn="bounceInRight" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={false}>
-<div className="container">
-<div className="content" style={{padding:'1rem 1rem',}}>
-<img src="" alt="Placeholder" width="220" height="220" style={{float: 'left', margin:'0 1rem 1rem 0',}} />
-<h2>Supporting Spotlight</h2>
-<p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages.</p>
 
-<p> It has survived not only five centuries, but also the leap into electronic typesetting.</p>
+<div className="container">
+<div className="content" style={{padding:'1rem 1rem', display:'flex', flexDirection:'row',}}>
+
+<div style={{width:'40%', margin:'0 1rem 0 0', }}>
+<Image alt="Todd Lambert Web development for photographers" filename="twilightscapes-rig.jpg" />Subaru Outback with 18-foot Aliner trailer coming out of Devils Peak, UT.
+</div>
+
+<div style={{width:'60%',}}>
+<h2>Always on the hunt</h2>
+<p>Todd scours the Internet, drives countless miles and lives and works in his unique overlanding road trip setup. You see, Todd is a photographer that specializes in photographing vintage cars, abandoned places and other pieces of unique American history.
+</p>
+</div>
+
 </div>
 </div>
 </ScrollAnimation>
@@ -266,10 +280,12 @@ export const IndexPageTemplate = ({
 <ScrollAnimation animateIn="bounceInLeft" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={false}>
 <div className="container">
 <div className="content" style={{padding:'1rem 1rem',}}>
-<img src="" alt="Placeholder" width="220" height="220" style={{float: 'right', margin:'0 0 1rem 1rem',}} />
-<h2>The Ad2 Difference</h2>
-<p>With our best-in-class capabilities, high quality work and superior support, we can market your company in the most cost effective way.</p>
-<p>Let Ad2 assist you with bringing your vision to a reality.</p>
+<Image alt="Todd Lambert Web development for photographers" filename="workshop.jpg" /><br />
+<h2>Unique Night Photography</h2>
+<p>Finding obscure locations and unusual subject matter that is atypical to the normal landscape genre, Todd has excelled at capturing the beauty of the night. Browse the galleries and let his award winning portfolio prove to you that the night is indeed beautiful.
+
+
+</p>
 </div>
 </div>
 </ScrollAnimation>
