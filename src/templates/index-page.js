@@ -83,8 +83,8 @@ font-size:180%; color:#f8f8fc; text-shadow: 12px 7px 15px 12px black;
   .full-width-image h2{font-size:300% !important;}
   .full-width-image h3{font-size:200% !important;}
   
-  #hero h1{font-size:350% !important; line-height:95%; margin-bottom:1rem;}
-  #hero h3{font-size:380% !important; color:red !important;}
+  #hero h1{font-size:650% !important; line-height:95%; margin-bottom:1rem;}
+  #hero h3{font-size:880% !important;}
   .special{font-size:200% !important;}
 }
 
@@ -175,7 +175,7 @@ export const IndexPageTemplate = ({
         </ScrollAnimation>
         
         <ScrollAnimation animateIn="bounceInRight" delay={1100}>
-        <h3
+        <h2
           className="narrow txtshadow mobile-txt"
           style={{
            fontSize:'3rem',
@@ -186,7 +186,7 @@ export const IndexPageTemplate = ({
           }}
         >
           into the
-        </h3>
+        </h2>
         </ScrollAnimation>
         
         
