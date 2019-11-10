@@ -29,7 +29,7 @@ export const CapabilitiesPageTemplate = ({ title, content, contentComponent }) =
 	 
     <section className="outer intro section" style={{paddingTop:'0',}}>
     
-    <ScrollAnimation animateIn="bounceInRight" animateOnce={true} delay={100}>
+    <ScrollAnimation animateIn="bounceInRight" animateOnce={true} delay={1000}>
       <div className="container">
               <h2 className="h2">
                 {title}

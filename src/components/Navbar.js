@@ -38,8 +38,9 @@ const Navbar = class extends React.Component {
               </Link>
               </li>
               
+            
             <li>
-              <Link className="navbar-item" to="/example">
+              <Link className="navbar-item" to="/about">
                 About
               </Link>
               </li>
@@ -58,12 +59,13 @@ const Navbar = class extends React.Component {
               
               
               
+              
+              
               <li>
-              <Link className="navbar-item" to="/about">
+              <Link className="navbar-item" to="/example">
                 Articles
               </Link>
               </li>
-              
               
               
               
