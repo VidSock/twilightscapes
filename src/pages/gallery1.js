@@ -18,8 +18,10 @@ justify-content: center;
 font-size:480%; color:#f8f8fc; text-shadow: 12px 7px 15px 12px black;
 }
 
+@media (hover: hover) {
 .gatsby-image-wrapper{transform: scale(1.25);}
-	
+}
+
 /*
 	.gatsby-image-wrapper:after{
 	content: "+ click to zoom";
