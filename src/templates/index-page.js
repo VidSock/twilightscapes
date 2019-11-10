@@ -112,7 +112,7 @@ export const IndexPageTemplate = ({
     
 	<CustomBox>
 	
-  <div className="outer intro" style={{}}>
+  <div className="outer intro" style={{content:'(WOOT)',}}>
   
 
   
