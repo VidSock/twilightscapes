@@ -141,11 +141,13 @@ export const IndexPageTemplate = ({
         width: '100%',
         backgroundSize: 'cover',
         height: '100vh',
-        paddingTop: '125px',
+
         position: 'relative',
 //         overflowX: 'scroll',
       }}
     >
+    
+
     
     
  
@@ -154,84 +156,78 @@ export const IndexPageTemplate = ({
     
 
     
-    <ScrollAnimation animateOut="fadeOut" initiallyVisible={true} animateOnce={true} animatePreScroll={true} style={{position:'absolute',  textAlign: 'center', bottom:'14%', fontSize: '80%', color: '#fff', zIndex: '0',}}>
-        <div className="scrolldown txtshadow-header">SCROLL <IoIosArrowDropdownCircle /> MORE</div>
-   </ScrollAnimation>
-        
-        
-        
-        
-<ScrollAnimation animateIn="bounceInRight"  delay={100} animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{display:'none', position:'absolute', left:'10%', bottom:'25%', zIndex:'1',}}>
-<label style={{display:'flex', justifyContent:'center',}} htmlFor="modal-toggle">
-<div className="special txtshadow" style={{padding:'.5rem 2rem', backgroundColor:'#DB2600', color:'#fff', borderRadius:'6px', cursor:'pointer',}}>Get Started</div>
-</label>
-</ScrollAnimation>
-    
-
-    
- <ScrollAnimation animateIn="fadeIn"  delay={1300} animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={true}>
+    <ScrollAnimation animateIn="bounceInDown" delay={1000}>
         <h1
           className="normal txtshadow-header mobile-txt"
           style={{
-/*
-            fontSize: '3.5rem',
-*/
             color: '#fff',
+            fontSize: '5rem',
            position: 'relative',
 //            top: '100px',
-//         left: '5%',
+           right: '3%',
 //            backgroundColor: '#ff0000',
-            textAlign: 'left',
-            border: '0px solid red',
+            textAlign: 'right', 
             float: 'none',
-            
           }}
         >
-          {heading}
+          Follow me
         </h1>
         </ScrollAnimation>
         
-        
-        
-         <ScrollAnimation animateIn="bounceInLeft"  delay={100} animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={true}>
-        <h2
-          className="normal txtshadow-header mobile-txt"
-          style={{
-            color: '#fff',
-            fontSize: '2rem',
-           position: 'relative',
-//            top: '100px',
-//         left: '5%',
-//            backgroundColor: '#ff0000',
-            textAlign: 'left',
-            border: '0px solid red',
-            float: 'none',
-            
-          }}
-        >
-          {subheading}
-        </h2>
-        </ScrollAnimation>
-        
-        <ScrollAnimation animateIn="bounceInUp"  delay={100} animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={true}>
+        <ScrollAnimation animateIn="bounceInRight" delay={1100}>
         <h3
-          className="normal txtshadow-header mobile-txt"
+          className="narrow txtshadow mobile-txt"
           style={{
-            color: '#fff',
-            fontSize: '2rem',
+           fontSize:'3rem',
+           color: 'white',
            position: 'relative',
-//            top: '100px',
-//         left: '5%',
-//            backgroundColor: '#ff0000',
-            textAlign: 'left',
-            border: '0px solid red',
-            float: 'none',
-            
+        right: '5%',
+            textAlign: 'right', 
           }}
         >
-          {subsubheading}
+          into the
         </h3>
         </ScrollAnimation>
+        
+        
+        <ScrollAnimation animateIn="bounceInUp" delay={1200}>
+        <h3
+          className="black txtshadow-3d mobile-txt"
+          style={{
+           fontSize:'7rem',
+           color: 'white',
+           position: 'relative',
+//            top: '230px',
+           right: '3%',
+            textAlign: 'right',
+            textTransform: 'uppercase', 
+          }}
+        >
+          Night
+        </h3>
+        </ScrollAnimation>
+        
+        
+        
+        
+        
+        
+        <ScrollAnimation animateIn="fadeIn" duration={2} delay={1000} animateOnce={false} className="mediacta" style={{position: 'absolute', right: '0', top: '50%',}}>
+        <br /><br />
+	
+        </ScrollAnimation>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         

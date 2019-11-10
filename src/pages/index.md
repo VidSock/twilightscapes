@@ -1,10 +1,10 @@
 ---
 templateKey: index-page
 title: Precision Parts
-image: /img/Ad2Grid_Logo.jpg
-heading: Award Winning Marketing and Design
-subheading: Dedicated to the ART of marketing
-subsubheading: Accelerate Your Results
+image: /img/night283.jpg
+heading: Follow Me
+subheading: Into the Night
+subsubheading: Unique Location Photography
 image2: /img/workspace-2517759_1280.png
 i2Heading: We'll Help You
 i2Subheading: Navigate the social divide
