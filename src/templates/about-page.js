@@ -46,7 +46,7 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
       </ScrollAnimation>
       
       
-    <ScrollAnimation animateIn="bounceInUp" animateOnce={false} delay={100}>
+    <ScrollAnimation animateIn="bounceInUp" animateOnce={true} delay={100}>
        <div className="container">
               <h2 className="">
                 [fast-forward through childhood]
@@ -70,7 +70,7 @@ I never learned in a school environment very well and it was always just a socia
        
        
        
-           <ScrollAnimation animateIn="bounceInUp" animateOnce={false} delay={100}>
+           <ScrollAnimation animateIn="bounceInUp" animateOnce={true} delay={100}>
        <div className="container">
               <h2 className="">
                 [fast-forward through childhood]
@@ -85,7 +85,7 @@ I never learned in a school environment very well and it was always just a socia
        
        
        
-       <ScrollAnimation animateIn="bounceInUp" animateOnce={false} delay={100}>
+       <ScrollAnimation animateIn="bounceInUp" animateOnce={true} delay={100}>
        <div className="container">
               <h2 className="">
                The Internet was new, it was the World Wild Web BABY!
@@ -99,7 +99,7 @@ I was one of the the once-vaunted “Webmasters” who controlled the Internet. 
        
        
        
-       <ScrollAnimation animateIn="bounceInUp" animateOnce={false} delay={100}>
+       <ScrollAnimation animateIn="bounceInUp" animateOnce={true} delay={100}>
        <div className="container">
               <h2 className="">
               [cue dramatic music]
@@ -115,7 +115,7 @@ But then it all came crashing down for Todd. Quickly, his body succumbed from th
        
        
        
-       <ScrollAnimation animateIn="bounceInUp" animateOnce={false} delay={100}>
+       <ScrollAnimation animateIn="bounceInUp" animateOnce={true} delay={100}>
        <div className="container">
               <h2 className="">
               [cue dramatic music]

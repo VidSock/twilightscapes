@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import { FaFacebookSquare, FaLinkedin, FaTwitterSquare, FaInstagram, FaPinterestSquare, FaYoutubeSquare } from 'react-icons/fa';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 
 /*
@@ -16,6 +17,7 @@ import vimeo from '../img/social/vimeo.svg'
 const Footer = class extends React.Component {
   render() {
     return (
+	    <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" initiallyVisible={false} animateOnce={false} animatePreScroll={true}>
       <footer className="footer has-background-black has-text-white-ter">
         <div className="content has-text-centered">
           
@@ -53,6 +55,7 @@ const Footer = class extends React.Component {
 <div style={{textAlign: 'center', margin: '0 0 1rem 0', justifyContent: 'center', fontSize: '70%'}}>Copyright &copy; {(new Date().getFullYear())} Twilightscapes</div>
         </div>
       </footer>
+      </ScrollAnimation>
     )
   }
 }

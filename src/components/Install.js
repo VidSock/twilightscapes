@@ -24,9 +24,11 @@ const CustomBox = styled.div`
   #installer{display: none !important;}
 }
 	
+/*
 @media (hover: hover) {
 #installer{display: none !important;}
 }
+*/
 	
 
 
@@ -40,7 +42,7 @@ const Install = () => (
 <ScrollAnimation animateIn="bounceInDown" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={true}>
 
 <CookieConsent
-	debug={false}
+	debug={true}
 	location="none"
 	style={{ color:'inherit', width:'auto', background:'inherit',  alignItems:'inherit',  textAlign:'left', justifyContent:'center', margin:'0 auto', top:'60px', maxWidth:'600px', position:'', border:'0px solid red', }}
     className=""

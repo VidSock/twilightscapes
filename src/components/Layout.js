@@ -59,11 +59,11 @@ const TemplateWrapper = ({ children }) => {
       
       
       <Navbar />
-      <Consent />
       <PopContact />
+  
       <main>{children}</main>
 
-      
+      <Consent />
     
 
 
