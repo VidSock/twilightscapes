@@ -143,7 +143,7 @@ export default class Contact extends React.Component {
                 
                 <div style={{fontSize: '70%', padding: '0 3%', margin: '0 0 1rem 0', textAlign: 'center',}}> <label htmlFor={'consent'}><input type="checkbox"  name={'consent'} required={true} style={{transform: 'scale(2)', margin: '0 10px 0 0', padding: '0',}} />  I want to communicate by email or text.</label></div>
                
-                <div className="actionable" style={{ marginBottom: '2rem',}}><input type="submit" value="Send Message" className="special" /><FaEnvelope style={{position: 'relative', top: '3px', left: '-30px', color: '#fff', fontSize: '120%',}} /></div>
+                <div className="actionable" style={{ marginBottom: '2rem',}}><input type="submit" value="Send Message" className="special grad" /><FaEnvelope style={{position: 'relative', top: '3px', left: '-30px', color: '#fff', fontSize: '120%',}} /></div>
                 
                 <div style={{fontSize: '70%', padding: '0px 3%', textAlign: 'center',}}><a style={{textAlign: 'center', paddingTop: '0px', paddingBottom: '0', textDecoration: 'underline',}} href="/privacy">Privacy Policy</a>
                 </div>

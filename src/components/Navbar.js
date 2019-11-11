@@ -32,20 +32,20 @@ const Navbar = class extends React.Component {
 
             <ul id="menu" className="menu">
             
-            <li>
+            <li className="grad">
               <Link className="navbar-item" to="/gallery1">
                Photo Gallery
               </Link>
               </li>
               
             
-            <li>
+            <li className="grad">
               <Link className="navbar-item" to="/about">
                 About Todd
               </Link>
               </li>
               
-               <li>
+               <li className="grad">
               <Link className="navbar-item" to="/capabilities">
                 My Gear
               </Link>
@@ -72,7 +72,7 @@ const Navbar = class extends React.Component {
 
               <li>
              
-             <label className="modal-btn" htmlFor="modal-toggle" style={{textShadow: '1px 2px 0px black',}}>Contact</label> 
+             <label className="modal-btn grad" htmlFor="modal-toggle" style={{textShadow: '1px 2px 0px black',}}>Contact</label> 
               </li>
               
               
@@ -85,7 +85,7 @@ const Navbar = class extends React.Component {
    
     <div className="themer"><ThemeToggler>
         {({ theme, toggleTheme }) => (
-          <div className="themeSlide">
+          <div className="themeSlide grad-vert">
             <input
               type="checkbox" value="None" id="themeSlide" name="check"
               onChange={e => toggleTheme(e.target.checked ? 'dark' : 'light')}
