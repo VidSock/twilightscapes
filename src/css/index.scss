@@ -875,7 +875,8 @@ background: linear-gradient(to right, rgba(3,73,127,1) 0%,rgba(65,145,186,1) 60%
 .themeSlide input[type=checkbox]:checked + label {
   left: 43px; }
   
-  
+body.dark .themeSlide input[type=checkbox] + label {
+  left: 43px; }
 
   
   
