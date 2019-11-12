@@ -75,7 +75,7 @@ const Gal1Page = () => {
       </div>
 
       
-      <ScrollAnimation animateIn="fadeIn" initiallyVisible={false} delay={1800} animateOnce={true} animatePreScroll={true}>
+      <ScrollAnimation animateIn="fadeIn" initiallyVisible={false} delay={1300} animateOnce={true} animatePreScroll={true}>
       <div className="container" style={{background:'',}}>
       <Gallery
         photos={data.allFile.edges}
