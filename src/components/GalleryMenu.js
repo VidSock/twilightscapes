@@ -34,7 +34,7 @@ background: radial-gradient(ellipse at center, rgba(126,209,234,1) 0%,rgba(65,14
 .galmenu{
 display: flex; justify-content: space-around; flex-wrap: wrap; align-items: center; flex-shrink: inherit; flex-basis: 30%;
 }
-.galmenu li{width:17%}
+.galmenu li{width:17%; margin-top:4px;}
 
 }
 
