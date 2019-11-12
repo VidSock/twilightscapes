@@ -8,11 +8,15 @@ import { Link } from 'gatsby'
 const CustomBox = styled.div`
 
 .galmenu{
-display: flex; justify-content: space-around; align-items: center; // flex-shrink: inherit;
+display: flex; justify-content: space-around; align-items: center; margin:0 3%;
+background:#111;
+padding:4px 4px;
+border-radius:10px;
+border:1px solid #444;
 }
 .galmenu li {width:10%; padding:0; color:#fff; margin:0 2px; text-align: center;}
 
-.galmenu .galgrad{display: block; padding:10px; border-radius:6px; border:1px solid #000; font-weight: bold; text-decoration: none; text-shadow: 1px 1px 1px black;}
+.galmenu .galgrad{display: block; padding:10px; border-radius:6px; border:1px solid #444; font-weight: bold; text-decoration: none; text-shadow: 1px 1px 1px black;}
 
 .galmenu .galgrad{
 background: rgb(125,126,125); /* Old browsers */
