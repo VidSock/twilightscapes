@@ -59,7 +59,7 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
 <p>
 I never learned in a school environment very well and it was always just a social thing for me (which was and still is awkward to me). I was a good “front man” that got along with lots of people and obstacles by faking it better than most.</p> 
 
-<h4 style={{padding:'1% 12%', textAlign:'center', backgroundColor:'#ff0000',}}>[Fair Warning]<br /> This story gets long, dirty and involved past this point
+<h4 style={{padding:'1% 12%', color:'#fff', textAlign:'center', backgroundColor:'#ff0000',}}>[Fair Warning]<br /> This story gets long, dirty and involved past this point
               <br />[Scroll at your own peril]</h4>
               
               

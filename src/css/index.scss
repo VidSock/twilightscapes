@@ -1039,27 +1039,7 @@ body.light .back-to-top svg, body.light .back-to-top svg:visited {color:#666;}
 body.light .back-to-top svg:hover, .back-to-top svg:hover{color:$primary;}
 
 
-.galmenu{
-display: flex; justify-content: space-between; align-items: center; // flex-shrink: inherit;
-}
-.galmenu li {width:10%; padding:0; color:#fff; margin:0 2px; text-align: center;}
 
-.galmenu .galgrad{display: block; padding:10px; border-radius:6px; border:1px solid #000; font-weight: bold; text-decoration: none; text-shadow: 1px 1px 1px black;}
-
-.galmenu .galgrad{
-background: rgb(125,126,125); /* Old browsers */
-background: -moz-linear-gradient(top, rgba(125,126,125,1) 0%, rgba(14,14,14,1) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top, rgba(125,126,125,1) 0%,rgba(14,14,14,1) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom, rgba(125,126,125,1) 0%,rgba(14,14,14,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#0e0e0e',GradientType=0 ); /* IE6-9 */
-}
-
-.galmenu [aria-current] {
-background: rgb(126,209,234); /* Old browsers */
-background: -moz-radial-gradient(center, ellipse cover, rgba(126,209,234,1) 0%, rgba(65,145,186,1) 40%, rgba(3,73,127,1) 100%); /* FF3.6-15 */
-background: -webkit-radial-gradient(center, ellipse cover, rgba(126,209,234,1) 0%,rgba(65,145,186,1) 40%,rgba(3,73,127,1) 100%); /* Chrome10-25,Safari5.1-6 */
-background: radial-gradient(ellipse at center, rgba(126,209,234,1) 0%,rgba(65,145,186,1) 40%,rgba(3,73,127,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-}
 
 
 [aria-current] {
