@@ -72,7 +72,7 @@ const Gal3Page = () => {
 
       
       <ScrollAnimation animateIn="fadeIn" initiallyVisible={false} delay={700} animateOnce={true} animatePreScroll={true}>
-      <div className="container" style={{background:'',}}>
+      <div className="container" style={{background:'#111',}}>
       <Gallery
         photos={data.allFile.edges}
       />
