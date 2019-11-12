@@ -1,15 +1,18 @@
 
 import React from 'react'
-import Layout from '../components/Layout';
+import Layout from '../components/Layout'
+
 import { graphql, useStaticQuery } from 'gatsby'
 import Gallery from '../components/Gallery'
-
+import ScrollAnimation from 'react-animate-on-scroll'
+import GalleryMenu from '../components/GalleryMenu'
+// import PopSemi from '../components/PopSemi'
 
 import styled from "styled-components"
 const CustomBox = styled.div`
 
 .intro:before{
-	content: "Galleries";
+	content: "Gallery 1";
 
 position:absolute;
 display: flex;
@@ -60,18 +63,34 @@ const Gal1Page = () => {
 	  <CustomBox>
     <Layout>
     
-    <div className="outer intro">
-      <div className="container">
+
+<div className="outer intro" style={{backgroundColor:'#222', borderTop:'1px solid #000',}}>
+      <div className="container1 content" style={{padding:'10px 0 10px 0',}}>
     
-      <h1>Twilightscapes Portfolio<br /><span style={{fontSize:'80%',}}>- the work of Todd Lambert</span></h1>
+<h2 style={{textAlign:'center', fontSize:'80%', margin:'0', padding:'0 0 5px 0', color:'#ddd',}}>Available Galleries</h2>
       
-      <p>Todd has focused mostly on the western United States where his work represents 14 states so far. He has plans to head East over the next year and eventually cover the entire US.</p>
+      
+      <GalleryMenu />
       </div>
       </div>
+
       
+      <ScrollAnimation animateIn="fadeIn" initiallyVisible={false} delay={1800} animateOnce={true} animatePreScroll={true}>
+      <div className="container" style={{background:'',}}>
       <Gallery
         photos={data.allFile.edges}
       />
+      </div>
+      </ScrollAnimation>
+
+    <ScrollAnimation animateIn="fadeIn" initiallyVisible={false} animateOnce={false} animatePreScroll={false}>
+<div className="outer intro" style={{backgroundColor:'#222', borderTop:'1px solid #000',}}>
+      <div className="container1" style={{padding:'10px 0 10px 0', borderBottom:'1px solid #000',}}>
+      
+       <GalleryMenu />
+      </div>
+      </div>
+      </ScrollAnimation>
       
       
     </Layout>

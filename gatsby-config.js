@@ -99,10 +99,10 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `hytron.com`,
-        short_name: `Hytron`,
+        name: `Twilightscapes`,
+        short_name: `Twilightscapes`,
         start_url: `/`,
-        background_color: `#FFF`,
+        background_color: `#222`,
         theme_color: `#FAE042`,
         display: `standalone`,
         icon: `src/img/tw-logo-white.svg`,

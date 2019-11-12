@@ -17,7 +17,7 @@ import vimeo from '../img/social/vimeo.svg'
 const Footer = class extends React.Component {
   render() {
     return (
-	    <ScrollAnimation animateIn="fadeIn" initiallyVisible={false} animateOnce={false} animatePreScroll={false}>
+	    <ScrollAnimation animateIn="fadeIn" duration={4} initiallyVisible={false} animateOnce={false} animatePreScroll={false}>
       <footer className="footer has-background-black has-text-white-ter">
         <div className="content has-text-centered">
           

@@ -48,7 +48,7 @@ const getImages = imageArray => {
     }))
 }
 
-const styleFn = styleObj => ({ ...styleObj, zIndex: 100 })
+const styleFn = styleObj => ({ ...styleObj, zIndex: 1 })
 
 const KnifeGallery = ({ photos, ...rest }) => {
   const [isOpen, setOpen] = useState(false)
