@@ -63,12 +63,7 @@ const Gal7Page = () => {
     <Layout>
 
 
-    <div className="outer intro" style={{backgroundColor:'#222', borderTop:'1px solid #000',}}>
-      <div className="container1 content" style={{padding:'30px 0 10px 0',}}>
-
-     <GalleryMenu />
-      </div>
-      </div>
+<GalleryMenu />
 
       
       <ScrollAnimation animateIn="fadeIn" initiallyVisible={false} delay={700} animateOnce={true} animatePreScroll={true}>
@@ -81,14 +76,7 @@ const Gal7Page = () => {
       
       
       
-      <ScrollAnimation animateIn="fadeIn" initiallyVisible={false} animateOnce={false} animatePreScroll={false}>
-      <div className="outer intro" style={{backgroundColor:'#222', borderTop:'1px solid #000',}}>
-      <div className="container1" style={{padding:'10px 0 10px 0', borderBottom:'1px solid #000',}}>
-      
-      <GalleryMenu />
-      </div>
-      </div>
-      </ScrollAnimation>
+<GalleryMenu />
 
     </Layout>
     </CustomBox>
