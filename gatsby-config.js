@@ -94,7 +94,12 @@ module.exports = {
     'gatsby-plugin-dark-mode',
     `gatsby-plugin-sitemap`,
     
-    
+    {
+    resolve: `gatsby-plugin-suscribers`,
+    options: {
+      id: '78ff82b9-bd63-4e20-9723-d83e6fd0682a',
+    },
+  },
     
     {
       resolve: `gatsby-plugin-manifest`,

@@ -75,8 +75,8 @@ const GalleryMenu = () => (
       <li className="galmenu-item"><Link to="/gallery4" className="galgrad" title="Gallery 4">Crazy<br />Geology</Link></li>
       
       
-      <li className="galmenu-item has-app"><Link to="/western" className="galgrad" title="Western Towns Gallery">Western<br />Towns</Link></li>
-      <li className="galmenu-item no-app"><Link to="/install" className="galgrad" title="Western Towns Gallery">Western<br />Towns<Lock style={{position:'absolute', top:'0', right:'0',}} /></Link></li>
+      <li className="galmenu-item has-app"><Link to="/ghosttowns" className="galgrad" title="Ghost Towns Gallery">Ghost<br />Towns</Link></li>
+      <li className="galmenu-item no-app"><Link to="/install" className="galgrad" title="Ghost Towns Gallery">Ghost<br />Towns<Lock style={{position:'absolute', top:'0', right:'0',}} /></Link></li>
       
 
 
