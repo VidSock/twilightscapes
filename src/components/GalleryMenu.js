@@ -19,6 +19,8 @@ width:auto;
 }
 .galmenu li {width:20%; height:100%; padding:0; color:#fff; margin:0 3px; text-align: center;}
 
+
+
 .galmenu .galgrad{display: block; padding:10px; border-radius:6px; border:1px solid #444; font-weight: bold; text-decoration: none; text-shadow: 1px 1px 1px black; height:100%;}
 
 .galmenu .galgrad{
@@ -42,7 +44,7 @@ background: radial-gradient(ellipse at center, rgba(126,209,234,1) 0%,rgba(65,14
 display: flex; justify-content: space-around; flex-wrap: wrap; align-items: top; flex-shrink: inherit; flex-basis: 30%;
 }
 .galmenu li{width:18%; margin:0 0 3px 0;}
-
+.custom-gal li {width:25%; height:100%; padding:0; color:#fff; margin:5px 3px; text-align: center;}
 }
 
 
@@ -60,13 +62,17 @@ const GalleryMenu = () => (
     
 <h2 style={{textAlign:'center', fontSize:'80%', margin:'0', padding:'0 0 5px 0', color:'#ddd',}}>Available Galleries <span className="no-app" style={{fontSize:'90%',}}><FaLock /> (requires <Link to="/install"> app installation here</Link>)</span></h2>
 
-<ul className="galmenu">
+<ul className="galmenu custom-gal" style={{}}>
       
       <li className="galmenu-item"><Link to="/gallery1" className="galgrad" title="Gallery 1">Todds<br />Portfolio</Link></li>
       
-      <li className="galmenu-item"><Link to="/gallery3" className="galgrad" title="Gallery 3">All<br />Cars</Link></li>
-      <li className="galmenu-item"><Link to="/gallery4" className="galgrad" title="Gallery 4">Crazy<br />Geology</Link></li>
       <li className="galmenu-item"><Link to="/gallery5" className="galgrad" title="Gallery 5">Milky<br />Way</Link></li>
+      
+      <li className="galmenu-item"><Link to="/gallery3" className="galgrad" title="Gallery 3">All<br />Cars</Link></li>
+      
+	  <li className="galmenu-item"><Link to="/gallery3" className="galgrad" title="Gallery 3">During<br />Daylight</Link></li>
+	  
+      <li className="galmenu-item"><Link to="/gallery4" className="galgrad" title="Gallery 4">Crazy<br />Geology</Link></li>
       
       
       <li className="galmenu-item has-app"><Link to="/western" className="galgrad" title="Western Towns Gallery">Western<br />Towns</Link></li>
