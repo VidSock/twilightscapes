@@ -1064,13 +1064,96 @@ background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0
 }
 
 
-.member{display:none !important;}
+
+
+
+
+
+.no-app  .galgrad  {
+	position:relative;
+	color:#aaa !important;
+	cursor: not-allowed !important;
+}
+.no-app .icon-lock{position:absolute; top:0; right:0;}
+
+// MEMBER LOCK
+  .icon-lock {
+  width:20px;
+  height:20px;
+  position: relative;
+  overflow: hidden;
+  cursor: not-allowed;
+}
+
+.icon-lock .lock-top-1 {
+  width: 40%;
+  height: 40%;
+  position: absolute;
+  left: 50%;
+  margin-left: -20%;
+  top: 14%;
+  background-color: #000;
+  border-radius: 40%;
+}
+
+.icon-lock .lock-top-2 {
+  width: 24%;
+  height: 40%;
+  position: absolute;
+  left: 50%;
+  margin-left: -12%;
+  top: 22%;
+  background-color: #999;
+  border-radius: 25%;
+}
+
+.icon-lock .lock-body {
+  width: 60%;
+  height: 48%;
+  position: absolute;
+  left: 50%;
+  margin-left: -30%;
+  bottom: 11%;
+  background-color: #000;
+  border-radius: 15%;
+}
+
+.icon-lock .lock-hole {
+  width: 16%;
+  height: 16%;
+  position: absolute;
+  left: 50%;
+  margin-left: -8%;
+  top: 51%;
+  border-radius: 100%;
+  background-color: #151517;
+}
+
+.icon-lock .lock-hole:after {
+  content: "";
+  width: 43%;
+  height: 78%;
+  position: absolute;
+  left: 50%;
+  margin-left: -20%;
+  top: 100%;
+  background-color: inherit;
+}
+// MEMBER LOCK
 
 @media (display-mode: standalone) {
   /* All installed PWAs */
-  .member{display: block !important;}
+ body.light .has-app{display: block !important;}
+ body.light .no-app{display: none !important;}
 }
 
+// remove to go live
+ body.light .has-app{display: block !important;}
+ body.light .no-app{display: none !important;}
+// 
+
+body.dark .has-app{display:none !important;}
+body.dark .no-app{display:block !important;}
 
 
 

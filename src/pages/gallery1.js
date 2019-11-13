@@ -64,15 +64,11 @@ const Gal1Page = () => {
     <Layout>
     
 
-<div className="outer intro" style={{backgroundColor:'#222', borderTop:'1px solid #000',}}>
-      <div className="container1 content" style={{padding:'10px 0 10px 0',}}>
-    
-<h2 style={{textAlign:'center', fontSize:'80%', margin:'0', padding:'0 0 5px 0', color:'#ddd',}}>Available Galleries</h2>
+
       
       
       <GalleryMenu />
-      </div>
-      </div>
+  
 
       
       <ScrollAnimation animateIn="fadeIn" initiallyVisible={false} delay={700} animateOnce={true} animatePreScroll={true}>
@@ -83,14 +79,12 @@ const Gal1Page = () => {
       </div>
       </ScrollAnimation>
 
-    <ScrollAnimation animateIn="fadeIn" initiallyVisible={false} animateOnce={false} animatePreScroll={false}>
-<div className="outer intro" style={{backgroundColor:'#222', borderTop:'1px solid #000',}}>
-      <div className="container1" style={{padding:'10px 0 10px 0', borderBottom:'1px solid #000',}}>
+    
+
       
        <GalleryMenu />
-      </div>
-      </div>
-      </ScrollAnimation>
+
+      
       
       
     </Layout>

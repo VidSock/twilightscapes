@@ -1,6 +1,8 @@
 import React from 'react'
 import styled from "styled-components";
 import { Link } from 'gatsby'
+import Lock from '../components/Lock'
+import { FaLock } from 'react-icons/fa';
 // import { FaTimesCircle } from 'react-icons/fa';
 // import Newsletter from '../components/Newsletter'
 // import ScrollAnimation from 'react-animate-on-scroll'
@@ -13,8 +15,9 @@ background:#111;
 padding:4px 4px;
 border-radius:10px;
 border:1px solid #444;
+width:auto;
 }
-.galmenu li {width:10%; padding:0; color:#fff; margin:0 2px; text-align: center;}
+.galmenu li {width:20%; padding:0; color:#fff; margin:0 3px; text-align: center;}
 
 .galmenu .galgrad{display: block; padding:10px; border-radius:6px; border:1px solid #444; font-weight: bold; text-decoration: none; text-shadow: 1px 1px 1px black;}
 
@@ -38,7 +41,7 @@ background: radial-gradient(ellipse at center, rgba(126,209,234,1) 0%,rgba(65,14
 .galmenu{
 display: flex; justify-content: space-around; flex-wrap: wrap; align-items: center; flex-shrink: inherit; flex-basis: 30%;
 }
-.galmenu li{width:17%; margin-top:4px;}
+.galmenu li{width:18%; margin:0 0 3px 0;}
 
 }
 
@@ -50,10 +53,12 @@ display: flex; justify-content: space-around; flex-wrap: wrap; align-items: cent
    
 const GalleryMenu = () => (
 
-   
-
-
 <CustomBox style={{}}>
+
+<div className="outer intro" style={{backgroundColor:'#222', borderTop:'1px solid #000',}}>
+      <div className="container1 content" style={{padding:'10px 0 10px 0',}}>
+    
+<h2 style={{textAlign:'center', fontSize:'80%', margin:'0', padding:'0 0 5px 0', color:'#ddd',}}>Available Galleries <span className="no-app" style={{fontSize:'90%',}}><FaLock /> (requires <Link to="/install"> app installation here</Link>)</span></h2>
 
 <ul className="galmenu">
       
@@ -62,14 +67,26 @@ const GalleryMenu = () => (
       <li className="galmenu-item"><Link to="/gallery3" className="galgrad" title="Gallery 3">III</Link></li>
       <li className="galmenu-item"><Link to="/gallery4" className="galgrad" title="Gallery 4">IV</Link></li>
       <li className="galmenu-item"><Link to="/gallery5" className="galgrad" title="Gallery 5">V</Link></li>
-      <li className="galmenu-item"><Link to="/gallery6" className="galgrad" title="Gallery 6">VI</Link></li>
-      <li className="galmenu-item"><Link to="/gallery7" className="galgrad" title="Gallery 7">VII</Link></li>
-      <li className="galmenu-item"><Link to="/gallery8" className="galgrad" title="Gallery 8">VIII</Link></li>
-      <li className="galmenu-item"><Link to="/gallery9" className="galgrad" title="Gallery 9">IX</Link></li>
-      <li className="galmenu-item"><Link to="/gallery10" className="galgrad" title="Gallery 10">X</Link></li>
+      
+      
+      <li className="galmenu-item no-app">
+      <Link to="/example" className="galgrad" title="Gallery 6">VI<Lock style={{position:'absolute', top:'0', right:'0',}} /></Link>
+      </li>
+      
+      <li className="galmenu-item no-app"><Link to="/example" className="galgrad" title="Gallery 7">VII<Lock style={{position:'absolute', top:'0', right:'0',}} /></Link></li>
+      <li className="galmenu-item no-app"><Link to="/example" className="galgrad" title="Gallery 8">VIII<Lock style={{position:'absolute', top:'0', right:'0',}} /></Link></li>
+      <li className="galmenu-item no-app"><Link to="/example" className="galgrad" title="Gallery 9">IV<Lock style={{position:'absolute', top:'0', right:'0',}} /></Link></li>
+      <li className="galmenu-item no-app"><Link to="/example" className="galgrad" title="Gallery 10">X<Lock style={{position:'absolute', top:'0', right:'0',}} /></Link></li>
+      
+      <li className="galmenu-item has-app"><Link to="/gallery6" className="galgrad" title="Gallery 6">VI</Link></li>
+      <li className="galmenu-item has-app" has-app><Link to="/gallery7" className="galgrad" title="Gallery 7">VII</Link></li>
+      <li className="galmenu-item has-app" has-app><Link to="/gallery8" className="galgrad" title="Gallery 8" has-app>VIII</Link></li>
+      <li className="galmenu-item has-app" has-app><Link to="/gallery9" className="galgrad" title="Gallery 9">IX</Link></li>
+      <li className="galmenu-item has-app" has-app><Link to="/gallery10" className="galgrad" title="Gallery 10">X</Link></li>
       </ul>
 
-
+</div>
+      </div>
 
 </CustomBox>
   
