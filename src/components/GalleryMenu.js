@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from "styled-components";
 import { Link } from 'gatsby'
-import Lock from '../components/Lock'
 import { FaLock } from 'react-icons/fa';
 // import { FaTimesCircle } from 'react-icons/fa';
 // import Newsletter from '../components/Newsletter'
@@ -60,7 +59,7 @@ const GalleryMenu = () => (
 <div className="outer intro" style={{backgroundColor:'#222', borderTop:'1px solid #000',}}>
       <div className="container1 content" style={{padding:'10px 0 10px 0',}}>
     
-<h2 style={{textAlign:'center', fontSize:'80%', margin:'0', padding:'0 0 5px 0', color:'#ddd',}}>Available Galleries <span className="no-app" style={{fontSize:'90%',}}><FaLock /> (requires <Link to="/install"> app installation here</Link>)</span></h2>
+<h2 style={{textAlign:'center', fontSize:'80%', margin:'0', padding:'0 0 5px 0', color:'#ddd',}}>Available Galleries <span className="no-app" style={{fontSize:'90%',}}><FaLock /> ( requires free<Link to="/install"> app installation here</Link> )</span></h2>
 
 <ul className="galmenu custom-gal" style={{}}>
       
@@ -76,7 +75,7 @@ const GalleryMenu = () => (
       
       
       <li className="galmenu-item has-app"><Link to="/ghosttowns" className="galgrad" title="Ghost Towns Gallery">Ghost<br />Towns</Link></li>
-      <li className="galmenu-item no-app"><Link to="/install" className="galgrad" title="Ghost Towns Gallery">Ghost<br />Towns<Lock style={{position:'absolute', top:'0', right:'0',}} /></Link></li>
+      <li className="galmenu-item no-app"><Link to="/install" className="galgrad" title="Ghost Towns Gallery">Ghost<br />Towns <FaLock  style={{position:'absolute', top:'0', right:'0',}} /></Link></li>
       
 
 
@@ -95,13 +94,13 @@ const GalleryMenu = () => (
       
       
       <li className="galmenu-item no-app">
-      <Link to="/example" className="galgrad" title="Gallery 6">VI<Lock style={{position:'absolute', top:'0', right:'0',}} /></Link>
+      <Link to="/install" className="galgrad" title="Gallery 6">VI<FaLock  style={{position:'absolute', top:'0', right:'0',}} /></Link>
       </li>
       
-      <li className="galmenu-item no-app"><Link to="/example" className="galgrad" title="Gallery 7">VII<Lock style={{position:'absolute', top:'0', right:'0',}} /></Link></li>
-      <li className="galmenu-item no-app"><Link to="/example" className="galgrad" title="Gallery 8">VIII<Lock style={{position:'absolute', top:'0', right:'0',}} /></Link></li>
-      <li className="galmenu-item no-app"><Link to="/example" className="galgrad" title="Gallery 9">IV<Lock style={{position:'absolute', top:'0', right:'0',}} /></Link></li>
-      <li className="galmenu-item no-app"><Link to="/example" className="galgrad" title="Gallery 10">X<Lock style={{position:'absolute', top:'0', right:'0',}} /></Link></li>
+      <li className="galmenu-item no-app"><Link to="/install" className="galgrad" title="Gallery 7">VII<FaLock  style={{position:'absolute', top:'0', right:'0',}} /></Link></li>
+      <li className="galmenu-item no-app"><Link to="/install" className="galgrad" title="Gallery 8">VIII<FaLock  style={{position:'absolute', top:'0', right:'0',}} /></Link></li>
+      <li className="galmenu-item no-app"><Link to="/install" className="galgrad" title="Gallery 9">IV<FaLock  style={{position:'absolute', top:'0', right:'0',}} /></Link></li>
+      <li className="galmenu-item no-app"><Link to="/install" className="galgrad" title="Gallery 10">X<FaLock  style={{position:'absolute', top:'0', right:'0',}} /></Link></li>
       
       <li className="galmenu-item has-app"><Link to="/gallery6" className="galgrad" title="Gallery 6">VI</Link></li>
       <li className="galmenu-item has-app" has-app><Link to="/gallery7" className="galgrad" title="Gallery 7">VII</Link></li>
