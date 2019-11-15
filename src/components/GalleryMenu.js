@@ -63,19 +63,22 @@ const GalleryMenu = () => (
 
 <ul className="galmenu custom-gal" style={{}}>
       
-      <li className="galmenu-item"><Link to="/gallery1" className="galgrad" title="Gallery 1">Todds<br />Portfolio</Link></li>
+      <li className="galmenu-item"><Link to="/favorites" className="galgrad" title="Favorites">Popular<br />Favorites</Link></li>
       
-      <li className="galmenu-item"><Link to="/gallery5" className="galgrad" title="Gallery 5">Milky<br />Way</Link></li>
+      <li className="galmenu-item"><Link to="/milky-way" className="galgrad" title="Milky Way">Milky<br />Way</Link></li>
       
-      <li className="galmenu-item"><Link to="/gallery3" className="galgrad" title="Gallery 3">All<br />Cars</Link></li>
+      <li className="galmenu-item"><Link to="/cars" className="galgrad" title="All Cars">All<br />Cars</Link></li>
       
-	  <li className="galmenu-item"><Link to="/gallery3" className="galgrad" title="Gallery 3">During<br />Daylight</Link></li>
+	  <li className="galmenu-item"><Link to="/ghosttowns" className="galgrad" title="Ghost Towns">Ghost<br />Towns</Link></li>
 	  
-      <li className="galmenu-item"><Link to="/gallery4" className="galgrad" title="Gallery 4">Crazy<br />Geology</Link></li>
+      <li className="galmenu-item"><Link to="/crazy-geology" className="galgrad" title="Crazy Geology">Crazy<br />Geology</Link></li>
       
       
-      <li className="galmenu-item has-app"><Link to="/ghosttowns" className="galgrad" title="Ghost Towns Gallery">Ghost<br />Towns</Link></li>
-      <li className="galmenu-item no-app"><Link to="/install" className="galgrad" title="Ghost Towns Gallery">Ghost<br />Towns <FaLock  style={{position:'absolute', top:'0', right:'0',}} /></Link></li>
+      
+      
+      
+      <li className="galmenu-item has-app"><Link to="/daylight" className="galgrad" title="During Daylight">During<br />Daylight</Link></li>
+      <li className="galmenu-item no-app"><Link to="/install" className="galgrad" title="During Daylight">During<br />Daylight <FaLock  style={{position:'absolute', top:'0', right:'0', color:'#aaa',}} className="lock" /></Link></li>
       
 
 
@@ -94,13 +97,11 @@ const GalleryMenu = () => (
       
       
       <li className="galmenu-item no-app">
-      <Link to="/install" className="galgrad" title="Gallery 6">VI<FaLock  style={{position:'absolute', top:'0', right:'0',}} /></Link>
-      </li>
-      
-      <li className="galmenu-item no-app"><Link to="/install" className="galgrad" title="Gallery 7">VII<FaLock  style={{position:'absolute', top:'0', right:'0',}} /></Link></li>
-      <li className="galmenu-item no-app"><Link to="/install" className="galgrad" title="Gallery 8">VIII<FaLock  style={{position:'absolute', top:'0', right:'0',}} /></Link></li>
-      <li className="galmenu-item no-app"><Link to="/install" className="galgrad" title="Gallery 9">IV<FaLock  style={{position:'absolute', top:'0', right:'0',}} /></Link></li>
-      <li className="galmenu-item no-app"><Link to="/install" className="galgrad" title="Gallery 10">X<FaLock  style={{position:'absolute', top:'0', right:'0',}} /></Link></li>
+      <Link to="/install" className="galgrad" title="Gallery 6">VI<FaLock  style={{position:'absolute', top:'0', right:'0', color:'#aaa',}} className="lock" /></Link></li>
+      <li className="galmenu-item no-app"><Link to="/install" className="galgrad" title="Gallery 7">VII<FaLock  style={{position:'absolute', top:'0', right:'0', color:'#aaa',}} className="lock" /></Link></li>
+      <li className="galmenu-item no-app"><Link to="/install" className="galgrad" title="Gallery 8">VIII<FaLock  style={{position:'absolute', top:'0', right:'0', color:'#aaa',}} className="lock" /></Link></li>
+      <li className="galmenu-item no-app"><Link to="/install" className="galgrad" title="Gallery 9">IV<FaLock  style={{position:'absolute', top:'0', right:'0', color:'#aaa',}} className="lock" /></Link></li>
+      <li className="galmenu-item no-app"><Link to="/install" className="galgrad" title="Gallery 10">X<FaLock  style={{position:'absolute', top:'0', right:'0', color:'#aaa',}} className="lock" /></Link></li>
       
       <li className="galmenu-item has-app"><Link to="/gallery6" className="galgrad" title="Gallery 6">VI</Link></li>
       <li className="galmenu-item has-app" has-app><Link to="/gallery7" className="galgrad" title="Gallery 7">VII</Link></li>
