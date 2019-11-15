@@ -24,6 +24,7 @@ font-size:480%; color:#f8f8fc; text-shadow: 12px 7px 15px 12px black;
 @media (hover: hover) {
 .gatsby-image-wrapper{transform: scale(1.25);}
 }
+.gatsby-image-wrapper{transform: scale(1.25);}
 /*
 	.gatsby-image-wrapper:after{
 	content: "+ click to zoom";
@@ -67,7 +68,7 @@ const Gal2Page = () => {
     <GalleryMenu />
 
 <ScrollAnimation animateIn="fadeOut" initiallyVisible={true} delay={0} animateOnce={true} animatePreScroll={false} style={{display:'flex',alignItems:'center', justifyContent:'center',}}>
-  <h4 style={{color:'#fff', fontSize:'100%', textAlign:'center', display:'flex', backgroundColor:'#222', padding:'5px 10px', borderRadius:'10px', border:'1px solid #999', position:'absolute', bottom:'50px', zIndex:'1',}}><FiZoomIn style={{fontSize:'150%', position:'relative', top:'0px', left:'-4px',}} />Click To Zoom</h4>
+  <h4 style={{color:'#fff', fontSize:'100%', textAlign:'center', display:'flex', backgroundColor:'#222', padding:'5px 10px', borderRadius:'10px', border:'1px solid #999', position:'absolute', bottom:'50px', zIndex:'1', opacity:'.9',}}><FiZoomIn style={{fontSize:'150%', position:'relative', top:'0px', left:'-4px',}} />Click To Zoom</h4>
   </ScrollAnimation>
       
       <ScrollAnimation animateIn="fadeIn" initiallyVisible={false} delay={700} animateOnce={true} animatePreScroll={true}>
