@@ -3,7 +3,7 @@ import React from 'react'
 import Layout from '../components/Layout'
 
 import { graphql, useStaticQuery } from 'gatsby'
-import Gallery from '../components/GalleryOpen'
+import Gallery from '../components/Gallery'
 import ScrollAnimation from 'react-animate-on-scroll'
 import GalleryMenu from '../components/GalleryMenu'
 // import PopSemi from '../components/PopSemi'
