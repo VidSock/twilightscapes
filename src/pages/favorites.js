@@ -3,9 +3,10 @@ import React from 'react'
 import Layout from '../components/Layout'
 
 import { graphql, useStaticQuery } from 'gatsby'
-import Gallery from '../components/GalleryOpen'
+import Gallery from '../components/Gallery'
 import ScrollAnimation from 'react-animate-on-scroll'
 import GalleryMenu from '../components/GalleryMenu'
+import { FiZoomIn } from 'react-icons/fi'
 // import PopSemi from '../components/PopSemi'
 
 import styled from "styled-components"
@@ -18,12 +19,13 @@ position:absolute;
 display: flex;
 align-items: center;
 justify-content: center;
-font-size:480%; color:#f8f8fc; text-shadow: 12px 7px 15px 12px black;
+font-size:380%; color:#f8f8fc; text-shadow: 12px 7px 15px 12px black;
 }
 
 @media (hover: hover) {
 .gatsby-image-wrapper{transform: scale(1.25);}
 }
+.gatsby-image-wrapper{transform: scale(1.25);}
 /*
 	.gatsby-image-wrapper:after{
 	content: "+ click to zoom";
@@ -68,7 +70,10 @@ const Gal1Page = () => {
       
       
       <GalleryMenu />
-  
+      
+      <ScrollAnimation animateIn="fadeOut" initiallyVisible={true} delay={0} animateOnce={true} animatePreScroll={false} style={{display:'flex',alignItems:'center', justifyContent:'center',}}>
+  <h4 style={{color:'#fff', fontSize:'100%', textAlign:'center', display:'flex', backgroundColor:'#222', padding:'5px 10px', borderRadius:'10px', border:'1px solid #999', position:'absolute', bottom:'50px', zIndex:'1',}}><FiZoomIn style={{fontSize:'150%', position:'relative', top:'0px', left:'-4px',}} />Click To Zoom</h4>
+  </ScrollAnimation>
 
       
       <ScrollAnimation animateIn="fadeIn" initiallyVisible={false} delay={700} animateOnce={true} animatePreScroll={true}>

@@ -86,7 +86,7 @@ const GalleryMenu = () => (
       </ul>
       
       
-      <h4 style={{textAlign:'center', fontSize:'70%', color:'#ddd',}}>Full Galleries:</h4>
+      <h4 style={{display:'none', textAlign:'center', fontSize:'70%', color:'#ddd',}}>Full Library:</h4>
 <ul className="galmenu">
       
       <li className="galmenu-item"><Link to="/gallery1" className="galgrad" title="Gallery 1">I</Link></li>
