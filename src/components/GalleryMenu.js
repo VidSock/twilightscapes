@@ -16,7 +16,7 @@ border-radius:10px;
 border:1px solid #444;
 width:auto;
 }
-.galmenu li {width:20%; height:100%; padding:0; color:#fff; margin:0 3px; text-align: center;}
+.galmenu li {width:30%; height:100%; padding:0; color:#fff; margin:0 3px; text-align: center;}
 
 
 
@@ -43,7 +43,8 @@ background: radial-gradient(ellipse at center, rgba(126,209,234,1) 0%,rgba(65,14
 display: flex; justify-content: space-around; flex-wrap: wrap; align-items: top; flex-shrink: inherit; flex-basis: 30%;
 }
 .galmenu li{width:18%; margin:0 0 3px 0;}
-.custom-gal li {width:25%; height:100%; padding:0; color:#fff; margin:5px 3px; text-align: center;}
+.custom-gal li {width:30%; height:100%; padding:0; color:#fff; margin:5px 3px; text-align: center;}
+
 }
 
 
@@ -72,6 +73,7 @@ const GalleryMenu = () => (
 	  <li className="galmenu-item"><Link to="/ghosttowns" className="galgrad" title="Ghost Towns">Ghost<br />Towns</Link></li>
 	  
       <li className="galmenu-item"><Link to="/crazy-geology" className="galgrad" title="Crazy Geology">Crazy<br />Geology</Link></li>
+      
       
       
       
