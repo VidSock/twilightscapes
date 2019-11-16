@@ -478,14 +478,14 @@ footer{background-color: #222; padding:.1rem 0rem;  animation: fadeIn 3s;}
 
  .actionable{width:100%; position:relative; text-align: center; justify-content: center;}
  
-input.special {
+.special {
     color: white; 
     font-weight: bold;
     font-size:130%;
 
     cursor: pointer;
     border:0; outline:0;
-    padding: .4em 2rem .4rem 1rem;
+    padding: .4em 1rem .4rem 1rem;
     border-radius:(4px);
     width:auto;
      box-shadow: 1px 2px 3px 0px #554f4f;

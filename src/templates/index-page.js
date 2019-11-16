@@ -7,6 +7,7 @@ import Image from '../components/Image';
 //  import Gallery1 from '../components/Gallery1'
 import Layout from '../components/Layout'
 import Install from '../components/Install'
+import { Link } from 'gatsby'
 // import Features from '../components/Features'
 // import BlogRoll from '../components/BlogRoll'
 import ScrollAnimation from 'react-animate-on-scroll'
@@ -281,6 +282,29 @@ export const IndexPageTemplate = ({
     
     
 
+
+
+
+
+<ScrollAnimation animateIn="bounceInRight" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={false}>
+<div className="container">
+<div className="content" style={{padding:'1rem 1rem',}}>
+<Image alt="Todd Lambert Web development for photographers" filename="workshop.jpg" /><br />
+<h2>Unique Night Photography</h2>
+<p>Finding obscure locations and unusual subject matter, Todd has excelled at capturing rarely seen moments of time. The night is misunderstood and often feared.  Let his award winning portfolio prove to you that the night is indeed beautiful.</p>
+
+<Link className="special grad" to="/favorites" style={{color:'#fff', textDecoration:'none', display:'flex', justifyContent:'center', maxWidth:'50%', margin:'0 auto',}}>View Galleries</Link>
+
+
+</div>
+</div>
+</ScrollAnimation>
+
+
+
+
+
+
 <ScrollAnimation animateIn="bounceInLeft" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={false}>
 <div id="desc" className="container">
 <div className="content" style={{padding:'1rem 1rem', display:'flex', flexDirection:'row',}}>
@@ -296,23 +320,17 @@ export const IndexPageTemplate = ({
 </div>
 
 </div>
+<Link className="special grad" to="/about" style={{color:'#fff', textDecoration:'none', display:'flex', justifyContent:'center', maxWidth:'50%', margin:'0 auto',}}>More About Todd</Link>
 </div>
 </ScrollAnimation>
+
+
+
+
 
 
 
 <ScrollAnimation animateIn="bounceInRight" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={false}>
-<div className="container">
-<div className="content" style={{padding:'1rem 1rem',}}>
-<Image alt="Todd Lambert Web development for photographers" filename="workshop.jpg" /><br />
-<h2>Unique Night Photography</h2>
-<p>Finding obscure locations and unusual subject matter, Todd has excelled at capturing rarely seen moments of time. The night is misunderstood and often feared.  Let his award winning portfolio prove to you that the night is indeed beautiful.</p>
-</div>
-</div>
-</ScrollAnimation>
-
-
-<ScrollAnimation animateIn="bounceInLeft" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={false}>
 
 <div className="container">
 <div className="content" style={{padding:'1rem 1rem', display:'flex', flexDirection:'row',}}>
@@ -328,6 +346,7 @@ export const IndexPageTemplate = ({
 </div>
 
 </div>
+<Link className="special grad" to="/capabilities" style={{color:'#fff', textDecoration:'none', display:'flex', justifyContent:'center', maxWidth:'50%', margin:'0 auto',}}>Todd's Gear</Link>
 </div>
 </ScrollAnimation>
 
