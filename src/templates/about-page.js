@@ -11,9 +11,9 @@ import styled from 'styled-components'
 
 const CustomBox = styled.div`
 
+.animated {overflow:hidden !important;}
 .intro:before{
 	content: "About Twilightscapes";
-
 position:absolute;
 display: flex;
 align-items: center;
@@ -23,6 +23,12 @@ font-size:380%; color:#f8f8fc; text-shadow: 12px 7px 15px 12px black;
 
 .container{width:90%; height:auto; margin:1rem auto; padding:1rem; border-radius:10px;}
 
+.imgbox img{border-radius:12px; border:1px solid #000;}
+
+.spacer33{height:33vh;}
+.spacer66{height:66vh;}
+.spacer99{height:99vh;}
+
 @media (max-width: 48rem) {
 
 .split{flex-direction:column !important; width:100% !important;}
@@ -30,6 +36,7 @@ font-size:380%; color:#f8f8fc; text-shadow: 12px 7px 15px 12px black;
 
 .split div:first-child{order:2 !important;}
 .split div:last-child{order:1 !important;}
+.spacer33, .spacer66, .spacer99{height:5vh;}
 
 }
 
@@ -42,7 +49,7 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
 //   const [toggler, setToggler] = useState(false);
 
   return (
-    <section className="outer1 intro section" style={{paddingTop:'0',}}>
+    <section className="outer1 intro section" style={{paddingTop:'0', overflow:'hidden',}}>
     
     <ScrollAnimation animateIn="bounceInUp" animateOut="bounceInDown" animateOnce={true} delay={1000}>
       <div className="container" style={{display:'none',}}>
@@ -60,44 +67,47 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
       
 
 
- <div className="split" style={{display:'flex', position:'relative', }}>
+ <div className="split" style={{display:'flex', justifyContent:'center', alignItems:'center', position:'relative', backgroundColor:'#222', width:'92%', margin:'0 auto', padding:'1rem', borderBottom:'4px solid #000', borderTop:'1px solid #000', boxShadow:'0px 0px 20px 0px #000', borderRadius:'0 0 20px 20px', overflow:'hidden',}}>
+
  
- <ScrollAnimation animateIn="slideInLeft" animateOut="slideOutLeft" animateOnce={false} delay={0} style={{width:'60%',}}>    
-<div className="container" style={{ borderRadius:'12px',}}>
+ <ScrollAnimation animateIn="bounceInDown" animateOut="slideOutLeft" animateOnce={false} delay={1000} style={{width:'60%',}}>    
+<div className="container" style={{ width:'95%', borderRadius:'12px', margin:'0', padding:'',}}>
 <h2>Meet Todd</h2>
 <p>My name is Todd Lambert, this is my story. It all began when the country was a different place, my parents were having sex, and I was born.</p>
 
-<p>OK, so who wants to read that crap? What if I post a few photos of my deliciously twisted childhood (that I wouldn’t change for anything), instead?</p>
+<p>OK, so who wants to read that crap? What if I post a few photos of my deliciously twisted childhood, instead?</p>
 </div>
 </ScrollAnimation>
 
- <ScrollAnimation animateIn="slideInRight" animateOut="slideOutRight" animateOnce={false} delay={0} style={{width:'40%', margin:'0 1rem 0 0',}}>    
+ <ScrollAnimation animateIn="bounceInDown" animateOut="slideOutRight" animateOnce={false} delay={1400} style={{width:'40%', padding:'0',}}>    
 
-<div style={{border:'1px solid black', position:'relative', margin:'1rem 0 0 0',}}><Image alt="Todd Lambert Web development for photographers" filename="todd.jpg" />
-<div style={{position:'absolute', bottom:'0', fontSize:'60%', color:'#ddd', textAlign:'center',}}>Todd Lambert on location</div>
+<div className="imgbox" style={{border:'0px solid black', position:'relative', margin:'0 0 0 0',}}><Image alt="Todd Lambert Web development for photographers" filename="todd.jpg" />
+<div style={{position:'absolute', bottom:'5px', fontSize:'60%', color:'#ddd', textAlign:'center', width:'100%',}}><span className="txtshadow">Todd Lambert on location</span></div>
 </div>
 </ScrollAnimation>
 
  </div>
  
- <br /> <br /> <br /> <br />
- 
- 
-  <div className="split" style={{display:'flex', position:'relative', }}>
- 
- <ScrollAnimation animateIn="slideInRight" animateOut="slideOutRight" animateOnce={false} delay={0} style={{width:'50%', margin:'0 0 0 0',}}>    
+ <div className="spacer33"></div>
 
-<div style={{borderRadius:'10px !important', border:'1px solid black', position:'relative', margin:'1rem 0 1rem 1rem',}}><Image alt="Todd Lambert Web development for photographers" filename="todd.jpg" />
-<div style={{position:'absolute', bottom:'0', fontSize:'60%', color:'#ddd', textAlign:'center',}}>Todd Lambert on location</div>
+ 
+ 
+ <div className="split" style={{display:'flex', justifyContent:'center',  alignItems:'center', position:'relative', backgroundColor:'#222', width:'92%', margin:'0 auto', padding:'1rem', borderRadius:'12px', overflow:'hidden',}}>
+
+ 
+ <ScrollAnimation animateIn="slideInLeft" animateOut="slideOutLeft" animateOnce={false} delay={0} style={{width:'60%',}}>    
+<div className="container" style={{ width:'95%', borderRadius:'12px', margin:'0', padding:'',}}>
+<h2>Meet Todd</h2>
+<p>My name is Todd Lambert, this is my story. It all began when the country was a different place, my parents were having sex, and I was born.</p>
+
+<p>OK, so who wants to read that crap? What if I post a few photos of my deliciously twisted childhood, instead?</p>
 </div>
 </ScrollAnimation>
 
+ <ScrollAnimation animateIn="slideInRight" animateOut="slideOutRight" animateOnce={false} delay={100} style={{width:'40%', padding:'0',}}>    
 
- <ScrollAnimation animateIn="slideInLeft" animateOut="slideOutLeft" animateOnce={false} delay={0} style={{width:'60%',  }}>    
-<div className="container">
-<p>My name is Todd Lambert, this is my story. It all began when the country was a different place, my parents were having sex, and I was born.</p>
-
-<p>OK, so who wants to read that crap? What if I post a few photos of my deliciously twisted childhood (that I wouldn’t change for anything), instead?</p>
+<div className="imgbox" style={{border:'0px solid black', position:'relative', margin:'0 0 0 0',}}><Image alt="Todd Lambert Web development for photographers" filename="todd.jpg" />
+<div className="txtshadow" style={{position:'absolute', bottom:'5px', fontSize:'60%', color:'#ddd', textAlign:'center', width:'100%',}}>Todd Lambert on location</div>
 </div>
 </ScrollAnimation>
 
@@ -114,37 +124,57 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
               
 
 
-<ScrollAnimation animateIn="bounceInUp" animateOnce={true} delay={100}>
-<div style={{}}>
- <div className="container">
-              <h2 className="">
-                [fast-forward through childhood]
-              </h2>
-<p>It’s now many years later, I am fresh into the working world, after having just busted out of high school with C- grades, and then quickly followed by a drug and alchol-induced loss of my first two years of college.</p>
 
+
+ <div className="split" style={{display:'flex', justifyContent:'center', alignContent:'center', alignItems:'center', position:'relative', backgroundColor:'#222', width:'92%', margin:'0 auto', padding:'1rem', borderRadius:'12px', overflow:'hidden',}}>
+
+ <ScrollAnimation animateIn="slideInLeft" animateOut="slideOutLeft" animateOnce={false} delay={0} style={{width:'60%', order:'2',}}>    
+<div className="container" style={{ width:'95%', borderRadius:'12px', margin:'0 0 0 1rem', padding:'',}}>
+<h2>[fast-forward through childhood]</h2>
+<p>It’s now many years later, I am fresh into the working world, after having just busted out of high school with C- grades, and then quickly followed by a drug and alchol-induced loss of my first two years of college.</p>
 <p>
 I never learned in a school environment very well and it was always just a social thing for me (which was and still is awkward to me). I was a good “front man” that got along with lots of people and obstacles by faking it better than most.</p> 
 </div>
+</ScrollAnimation>
+
+ <ScrollAnimation animateIn="slideInRight" animateOut="slideOutRight" animateOnce={false} delay={100} style={{width:'40%', padding:'0', order:'1',}}>    
+
+<div className="imgbox" style={{border:'0px solid black', position:'relative', margin:'0 0 0 0',}}><Image alt="Todd Lambert Web development for photographers" filename="todd.jpg" />
+<div className="txtshadow" style={{position:'absolute', bottom:'5px', fontSize:'60%', color:'#ddd', textAlign:'center', width:'100%',}}>Todd Lambert on location</div>
 </div>
 </ScrollAnimation>
 
+ </div>
+
        
        
        
+      <div className="spacer33"></div>  
        
+
        
-           <ScrollAnimation animateIn="bounceInUp" animateOnce={true} delay={100}>
-       <div className="container">
-              <h2 className="">
-                The Dawn Of The Internet
-              </h2>
-                      
+        <div className="split" style={{display:'flex', justifyContent:'center', alignItems:'center', position:'relative', backgroundColor:'#222', width:'92%', margin:'0 auto', padding:'1rem', borderRadius:'12px', overflow:'hidden',}}>
+
+ <ScrollAnimation animateIn="slideInLeft" animateOut="slideOutLeft" animateOnce={false} delay={0} style={{width:'60%',}}>    
+<div className="container" style={{ width:'95%', borderRadius:'12px', margin:'0', padding:'',}}>
+<h2>The Dawn Of The Internet</h2>
 <p>The Internet had just really started, but the amount of knowledge at my fingertips was honestly, quite addictive. Just as I’d been self-taught with just about all things in my life, I had immersed myself in multiple online personalities each with intense work patterns to learn as much as I could about all aspects of…dun dun dun:</p> 
 
 <h4> Website Design and Development</h4>
-              
-       </div>
-       </ScrollAnimation>
+</div>
+</ScrollAnimation>
+
+ <ScrollAnimation animateIn="slideInRight" animateOut="slideOutRight" animateOnce={false} delay={100} style={{width:'40%', padding:'0',}}>    
+
+<div className="imgbox" style={{border:'0px solid black', position:'relative', margin:'0 0 0 0',}}><Image alt="Todd Lambert Web development for photographers" filename="todd.jpg" />
+<div className="txtshadow" style={{position:'absolute', bottom:'5px', fontSize:'60%', color:'#ddd', textAlign:'center', width:'100%',}}>Todd Lambert on location</div>
+</div>
+</ScrollAnimation>
+
+ </div>
+ 
+ 
+ 
        
        
        
