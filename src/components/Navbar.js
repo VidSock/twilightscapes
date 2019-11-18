@@ -3,7 +3,10 @@ import { Link } from 'gatsby'
 import logo from '../img/tw-logo-white.svg'
 import Headroom from "react-headroom"
 import { ThemeToggler } from 'gatsby-plugin-dark-mode'
-import { GoArrowUp } from 'react-icons/go';
+import { GoArrowUp, GoTelescope } from 'react-icons/go'
+import { AiFillBank } from 'react-icons/ai'
+import { FaRegAddressCard, FaQuestionCircle, FaTelegramPlane } from 'react-icons/fa'
+
 // import PopContact from '../components/PopContact'
 // import ScrollAnimation from 'react-animate-on-scroll'
 
@@ -32,22 +35,23 @@ const Navbar = class extends React.Component {
 
             <ul id="menu" className="menu">
             
-            <li className="grad">
-              <Link className="navbar-item" to="/favorites">
-               Galleries
+            <li className="grad" style={{position:'relative',}}>
+              <Link className="navbar-item" to="/favorites" style={{paddingRight:'50px',}}>
+               Galleries <GoTelescope className="txtshadow" style={{fontSize:'40px', position:'absolute', right:'4px', top:'10px',}}/>
               </Link>
+              
               </li>
               
             
-            <li className="grad">
-              <Link className="navbar-item" to="/about">
-                About
+            <li className="grad" style={{position:'relative',}}>
+              <Link className="navbar-item" to="/about" style={{paddingRight:'50px',}}>
+                About <FaRegAddressCard className="txtshadow" style={{fontSize:'30px', position:'absolute', right:'10px', top:'15px',}}/>
               </Link>
               </li>
               
-               <li className="grad">
-              <Link className="navbar-item" to="/capabilities">
-                FAQs
+               <li className="grad" style={{position:'relative',}}>
+              <Link className="navbar-item" to="/capabilities" style={{paddingRight:'50px',}}>
+                FAQs <FaQuestionCircle className="txtshadow" style={{fontSize:'30px', position:'absolute', right:'10px', top:'15px',}}/>
               </Link>
               </li>
               
@@ -61,18 +65,18 @@ const Navbar = class extends React.Component {
               
               
               
-              <li>
-              <Link className="navbar-item has-app" to="/example">
-                The Vault
+              <li style={{position:'relative',}}>
+              <Link className="navbar-item has-app" to="/example" style={{paddingRight:'50px',}}>
+                The Vault <AiFillBank className="txtshadow" style={{fontSize:'30px', position:'absolute', right:'10px', top:'15px',}}/>
               </Link>
               </li>
               
               
 
 
-              <li>
+              <li style={{position:'',}}>
              
-             <label className="modal-btn grad" htmlFor="modal-toggle" style={{textShadow: '1px 2px 0px black',}}>Contact</label> 
+             <label className="modal-btn grad" htmlFor="modal-toggle" style={{textShadow: '1px 2px 0px black', paddingRight:'20px',}}>Contact <FaTelegramPlane className="txtshadow" style={{fontSize:'30px', position:'relative', right:'-6px', top:'12px',}}/></label> 
               </li>
               
               
