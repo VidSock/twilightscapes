@@ -62,7 +62,6 @@ height: 0;
 .split.nowrap .speech{border:1px solid;}
 
 .split.nowrap .speech:after {
-content: '';
 position: absolute;
 top: 50%;
 right: -20px;
