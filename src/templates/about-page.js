@@ -41,7 +41,7 @@ height: 0;
 
 .imgbox img{border-radius:12px; border:0px solid #000;}
 
-.spacer33{height:33vh;}
+.spacer33{height:15vh;}
 .spacer66{height:66vh;}
 .spacer99{height:99vh;}
 
@@ -123,12 +123,12 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
  <div className="split" style={{display:'flex', justifyContent:'center', alignItems:'center', position:'relative', backgroundColor:'#222', width:'92%', margin:'0 auto', padding:'1rem', borderBottom:'4px solid #000', borderTop:'1px solid #000', boxShadow:'0px 0px 20px 0px #000', borderRadius:'0 0 20px 20px', overflow:'',}}>
 
  
- <ScrollAnimation animateIn="fadeIn" animateOut="slideOutUp" animateOnce={false} delay={900} style={{width:'60%',}}>    
+ <ScrollAnimation animateIn="" animateOut="" initiallyVisible={true} animateOnce={true} animatePreScroll={false} delay={0} style={{width:'60%',}}>    
 <div className="container" style={{ width:'95%', borderRadius:'12px', margin:'0', padding:'',}}>
 <h2>Meet Todd</h2>
 <p style={{position:'relative',}}>My name is Todd Lambert, and this is my story. It all began when the country was a different place, my parents were wanting to have a family, and I was born.
 
-<ScrollAnimation animateIn="fadeIn" animateOnce={false} delay={1500}> 
+<ScrollAnimation animateIn="fadeIn" animateOnce={false} delay={1800}> 
 <div className="txtshadow-header" style={{position:'absolute', top:'30px', left:'0', width:'100%', borderBottom:'12px solid ', transform:'rotate(8deg)', textAlign:'center', fontSize:'250%', zIndex:'1',}}><span style={{color:'#169dc6',}}>NOPE!</span></div>
 <div style={{position:'absolute', top:'30px', left:'0', width:'100%', borderBottom:'12px solid ', transform:'rotate(-8deg)', textAlign:'center',}}> &nbsp;</div>
 </ScrollAnimation> 
@@ -143,7 +143,7 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
 
 </ScrollAnimation>
 
- <ScrollAnimation animateIn="fadeIn" animateOut="slideOutUp" animateOnce={false} delay={900} style={{width:'40%', padding:'0',}}>    
+ <ScrollAnimation animateIn="" animateOut="" initiallyVisible={true} animateOnce={true} animatePreScroll={false} style={{width:'40%', padding:'0',}}>    
 
 <div className="imgbox" style={{border:'0px solid black', position:'relative', margin:'0 0 0 0',}}><Image alt="Todd Lambert Web development for photographers" filename="todd.jpg" />
 <div style={{position:'absolute', bottom:'5px', fontSize:'60%', color:'#ddd', textAlign:'center', width:'100%',}}><span className="txtshadow">Todd Lambert on location</span></div>
@@ -167,12 +167,12 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
  
  
 
- 
+ <div className="spacer33"></div>
  
  
  
  <div style={{margin:'0 auto', width:'80%', border:'3px solid #fff', transform:'rotate(-3deg)', color:'#fff', backgroundColor:'#000', padding:'0 1rem',}}>
- <h3>Told in the style of reality TV:</h3>
+ <h3>In the style of reality TV:</h3>
  <Image alt="Behind The Photos - VH1 " filename="behind-the-photos.png" />
  </div>
  
@@ -185,8 +185,12 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
 
  <h2 style={{textAlign:'center', color:'#169dc6', fontSize:'180%', margin:'2rem auto 0 auto', padding:'0',}}>[Narrator Voice]</h2>
  
- <div className="container" style={{width:'60%', margin:'0 auto',}}>
- Todd had a nice childhood growing up in Southern California where he enjoyed most sports and grew up surfing, skateboarding and skiing.
+ <div className="container" style={{width:'80%', margin:'0 auto',}}>
+ <p>Tonight, we look at Twilightscapes by Todd Lambert. Todd is best-known for his incredible night photography and unusual photo locations.</p>
+ 
+ <h3 style={{textAlign:'center',}}>Now, Lets Go Behind The Photos</h3>
+ 
+ <p>We begin in Southern Californa in  the early 80s, where Todd spent his childhood enjoying sports and grew up surfing, skateboarding and skiing.</p>
  </div>
  
  
@@ -197,7 +201,7 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
  
  <div className="split" style={{display:'flex', justifyContent:'center',  alignItems:'center', position:'relative', width:'92%', margin:'0 auto', padding:'1rem', borderRadius:'12px', overflow:'',}}>
 
-<ScrollAnimation animateIn="rotateIn" animateOut="rotateOut" animateOnce={false} delay={100} style={{width:'50%', padding:'0',}}>    
+<ScrollAnimation animateIn="rotateIn" animateOut="rotateOut" animateOnce={false} delay={200} style={{width:'50%', padding:'0',}}>    
 
 <div className="imgbox shadow-3d" style={{border:'1px solid #444', borderRadius:'3px', padding:'5px 5px 25px 5px', background:'#fff', position:'relative', margin:'0 0', transform:'rotate(10deg)',}}><Image alt="Todd Lambert Web development for photographers" filename="todd-young1.jpg" style={{}}  />
 <div className="" style={{position:'absolute', bottom:'8px', fontSize:'60%', color:'#333', textAlign:'center', width:'100%',}}>Rockin the bowl cut!</div>
@@ -206,7 +210,7 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
 
 <h2 style={{textAlign:'center', color:'#fff', transform:'rotate(-10deg)', fontSize:'150%', width:'40%', marginBottom:'1rem',}}>Todd was a cool kid!</h2>
 
- <ScrollAnimation animateIn="rotateIn" animateOut="rotateOut" animateOnce={false} delay={100} style={{width:'50%', padding:'0',}}>    
+ <ScrollAnimation animateIn="rotateIn" animateOut="rotateOut" animateOnce={false} delay={500} style={{width:'50%', padding:'0',}}>    
 
 <div className="imgbox shadow-3d" style={{border:'1px solid #444', borderRadius:'3px', padding:'5px 5px 25px 5px', background:'#fff', position:'relative', margin:'0 0', transform:'rotate(-10deg)',}}><Image alt="Todd Lambert Web development for photographers" filename="todd-young2.jpg" style={{}}  />
 <div className="" style={{position:'absolute', bottom:'8px', fontSize:'60%', color:'#333', textAlign:'center', width:'100%',}}>Future was so bright, needed shades</div>
@@ -219,20 +223,13 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
  
  
  
- <ScrollAnimation animateIn="bounce" animateOut="fadeOut" initiallyVisible={true} animateOnce={true} animatePreScroll={false} delay={0} style={{}}>
-  
- <div className="spacer33 bounce txtshadow-header" style={{fontSize:'500%', color:'#fff', textAlign:'center', position:'relative',}}>
-
- 
- </div>
-  </ScrollAnimation> 
   
   
   
   
   <ScrollAnimation animateIn="tada" animateOnce={false} delay={0}>
   
-  <div style={{padding:'1% 2%', fontSize:'120%', color:'#fff', textAlign:'center', backgroundColor:'#000', margin:'0 auto', width:'60%', border:'1px solid',}}>
+  <div style={{padding:'1% 9%', fontSize:'120%', color:'#fff', textAlign:'center', backgroundColor:'#000', margin:'2em auto 0 auto', width:'80%', border:'1px solid',}}>
   <h5 className="txtshadow">The following content is rated:</h5> 
   <h4 className="txtshadow shadow-3d" style={{fontSize:'200%',}}>TV-MA</h4>
   <h6 className="txtshadow">This content may contain adult language , violence and mature themes not suitable for viewers under 18.</h6> 
