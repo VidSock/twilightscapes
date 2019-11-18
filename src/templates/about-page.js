@@ -22,9 +22,26 @@ justify-content: center;
 font-size:380%; color:#f8f8fc; text-shadow: 12px 7px 15px 12px black;
 }
 
+
+.speech:after {
+content: '';
+position: absolute;
+top: 50%;
+right: -28px;
+width: 0;
+height: 0;
+
+	border: 60px solid transparent;
+	border-left-color: inherit;
+	border-right: 0;
+	border-bottom: 0;
+
+
+}
+
 .outer .container{width:90%; height:auto; margin:1rem auto; padding:1rem; border-radius:10px;}
 
-.imgbox img{border-radius:12px; border:1px solid #000;}
+.imgbox img{border-radius:12px; border:0px solid #000;}
 
 .spacer33{height:33vh;}
 .spacer66{height:66vh;}
@@ -35,9 +52,27 @@ font-size:380%; color:#f8f8fc; text-shadow: 12px 7px 15px 12px black;
 .split{flex-direction:column !important; width:100% !important;}
 .split div{width:100% !important;}
 
-.split div:first-child{order:2 !important;}
-.split div:last-child{order:1 !important;}
+.split div:first-child{order:2}
+.split div:last-child{order:1}
 .spacer33, .spacer66, .spacer99{ display:none; height:5vh;}
+
+.split.nowrap{flex-direction:row !important; width:100% !important;}
+.split.nowrap div:first-child{order:1}
+.split.nowrap div:last-child{order:2}
+.split.nowrap .speech{border:1px solid;}
+
+.split.nowrap .speech:after {
+content: '';
+position: absolute;
+top: 50%;
+right: -20px;
+width: 0;
+height: 0;
+	border: 20px solid transparent;
+	border-left-color: inherit;
+	border-right: 0;
+	border-bottom: 0;
+}
 
 }
 
@@ -242,19 +277,21 @@ I was one of the the once-vaunted “Webmasters” who controlled the Internet. 
        
 
        
-        <div className="split" style={{display:'flex', justifyContent:'center', alignItems:'center', position:'relative',  width:'92%', margin:'0 auto', padding:'1rem', borderRadius:'12px', overflow:'',}}>
+        <div className="split nowrap" style={{display:'flex', justifyContent:'center', alignItems:'center', flexWrap:'no-wrap', position:'relative',  width:'92%', margin:'0 auto', padding:'1rem', borderRadius:'12px', overflow:'',}}>
 
  <ScrollAnimation animateIn="slideInLeft" animateOut="slideOutLeft" animateOnce={false} delay={0} style={{width:'60%',}}>    
-<div className="container" style={{ width:'95%', borderRadius:'12px', margin:'0', padding:'',}}>
+<div className="container speech" style={{ width:'95%', borderRadius:'12px', margin:'0', padding:'', order:'1',}}>
 <h2></h2>
 <p>
-But then it all came crashing down for Todd. Quickly, his body succumbed from the years of excessive 1 and 0’s</p>
+But then it all came crashing down for Todd. Quickly, his body succumbed from the years of excessive 1 and 0’s
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+</p>
 </div>
 </ScrollAnimation>
 
- <ScrollAnimation animateIn="slideInRight" animateOut="slideOutRight" animateOnce={false} delay={100} style={{width:'40%', padding:'0',}}>    
+ <ScrollAnimation animateIn="slideInRight" animateOut="slideOutRight" animateOnce={false} delay={100} style={{width:'40%', padding:'0', order:'2 !important',}}>    
 
-<div className="imgbox" style={{border:'0px solid black', position:'relative', margin:'0 0 0 0',}}><Image alt="Todd Lambert Web development for photographers" filename="todd-toon.png" />
+<div className="imgbox" style={{border:'0px solid transparent', position:'relative', margin:'0 0 0 0',}}><Image alt="Todd Lambert Web development for photographers" filename="todd-toon.png" style={{borderColor:'transparent',}} />
 <div className="txtshadow" style={{position:'absolute', bottom:'5px', fontSize:'60%', color:'#ddd', textAlign:'center', width:'100%',}}></div>
 </div>
 </ScrollAnimation>

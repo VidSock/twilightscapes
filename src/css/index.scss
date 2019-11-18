@@ -927,15 +927,15 @@ body.dark .themeSlide input[type=checkbox] + label {
   
 
 
-body.dark, body.dark .container {
+body.dark, body.dark .container{
   background-color: #333;
   color: #f9f9fa; 
   box-shadow: inherit;}
   
   body.light .container{background-color: #dedede;}
   
-  body.dark .outer .innerpanel { background-color: #333;}
-  body.light .outer .innerpanel{ background-color: #f1f2f7;}
+  body.dark .outer .innerpanel, body.dark .speech  { background-color: #333;}
+  body.light .outer .innerpanel, body.light .speech { background-color: #f1f2f7;}
 
 body.light {
   background-color: #cfcfcf;
@@ -954,10 +954,10 @@ body.light .header li a, body.dark .header li a, body.light footer, body.light f
 
 
 body.light * {
-  border-color: #f0eaea ; }
+  border-color: #f1f2f7 ; }
 
 body.dark * {
-  border-color: #3e3b3b ; }
+  border-color: #333 ; }
 // Theme switcher
 
 .react-images__positioner{z-index: 2 !important;}
