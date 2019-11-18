@@ -47,7 +47,7 @@ const Navbar = class extends React.Component {
               
                <li className="grad">
               <Link className="navbar-item" to="/capabilities">
-                Gear Talk
+                FAQs
               </Link>
               </li>
               

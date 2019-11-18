@@ -5,6 +5,7 @@ import Layout from '../components/Layout'
 import Image from '../components/Image'
 import Content, { HTMLContent } from '../components/Content'
 import { GiPlainArrow } from 'react-icons/gi'
+import { GoQuote } from 'react-icons/go'
 
 import ScrollAnimation from 'react-animate-on-scroll'
 
@@ -24,19 +25,17 @@ font-size:380%; color:#f8f8fc; text-shadow: 12px 7px 15px 12px black;
 
 
 .speech:after {
-content: '';
+	content: '';
 position: absolute;
-top: 50%;
-right: -28px;
+top: 30%;
+right: -18px;
 width: 0;
 height: 0;
-
 	border: 60px solid transparent;
 	border-left-color: inherit;
 	border-right: 0;
 	border-bottom: 0;
-
-
+	 z-index:2;
 }
 
 .outer .container{width:90%; height:auto; margin:1rem auto; padding:1rem; border-radius:10px;}
@@ -47,10 +46,15 @@ height: 0;
 .spacer66{height:66vh;}
 .spacer99{height:99vh;}
 
+
+body.light .speech p span{color:#fff;}
+
+
 @media (max-width: 48rem) {
 
 .split{flex-direction:column !important; width:100% !important;}
-.split div{width:100% !important;}
+.split div{width:100% !important}
+
 
 .split div:first-child{order:2}
 .split div:last-child{order:1}
@@ -60,6 +64,9 @@ height: 0;
 .split.nowrap div:first-child{order:1}
 .split.nowrap div:last-child{order:2}
 .split.nowrap .speech{border:1px solid;}
+
+.split.nowrap div.speech{width: 60vw !important;}
+.split.nowrap div.imgbox{width:30vw !important; margin-left:1rem !important;}
 
 .split.nowrap .speech:after {
 position: absolute;
@@ -71,9 +78,17 @@ height: 0;
 	border-left-color: inherit;
 	border-right: 0;
 	border-bottom: 0;
+	 z-index:2;
 }
 
 }
+
+@media (min-width: 58rem) {
+	.outer{padding:0 10% !important; /* width:50%; */}
+	.split1{border:2px solid red !important}
+	}
+
+
 
 `
 
@@ -108,7 +123,7 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
 <p style={{position:'relative',}}>My name is Todd Lambert, and this is my story. It all began when the country was a different place, my parents were wanting to have a family, and I was born.
 
 <ScrollAnimation animateIn="fadeIn" animateOnce={false} delay={1500}> 
-<div className="txtshadow-header" style={{position:'absolute', top:'30px', left:'0', width:'100%', borderBottom:'12px solid ', transform:'rotate(8deg)', textAlign:'center', fontSize:'250%', zIndex:'1',}}><span style={{color:'lightblue',}}>NOPE!</span></div>
+<div className="txtshadow-header" style={{position:'absolute', top:'30px', left:'0', width:'100%', borderBottom:'12px solid ', transform:'rotate(8deg)', textAlign:'center', fontSize:'250%', zIndex:'1',}}><span style={{color:'#169dc6',}}>NOPE!</span></div>
 <div style={{position:'absolute', top:'30px', left:'0', width:'100%', borderBottom:'12px solid ', transform:'rotate(-8deg)', textAlign:'center',}}> &nbsp;</div>
 </ScrollAnimation> 
 </p>
@@ -117,7 +132,7 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
 
 <ScrollAnimation animateIn="zoomInDown" animateOnce={false} delay={1800}> 
 <div style={{margin:'1rem auto 0 auto', color:'#fff', width:'90%', textAlign:'center',}}>
-<h3>OK, so who wants to read that crap?</h3> Lets keep things real and tell it like it, shall we?
+<h3>OK, who wants to read that crap?</h3> Lets keep things real, shall we?
 </div></ScrollAnimation> 
 
 </ScrollAnimation>
@@ -131,13 +146,13 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
 
  </div>
  
-  <ScrollAnimation animateIn="bounce" animateOut="slideOutUp" initiallyVisible={true} animateOnce={true} animatePreScroll={false} delay={900} style={{}}>
+  <ScrollAnimation animateIn="bounce" animateOut="fadeOut" initiallyVisible={true} animateOnce={true} animatePreScroll={false} delay={0} style={{}}>
   
  <div className="spacer33 bounce txtshadow-header" style={{fontSize:'500%', color:'#fff', textAlign:'center', position:'relative',}}>
  
  <GiPlainArrow className="" style={{padding:'1rem', borderRadius:'10px',}} />
  
- <span className="txtshadow-header" style={{position:'relative', top:'-25px', color:'lightblue', fontSize:'50%', fontWeight:'bold', margin:'0 1rem 0 1rem',}}>SCROLL</span>
+ <span className="txtshadow-header" style={{position:'relative', top:'-25px', color:'#169dc6', fontSize:'50%', fontWeight:'bold', margin:'0 1rem 0 1rem',}}>SCROLL</span>
  
  <GiPlainArrow className="" style={{padding:'1rem', borderRadius:'10px',}} />
  
@@ -182,7 +197,16 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
  
  
  
+ <ScrollAnimation animateIn="bounce" animateOut="fadeOut" initiallyVisible={true} animateOnce={true} animatePreScroll={false} delay={0} style={{}}>
+  
+ <div className="spacer33 bounce txtshadow-header" style={{fontSize:'500%', color:'#fff', textAlign:'center', position:'relative',}}>
+
  
+ </div>
+  </ScrollAnimation> 
+  
+  
+  
   
   <ScrollAnimation animateIn="tada" animateOnce={false} delay={0}>
   <h4 className="txtshadow shadow-3d" style={{padding:'1% 12%', fontSize:'120%', color:'#fff', textAlign:'center', backgroundColor:'#ff0000', margin:'2rem auto', width:'80%',}}>[ Fair Warning ]<br /> The story gets long and dirty past this point
@@ -197,7 +221,7 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
 
  <ScrollAnimation animateIn="slideInLeft" animateOut="slideOutLeft" animateOnce={false} delay={0} style={{width:'60%', order:'2',}}>    
 <div className="container" style={{ width:'95%', borderRadius:'12px', margin:'0 0 0 0', padding:'',}}>
-<h2></h2>
+
 <p>It’s now many years later, I am fresh into the working world, after having just busted out of high school with C- grades, and then quickly followed by a drug and alchol-induced loss of my first two years of college.</p>
 <p>
 I never learned in a school environment very well and it was always just a social thing for me (which was and still is awkward to me). I got along with lots of people and obstacles by faking it better than most.</p> 
@@ -252,7 +276,7 @@ I never learned in a school environment very well and it was always just a socia
 
  <ScrollAnimation animateIn="slideInLeft" animateOut="slideOutLeft" animateOnce={false} delay={0} style={{width:'50%', order:'2',}}>    
 <div className="container" style={{ width:'95%', borderRadius:'12px', margin:'0 0 0 0', padding:'',}}>
-<h2>I was a pioneer of the new Internet Frontier</h2>
+<h2>I became a pioneer of the Internet Frontier</h2>
 <p>
 I was one of the the once-vaunted “Webmasters” who controlled the Internet. We were the ones they made the movie “Hackers” about. In fact, I almost had a Gibson one time, just barely out of my grasp, but I digress.</p>
 </div>
@@ -272,26 +296,34 @@ I was one of the the once-vaunted “Webmasters” who controlled the Internet. 
        
        
        
-       <div className="spacer33"></div>  
+       <div className="spacer33">
+       <p>
+But then it all came crashing down for Todd. Quickly, his body succumbed from the years of excessive 1 and 0’s
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+</p>
+</div>  
        
 
        
         <div className="split nowrap" style={{display:'flex', justifyContent:'center', alignItems:'center', flexWrap:'no-wrap', position:'relative',  width:'92%', margin:'0 auto', padding:'1rem', borderRadius:'12px', overflow:'',}}>
 
- <ScrollAnimation animateIn="slideInLeft" animateOut="slideOutLeft" animateOnce={false} delay={0} style={{width:'60%',}}>    
-<div className="container speech" style={{ width:'95%', borderRadius:'12px', margin:'0', padding:'', order:'1',}}>
-<h2></h2>
+ <ScrollAnimation animateIn="slideInLeft" animateOut="slideOutLeft" animateOnce={false} delay={0} style={{width:'70%', zIndex:'1',}}>    
+<div className="container speech" style={{ width:'95%', borderRadius:'12px', margin:'0', padding:'', order:'1', position:'relative',}}>
+
 <p>
-But then it all came crashing down for Todd. Quickly, his body succumbed from the years of excessive 1 and 0’s
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+<span className="txtshadow-header" style={{fontSize:'500%', color:'#ccc', position:'absolute', top:'-5px', left:'-10px',}}>&#10077;</span>
+<span className="txtshadow-header" style={{fontSize:'500%', color:'#ccc', position:'absolute', bottom:'-15px', right:'-10px',}}>&#10078;</span>
+I once saw Todd eat an entire box of Krispie Kreme donuts and then he washed it down with at least 2 gallons of Mountain Dew.
+<br /><br />And this was like, usually ever day...
 </p>
+<h5>- Todd Lambert</h5>
 </div>
 </ScrollAnimation>
 
- <ScrollAnimation animateIn="slideInRight" animateOut="slideOutRight" animateOnce={false} delay={100} style={{width:'40%', padding:'0', order:'2 !important',}}>    
+ <ScrollAnimation animateIn="slideInRight" animateOut="slideOutRight" animateOnce={false} delay={100} style={{width:'30%', padding:'0', order:'2 !important',  zIndex:'0',}}>    
 
-<div className="imgbox" style={{border:'0px solid transparent', position:'relative', margin:'0 0 0 0',}}><Image alt="Todd Lambert Web development for photographers" filename="todd-toon.png" style={{borderColor:'transparent',}} />
-<div className="txtshadow" style={{position:'absolute', bottom:'5px', fontSize:'60%', color:'#ddd', textAlign:'center', width:'100%',}}></div>
+<div className="imgbox grad" style={{border:'4px solid #fff', position:'relative', margin:'0 0 0 0', borderRadius:'50%', padding:'1rem', overflow:'hidden',}}><Image alt="Co-worker talks about Todd Lambert" filename="todd-toon.png" style={{borderColor:'transparent',}} />
+<div className="txtshadow" style={{position:'absolute', left:'0', bottom:'5px', fontSize:'70%', color:'#ddd', textAlign:'center', width:'100%',}}>Todd Lambert</div>
 </div>
 </ScrollAnimation>
 
@@ -299,6 +331,39 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry.
        
        
        
+       
+       <div className="spacer33"></div>  
+       
+
+       
+        <div className="split nowrap" style={{display:'flex', justifyContent:'center', alignItems:'center', flexWrap:'no-wrap', position:'relative',  width:'92%', margin:'0 auto', padding:'1rem', borderRadius:'12px', overflow:'',}}>
+
+ <ScrollAnimation animateIn="slideInLeft" animateOut="slideOutLeft" animateOnce={false} delay={0} style={{width:'60%', zIndex:'1',}}>    
+<div className="container speech" style={{ width:'95%', borderRadius:'12px', margin:'0', padding:'', order:'1', position:'relative',}}>
+
+<p>
+<span className="txtshadow-header" style={{fontSize:'500%', color:'#ccc', position:'absolute', top:'-5px', left:'-10px',}}>&#10077;</span>
+<span className="txtshadow-header" style={{fontSize:'500%', color:'#ccc', position:'absolute', bottom:'-15px', right:'-10px',}}>&#10078;</span>
+I once saw Todd eat an entire box of Krispie Kreme donuts and then he washed it down with at least 2 gallons of Mountain Dew.
+<br /><br />And this was like, usually ever day...
+</p>
+<h5>- anonymous co-worker</h5>
+</div>
+</ScrollAnimation>
+
+ <ScrollAnimation animateIn="slideInRight" animateOut="slideOutRight" animateOnce={false} delay={100} style={{width:'40%', padding:'0', order:'2 !important',  zIndex:'0',}}>    
+
+<div className="imgbox grad" style={{border:'4px solid #fff', position:'relative', margin:'0 0 0 0', borderRadius:'50%', padding:'1rem', overflow:'hidden',}}><Image alt="Co-worker talks about Todd Lambert" filename="coworker.png" style={{borderColor:'transparent',}} />
+<div className="txtshadow" style={{position:'absolute', left:'0', bottom:'25px', fontSize:'70%', color:'#ddd', textAlign:'center', width:'100%',}}>anonymous co-worker</div>
+</div>
+</ScrollAnimation>
+
+ </div>
+ 
+ 
+ 
+ 
+ 
        
        
        <ScrollAnimation animateIn="bounceInUp" animateOnce={true} delay={100}>
@@ -351,9 +416,7 @@ So, that was my hey-day of web development with the likes of Jeffrey Zeldman and
       
       <ScrollAnimation animateIn="bounceInUp" animateOnce={true} delay={100}>
        <div className="container">
-              <h2 className="">
-              
-              </h2>
+
               
 <p>
 It was here at this point that I was shining while I was sinking. I’d reached a great peak in my career, and I should have been basking in what that brought. I had the large McMansion in the Burbs, new cars, happy dogs and a great career. I should have been on top of the world, yet I felt empty and felt as though I was just going through the motions.</p>
