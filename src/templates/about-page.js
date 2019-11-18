@@ -5,14 +5,13 @@ import Layout from '../components/Layout'
 import Image from '../components/Image'
 import Content, { HTMLContent } from '../components/Content'
 import { GiPlainArrow } from 'react-icons/gi'
-import { GoQuote } from 'react-icons/go'
+// import { GoQuote } from 'react-icons/go'
 
 import ScrollAnimation from 'react-animate-on-scroll'
 
 import styled from 'styled-components'
 
 const CustomBox = styled.div`
-
 
 .intro:before{
 	content: "About Twilightscapes";
@@ -46,6 +45,8 @@ height: 0;
 .spacer66{height:66vh;}
 .spacer99{height:99vh;}
 
+p{line-height:150%;}
+
 
 body.light .speech p span{color:#fff;}
 
@@ -58,7 +59,7 @@ body.light .speech p span{color:#fff;}
 
 .split div:first-child{order:2}
 .split div:last-child{order:1}
-.spacer33, .spacer66, .spacer99{ display:none; height:5vh;}
+.spacer33, .spacer66, .spacer99{height:15vh;}
 
 .split.nowrap{flex-direction:row !important; width:100% !important;}
 .split.nowrap div:first-child{order:1}
@@ -90,6 +91,11 @@ height: 0;
 
 
 
+
+
+
+
+
 `
 
 
@@ -99,7 +105,7 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
 //   const [toggler, setToggler] = useState(false);
 
   return (
-    <section className="outer intro section" style={{paddingTop:'0', overflow:'hidden',}}>
+    <section className="about outer intro section" style={{paddingTop:'0', overflow:'hidden',}}>
     
     <ScrollAnimation animateIn="bounceInUp" animateOut="bounceInDown" animateOnce={true} delay={1000}>
       <div className="container" style={{display:'none',}}>
@@ -160,22 +166,36 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
   </ScrollAnimation>  
  
  
+
  
  
  
  
+ <div style={{margin:'0 auto', width:'80%', border:'3px solid #fff', transform:'rotate(-3deg)', color:'#fff', backgroundColor:'#000', padding:'0 1rem',}}>
+ <h3>Told in the style of reality TV:</h3>
+ <Image alt="Behind The Photos - VH1 " filename="behind-the-photos.png" />
+ </div>
  
  
  
+{/*  <div className="spacer33"></div> */} 
  
+{/* Show Intro */}
  
 
- <h2 style={{textAlign:'center', color:'#fff', fontSize:'180%', margin:'2rem 0',}}>[fast-forward through childhood]</h2>
+ <h2 style={{textAlign:'center', color:'#169dc6', fontSize:'180%', margin:'2rem auto 0 auto', padding:'0',}}>[Narrator Voice]</h2>
+ 
+ <div className="container" style={{width:'60%', margin:'0 auto',}}>
+ Todd had a nice childhood growing up in Southern California where he enjoyed most sports and grew up surfing, skateboarding and skiing.
+ </div>
+ 
+ 
+ 
+  
+ 
+ 
  
  <div className="split" style={{display:'flex', justifyContent:'center',  alignItems:'center', position:'relative', width:'92%', margin:'0 auto', padding:'1rem', borderRadius:'12px', overflow:'',}}>
-
- 
-
 
 <ScrollAnimation animateIn="rotateIn" animateOut="rotateOut" animateOnce={false} delay={100} style={{width:'50%', padding:'0',}}>    
 
@@ -184,7 +204,7 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
 </div>
 </ScrollAnimation>
 
-<h2 style={{textAlign:'center', color:'#fff', transform:'rotate(-10deg)', fontSize:'150%', width:'40%', marginBottom:'1rem',}}>I was a cool kid!</h2>
+<h2 style={{textAlign:'center', color:'#fff', transform:'rotate(-10deg)', fontSize:'150%', width:'40%', marginBottom:'1rem',}}>Todd was a cool kid!</h2>
 
  <ScrollAnimation animateIn="rotateIn" animateOut="rotateOut" animateOnce={false} delay={100} style={{width:'50%', padding:'0',}}>    
 
@@ -194,6 +214,8 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
 </ScrollAnimation>
 
  </div>
+ 
+ <h2 style={{textAlign:'center', color:'#169dc6', fontSize:'180%', margin:'2rem auto 0 auto', padding:'0',}}>[Fast-Forwarding Childhood]</h2>
  
  
  
@@ -209,22 +231,30 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
   
   
   <ScrollAnimation animateIn="tada" animateOnce={false} delay={0}>
-  <h4 className="txtshadow shadow-3d" style={{padding:'1% 12%', fontSize:'120%', color:'#fff', textAlign:'center', backgroundColor:'#ff0000', margin:'2rem auto', width:'80%',}}>[ Fair Warning ]<br /> The story gets long and dirty past this point
-              <br />[ Scroll at your own peril ]</h4>
+  
+  <div style={{padding:'1% 2%', fontSize:'120%', color:'#fff', textAlign:'center', backgroundColor:'#000', margin:'0 auto', width:'60%', border:'1px solid',}}>
+  <h5 className="txtshadow">The following content is rated:</h5> 
+  <h4 className="txtshadow shadow-3d" style={{fontSize:'200%',}}>TV-MA</h4>
+  <h6 className="txtshadow">This content may contain adult language , violence and mature themes not suitable for viewers under 18.</h6> 
+  <h6 className="txtshadow">Viewer discretion is strongly advised.</h6> 
+  </div>
 </ScrollAnimation>      
               
 
-
+<div className="spacer33"></div>
 
 
  <div className="split" style={{display:'flex', justifyContent:'center', alignContent:'center', alignItems:'center', position:'relative',  width:'92%', margin:'0 auto', padding:'1rem', borderRadius:'12px', overflow:'',}}>
 
  <ScrollAnimation animateIn="slideInLeft" animateOut="slideOutLeft" animateOnce={false} delay={0} style={{width:'60%', order:'2',}}>    
-<div className="container" style={{ width:'95%', borderRadius:'12px', margin:'0 0 0 0', padding:'',}}>
+<div className="container" style={{ width:'95%', borderRadius:'12px', margin:'0 0 0 -10px', padding:'1rem 2rem',}}>
+<h2 style={{textAlign:'center', color:'#169dc6', fontSize:'130%', padding:'0',}}>[Narrator]</h2>
 
-<p>It’s now many years later, I am fresh into the working world, after having just busted out of high school with C- grades, and then quickly followed by a drug and alchol-induced loss of my first two years of college.</p>
-<p>
-I never learned in a school environment very well and it was always just a social thing for me (which was and still is awkward to me). I got along with lots of people and obstacles by faking it better than most.</p> 
+<p>It’s now many years later and Todd is fresh into the working world, after having busted his way out of high school with C- grades.</p>
+
+ <p>Todd quickly followed that act with his encore performance of a drug and alchol-induced loss of his first two years of college.</p>
+ 
+<p>Todd just never learned very well in a school environment and it always ended up just being a social thing for him. It was often where he seemed to get along with both the people and obstacles in his life, by faking it better than most.</p> 
 </div>
 </ScrollAnimation>
 
@@ -248,10 +278,17 @@ I never learned in a school environment very well and it was always just a socia
 
  <ScrollAnimation animateIn="slideInLeft" animateOut="slideOutLeft" animateOnce={false} delay={0} style={{width:'60%',}}>    
 <div className="container" style={{ width:'95%', borderRadius:'12px', margin:'0', padding:'',}}>
-<h2>The Dawn Of The Internet</h2>
-<p>The Internet had just really started, but the amount of knowledge at my fingertips was honestly, quite addictive. Just as I’d been self-taught with just about all things in my life, I had immersed myself in multiple online personalities each with intense work patterns to learn as much as I could about all aspects of…dun dun dun:</p> 
+<h3 style={{textAlign:'center', color:'#169dc6', fontSize:'130%', padding:'0', margin:'0 0 1rem 0',}}>[Narrator]</h3>
 
-<h4> Website Design and Development</h4>
+<h3>The Dawn Of The Internet</h3>
+<p>The Internet had just really started, but the amount of knowledge at Todds fingertips was quite addictive to him.</p>
+
+<p>Just as he’d been self-taught with most other things in his life, Todd immersed himself in multiple online personalities, each with intense work patterns and scope.</p>
+
+<p>He was trying to learn as much as he could about all aspects of...</p> 
+
+
+<h2 style={{textAlign:'center',}}> Website Design and Development</h2>
 </div>
 </ScrollAnimation>
 
@@ -274,15 +311,18 @@ I never learned in a school environment very well and it was always just a socia
        
         <div className="split" style={{display:'flex', justifyContent:'center', alignItems:'center', position:'relative',  width:'92%', margin:'0 auto', padding:'1rem', borderRadius:'12px', overflow:'',}}>
 
- <ScrollAnimation animateIn="slideInLeft" animateOut="slideOutLeft" animateOnce={false} delay={0} style={{width:'50%', order:'2',}}>    
+ <ScrollAnimation animateIn="slideInLeft" animateOut="slideOutLeft" animateOnce={false} delay={0} style={{width:'45%', order:'2',}}>    
 <div className="container" style={{ width:'95%', borderRadius:'12px', margin:'0 0 0 0', padding:'',}}>
-<h2>I became a pioneer of the Internet Frontier</h2>
+<h3 style={{textAlign:'center', color:'#169dc6', fontSize:'130%', padding:'0', margin:'0 0 1rem 0',}}>[Narrator]</h3>
+<h3>Todd becomes a new pioneer on the frontiers of the World Wide Web</h3>
 <p>
-I was one of the the once-vaunted “Webmasters” who controlled the Internet. We were the ones they made the movie “Hackers” about. In fact, I almost had a Gibson one time, just barely out of my grasp, but I digress.</p>
+Todd had worked hard and become one of the the once-vaunted “Webmasters” who controlled the Internet.</p>
+
+<p>These Webmasters, were the ones that they made the critically-acclaimed movie “Hackers” about and starred Angelina Jolie. </p>
 </div>
 </ScrollAnimation>
 
- <ScrollAnimation animateIn="slideInRight" animateOut="slideOutRight" animateOnce={false} delay={100} style={{width:'50%', padding:'0', order:'1',}}>    
+ <ScrollAnimation animateIn="slideInRight" animateOut="slideOutRight" animateOnce={false} delay={100} style={{width:'55%', padding:'0', order:'1',}}>    
 
 <div className="imgbox" style={{border:'0px solid black', position:'relative', margin:'0 1rem 0 0',}}><Image alt="Todd Lambert Web development for photographers" filename="hackthis.jpg" />
 <div className="txtshadow" style={{position:'absolute', bottom:'5px', fontSize:'60%', color:'#ddd', textAlign:'center', width:'100%',}}>Biopic film of my life at this point</div>
@@ -296,12 +336,7 @@ I was one of the the once-vaunted “Webmasters” who controlled the Internet. 
        
        
        
-       <div className="spacer33">
-       <p>
-But then it all came crashing down for Todd. Quickly, his body succumbed from the years of excessive 1 and 0’s
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-</p>
-</div>  
+       <div className="spacer33"></div>  
        
 
        
@@ -375,6 +410,8 @@ I once saw Todd eat an entire box of Krispie Kreme donuts and then he washed it 
 
 <p>
 But then it all came crashing down for Todd. Quickly, his body succumbed from the years of excessive 1 and 0’s</p>
+
+
    
        </div>
        </ScrollAnimation>
