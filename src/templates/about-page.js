@@ -4,6 +4,7 @@ import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Image from '../components/Image'
 import Content, { HTMLContent } from '../components/Content'
+import { GiPlainArrow } from 'react-icons/gi'
 
 import ScrollAnimation from 'react-animate-on-scroll'
 
@@ -21,7 +22,7 @@ justify-content: center;
 font-size:380%; color:#f8f8fc; text-shadow: 12px 7px 15px 12px black;
 }
 
-.container{width:90%; height:auto; margin:1rem auto; padding:1rem; border-radius:10px;}
+.outer .container{width:90%; height:auto; margin:1rem auto; padding:1rem; border-radius:10px;}
 
 .imgbox img{border-radius:12px; border:1px solid #000;}
 
@@ -36,7 +37,7 @@ font-size:380%; color:#f8f8fc; text-shadow: 12px 7px 15px 12px black;
 
 .split div:first-child{order:2 !important;}
 .split div:last-child{order:1 !important;}
-.spacer33, .spacer66, .spacer99{height:5vh;}
+.spacer33, .spacer66, .spacer99{ display:none; height:5vh;}
 
 }
 
@@ -49,7 +50,7 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
 //   const [toggler, setToggler] = useState(false);
 
   return (
-    <section className="outer1 intro section" style={{paddingTop:'0', overflow:'hidden',}}>
+    <section className="outer intro section" style={{paddingTop:'0', overflow:'hidden',}}>
     
     <ScrollAnimation animateIn="bounceInUp" animateOut="bounceInDown" animateOnce={true} delay={1000}>
       <div className="container" style={{display:'none',}}>
@@ -73,7 +74,7 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
 <p style={{position:'relative',}}>My name is Todd Lambert, and this is my story. It all began when the country was a different place, my parents were wanting to have a family, and I was born.
 
 <ScrollAnimation animateIn="fadeIn" animateOnce={false} delay={1500}> 
-<div className="txtshadow" style={{position:'absolute', top:'30px', left:'0', width:'100%', borderBottom:'12px solid ', transform:'rotate(8deg)', textAlign:'center', fontSize:'250%', zIndex:'1',}}><span style={{color:'#fff',}}>NOPE!</span></div>
+<div className="txtshadow-header" style={{position:'absolute', top:'30px', left:'0', width:'100%', borderBottom:'12px solid ', transform:'rotate(8deg)', textAlign:'center', fontSize:'250%', zIndex:'1',}}><span style={{color:'lightblue',}}>NOPE!</span></div>
 <div style={{position:'absolute', top:'30px', left:'0', width:'100%', borderBottom:'12px solid ', transform:'rotate(-8deg)', textAlign:'center',}}> &nbsp;</div>
 </ScrollAnimation> 
 </p>
@@ -81,7 +82,7 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
 </div>
 
 <ScrollAnimation animateIn="zoomInDown" animateOnce={false} delay={1800}> 
-<div style={{margin:'1rem 0 0 .5rem', color:'#fff',}}>
+<div style={{margin:'1rem auto 0 auto', color:'#fff', width:'90%', textAlign:'center',}}>
 <h3>OK, so who wants to read that crap?</h3> Lets keep things real and tell it like it, shall we?
 </div></ScrollAnimation> 
 
@@ -96,8 +97,18 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
 
  </div>
  
- <div className="spacer33"></div>
+  <ScrollAnimation animateIn="bounce" animateOut="slideOutUp" initiallyVisible={true} animateOnce={true} animatePreScroll={false} delay={900} style={{}}>
+  
+ <div className="spacer33 bounce txtshadow-header" style={{fontSize:'500%', color:'#fff', textAlign:'center', position:'relative',}}>
  
+ <GiPlainArrow className="" style={{padding:'1rem', borderRadius:'10px',}} />
+ 
+ <span className="txtshadow-header" style={{position:'relative', top:'-25px', color:'lightblue', fontSize:'50%', fontWeight:'bold', margin:'0 1rem 0 1rem',}}>SCROLL</span>
+ 
+ <GiPlainArrow className="" style={{padding:'1rem', borderRadius:'10px',}} />
+ 
+ </div>
+  </ScrollAnimation>  
  
  
  
@@ -110,7 +121,7 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
  
  
 
- <h2 style={{textAlign:'center', color:'#fff', fontSize:'180%',}}>[fast-forward through childhood]</h2>
+ <h2 style={{textAlign:'center', color:'#fff', fontSize:'180%', margin:'2rem 0',}}>[fast-forward through childhood]</h2>
  
  <div className="split" style={{display:'flex', justifyContent:'center',  alignItems:'center', position:'relative', width:'92%', margin:'0 auto', padding:'1rem', borderRadius:'12px', overflow:'',}}>
 
@@ -124,7 +135,7 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
 </div>
 </ScrollAnimation>
 
-<h2 style={{textAlign:'center', color:'#fff', transform:'rotate(-25deg)', fontSize:'150%', width:'40%',}}>I was a cool kid!</h2>
+<h2 style={{textAlign:'center', color:'#fff', transform:'rotate(-10deg)', fontSize:'150%', width:'40%', marginBottom:'1rem',}}>I was a cool kid!</h2>
 
  <ScrollAnimation animateIn="rotateIn" animateOut="rotateOut" animateOnce={false} delay={100} style={{width:'50%', padding:'0',}}>    
 
@@ -151,7 +162,7 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
  <div className="split" style={{display:'flex', justifyContent:'center', alignContent:'center', alignItems:'center', position:'relative',  width:'92%', margin:'0 auto', padding:'1rem', borderRadius:'12px', overflow:'',}}>
 
  <ScrollAnimation animateIn="slideInLeft" animateOut="slideOutLeft" animateOnce={false} delay={0} style={{width:'60%', order:'2',}}>    
-<div className="container" style={{ width:'95%', borderRadius:'12px', margin:'0 0 0 1rem', padding:'',}}>
+<div className="container" style={{ width:'95%', borderRadius:'12px', margin:'0 0 0 0', padding:'',}}>
 <h2></h2>
 <p>It’s now many years later, I am fresh into the working world, after having just busted out of high school with C- grades, and then quickly followed by a drug and alchol-induced loss of my first two years of college.</p>
 <p>
@@ -159,10 +170,10 @@ I never learned in a school environment very well and it was always just a socia
 </div>
 </ScrollAnimation>
 
- <ScrollAnimation animateIn="slideInRight" animateOut="slideOutRight" animateOnce={false} delay={100} style={{width:'40%', padding:'0', order:'1',}}>    
+ <ScrollAnimation animateIn="slideInRight" animateOut="slideOutRight" animateOnce={false} delay={100} style={{width:'40%', padding:'0 auto 0 auto', order:'1',}}>    
 
-<div className="imgbox" style={{border:'0px solid black', position:'relative', margin:'0 0 0 0',}}><Image alt="Todd Lambert Web development for photographers" filename="todd-young-metal.jpg" />
-<div className="txtshadow" style={{position:'absolute', bottom:'5px', fontSize:'60%', color:'#ddd', textAlign:'center', width:'100%',}}>Todd Lambert on location</div>
+<div className="imgbox" style={{border:'0px solid black', position:'relative', margin:'0 0',}}><Image alt="Todd Lambert Web development for photographers" filename="todd-young-metal.jpg" />
+<div className="txtshadow" style={{position:'absolute', bottom:'5px', fontSize:'60%', color:'#ddd', textAlign:'center', width:'100%',}}>Yes, thats a Metallica hat</div>
 </div>
 </ScrollAnimation>
 
@@ -186,10 +197,10 @@ I never learned in a school environment very well and it was always just a socia
 </div>
 </ScrollAnimation>
 
- <ScrollAnimation animateIn="slideInRight" animateOut="slideOutRight" animateOnce={false} delay={100} style={{width:'40%', padding:'0',}}>    
+ <ScrollAnimation animateIn="slideInRight" animateOut="slideOutRight" animateOnce={false} delay={100} style={{width:'40%', padding:'40px auto 40px auto',}}>    
 
 <div className="imgbox" style={{border:'0px solid black', position:'relative', margin:'0 0 0 0',}}><Image alt="Todd Lambert Web development for photographers" filename="todd-young-business.jpg" />
-<div className="txtshadow" style={{position:'absolute', bottom:'5px', fontSize:'60%', color:'#ddd', textAlign:'center', width:'100%',}}>Todd Lambert on location</div>
+<div className="txtshadow" style={{position:'absolute', bottom:'5px', fontSize:'60%', color:'#ddd', textAlign:'center', width:'100%',}}>Clean cut and baby-faced</div>
 </div>
 </ScrollAnimation>
 
