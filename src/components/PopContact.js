@@ -50,8 +50,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7ed1ea', end
   
   .modal-close {
 	  position:absolute;
-	  top:25px;
-	  right:105px;
+	  top:15px;
+	  right:25px;
 	  z-index:5;
 	  
     color: #999;
@@ -89,7 +89,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7ed1ea', end
     &.active ~ .modal-backdrop,
     &:checked ~ .modal-backdrop {
       background-color: rgba(0, 0, 0, 0.6);
-      width: 100vw;
+      width:100vw;
       height: 100vh;
       position: fixed;
       left: 0;
@@ -103,8 +103,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7ed1ea', end
     &:checked ~ .modal-content {
       opacity: 1;
       background-color: transparent;
-    max-width: 800px;
-    width: 100vw;
+    max-width: 700px;
+    width: 90vw;
       height: auto;
       padding: 0;
       position: fixed !important;
