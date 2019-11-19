@@ -37,9 +37,16 @@ const Navbar = class extends React.Component {
             
             <li className="grad" style={{position:'relative',}}>
               <Link className="navbar-item" to="/favorites" style={{paddingRight:'50px',}}>
-               Galleries <GoTelescope className="txtshadow" style={{fontSize:'40px', position:'absolute', right:'4px', top:'10px',}}/>
+               Galleries <GoTelescope className="txtshadow" style={{fontSize:'30px', position:'absolute', right:'4px', top:'12px',}}/>
               </Link>
               
+              </li>
+              
+              
+              <li style={{position:'relative',}}>
+              <Link className="navbar-item" to="/example" style={{paddingRight:'50px',}}>
+                The Vault <AiFillBank className="txtshadow" style={{fontSize:'30px', position:'absolute', right:'10px', top:'15px',}}/>
+              </Link>
               </li>
               
             
@@ -65,11 +72,7 @@ const Navbar = class extends React.Component {
               
               
               
-              <li style={{position:'relative',}}>
-              <Link className="navbar-item has-app" to="/example" style={{paddingRight:'50px',}}>
-                The Vault <AiFillBank className="txtshadow" style={{fontSize:'30px', position:'absolute', right:'10px', top:'15px',}}/>
-              </Link>
-              </li>
+              
               
               
 

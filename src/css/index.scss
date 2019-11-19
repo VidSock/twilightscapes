@@ -864,12 +864,14 @@ body.dark .about:after, body.light .about:after{content: (''); background-image:
 .header {height:60px;}
 .header ul li a{border-bottom:0px solid #444 !important;/*  padding-top:15px; padding-bottom: 10px; */}
 
+.header {display: flex; justify-content: space-around;}
+
 .intro:after, .into:before{font-size:500%}
-.themer { left:3% !important;}
 .media h1{font-size:5rem;}
 .media h2{font-size:3rem;}
 .media h3{font-size:2.8rem;}
 // .back-to-top{display: block !important;}
+.header {display: flex; justify-content: space-around !important;}
 
 }
 
