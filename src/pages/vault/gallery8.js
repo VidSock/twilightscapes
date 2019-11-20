@@ -1,18 +1,26 @@
 
 import React from 'react'
-import Layout from '../components/Layout';
+import Layout from '../../components/Layout';
 // import { Link } from 'gatsby'
 import { graphql, useStaticQuery } from 'gatsby'
-import Gallery from '../components/Gallery'
+import Gallery from '../../components/Gallery'
 import ScrollAnimation from 'react-animate-on-scroll'
-import GalleryMenu from '../components/GalleryMenu'
+import GalleryMenu from '../../components/GalleryMenu'
 import { FiZoomIn } from 'react-icons/fi'
 
 import styled from "styled-components"
 const CustomBox = styled.div`
 
+#vault {
+	position:relative;
+background: rgb(126,209,234);
+background: -moz-radial-gradient(center,ellipse cover,rgba(126,209,234,1) 0%,rgba(65,145,186,1) 40%,rgba(3,73,127,1) 100%);
+background: -webkit-radial-gradient(center,ellipse cover,rgba(126,209,234,1) 0%,rgba(65,145,186,1) 40%,rgba(3,73,127,1) 100%);
+background: radial-gradient(ellipse at center,rgba(126,209,234,1) 0%,rgba(65,145,186,1) 40%,rgba(3,73,127,1) 100%);
+}
+
 .intro:before{
-	content: "Gallery 7";
+	content: "Gallery 8";
 
 position:absolute;
 display: flex;
@@ -25,6 +33,7 @@ font-size:480%; color:#f8f8fc; text-shadow: 12px 7px 15px 12px black;
 .gatsby-image-wrapper{transform: scale(1.25);}
 }
 .gatsby-image-wrapper{transform: scale(1.25);}
+
 /*
 	.gatsby-image-wrapper:after{
 	content: "+ click to zoom";
@@ -37,8 +46,8 @@ font-size:480%; color:#f8f8fc; text-shadow: 12px 7px 15px 12px black;
 
 
 const gal1Query = graphql`
-  query gal7Query {
-    allFile(filter: { relativeDirectory: { eq: "gallery7" } }) {
+  query gal8Query {
+    allFile(filter: { relativeDirectory: { eq: "gallery8" } }) {
       edges {
         node {
           childImageSharp {
@@ -58,7 +67,7 @@ const gal1Query = graphql`
   }
 `
 
-const Gal7Page = () => {
+const Gal8Page = () => {
   const data = useStaticQuery(gal1Query)
   return (
 	  <CustomBox>
@@ -66,6 +75,7 @@ const Gal7Page = () => {
 
 
 <GalleryMenu />
+
 
 <ScrollAnimation animateIn="fadeOut" initiallyVisible={true} delay={0} animateOnce={true} animatePreScroll={false} style={{display:'flex',alignItems:'center', justifyContent:'center',}}>
   <h4 style={{color:'#fff', fontSize:'100%', textAlign:'center', display:'flex', backgroundColor:'#222', padding:'5px 10px', borderRadius:'10px', border:'1px solid #999', position:'absolute', bottom:'50px', zIndex:'1', opacity:'.9',}}><FiZoomIn style={{fontSize:'150%', position:'relative', top:'0px', left:'-4px',}} />Click To Zoom</h4>
@@ -79,8 +89,6 @@ const Gal7Page = () => {
       </div>
       </ScrollAnimation>
       
-      
-      
 <GalleryMenu />
 
     </Layout>
@@ -88,4 +96,4 @@ const Gal7Page = () => {
   )
 }
 
-export default Gal7Page
+export default Gal8Page

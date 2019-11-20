@@ -1137,7 +1137,7 @@ background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0
 
 @media (display-mode: standalone) {
   /* All installed PWAs */
- body.light .has-app{display: block !important;}
+ body.light .has-app{display: inherit ;}
  body.light .no-app{display: none !important;}
 }
 
@@ -1147,7 +1147,7 @@ background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0
 // 
 
 body.dark .has-app{display:none !important;}
-body.dark .no-app{display:block !important;}
+body.dark .no-app{display:inherit;}
 
 
 

@@ -1,16 +1,25 @@
 
 import React from 'react'
-import Layout from '../components/Layout'
+import Layout from '../../components/Layout'
 
 import { graphql, useStaticQuery } from 'gatsby'
-import Gallery from '../components/Gallery'
+import Gallery from '../../components/Gallery'
 import ScrollAnimation from 'react-animate-on-scroll'
-import GalleryMenu from '../components/GalleryMenu'
+import GalleryMenu from '../../components/GalleryMenu'
 // import PopSemi from '../components/PopSemi'
 import { FiZoomIn } from 'react-icons/fi'
 
 import styled from "styled-components"
 const CustomBox = styled.div`
+
+#galleries {
+	position:relative;
+background: rgb(126,209,234);
+background: -moz-radial-gradient(center,ellipse cover,rgba(126,209,234,1) 0%,rgba(65,145,186,1) 40%,rgba(3,73,127,1) 100%);
+background: -webkit-radial-gradient(center,ellipse cover,rgba(126,209,234,1) 0%,rgba(65,145,186,1) 40%,rgba(3,73,127,1) 100%);
+background: radial-gradient(ellipse at center,rgba(126,209,234,1) 0%,rgba(65,145,186,1) 40%,rgba(3,73,127,1) 100%);
+}
+
 
 .intro:before{
 	content: "Gallery 1";

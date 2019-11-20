@@ -346,7 +346,7 @@ export const IndexPageTemplate = ({
 </div>
 
 </div>
-<Link className="special grad" to="/capabilities" style={{color:'#fff', textDecoration:'none', display:'flex', justifyContent:'center', maxWidth:'50%', margin:'0 auto',}}>Todd's Gear</Link>
+<Link className="special grad" to="/capabilities" style={{color:'#fff', textDecoration:'none', display:'flex', justifyContent:'center', maxWidth:'50%', margin:'0 auto',}}>Todds Gear</Link>
 </div>
 </ScrollAnimation>
 

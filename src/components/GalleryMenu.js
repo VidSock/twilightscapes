@@ -16,11 +16,11 @@ border-radius:10px;
 border:1px solid #444;
 width:auto;
 }
-.galmenu li {width:30%; height:100%; padding:0; color:#fff; margin:0 3px; text-align: center;}
+.galmenu li {width:30%; height:100%; padding:0; color:#fff; margin:0 3px; text-align: center; display:block !important;}
 
 
 
-.galmenu .galgrad{display: block; padding:10px; border-radius:6px; border:1px solid #444; font-weight: bold; text-decoration: none; text-shadow: 1px 1px 1px black; height:100%;}
+.galmenu .galgrad{display: block !important; padding:10px; border-radius:6px; border:1px solid #444; font-weight: bold; text-decoration: none; text-shadow: 1px 1px 1px black; height:100%;}
 
 .galmenu .galgrad{
 background: rgb(125,126,125); /* Old browsers */
@@ -62,25 +62,25 @@ const GalleryMenu = () => (
     
 <h2 style={{textAlign:'center', fontSize:'80%', margin:'0', padding:'0 0 5px 0', color:'#ddd',}}>Available Galleries <span className="no-app" style={{fontSize:'90%',}}><FaLock /> ( requires free<Link to="/install"> app installation here</Link> )</span></h2>
 
-<ul className="galmenu custom-gal" style={{}}>
+<ul id="galmenu" className="galmenu custom-gal" style={{}}>
       
-      <li className="galmenu-item"><Link to="/favorites" className="galgrad" title="Favorites">Popular<br />Favorites</Link></li>
+      <li className="galmenu-item"><Link to="/galleries/favorites" className="galgrad" title="Favorites">Popular<br />Favorites</Link></li>
       
-      <li className="galmenu-item"><Link to="/milky-way" className="galgrad" title="Milky Way">Milky<br />Way</Link></li>
+      <li className="galmenu-item"><Link to="/galleries/milky-way" className="galgrad" title="Milky Way">Milky<br />Way</Link></li>
       
-      <li className="galmenu-item"><Link to="/cars" className="galgrad" title="All Cars">All<br />Cars</Link></li>
+      <li className="galmenu-item"><Link to="/galleries/cars" className="galgrad" title="All Cars">All<br />Cars</Link></li>
       
-	  <li className="galmenu-item"><Link to="/ghosttowns" className="galgrad" title="Ghost Towns">Ghost<br />Towns</Link></li>
+	  <li className="galmenu-item"><Link to="/galleries/ghosttowns" className="galgrad" title="Ghost Towns">Ghost<br />Towns</Link></li>
 	  
-      <li className="galmenu-item"><Link to="/crazy-geology" className="galgrad" title="Crazy Geology">Crazy<br />Geology</Link></li>
+      <li className="galmenu-item"><Link to="/galleries/crazy-geology" className="galgrad" title="Crazy Geology">Crazy<br />Geology</Link></li>
       
       
       
       
       
       
-      <li className="galmenu-item has-app"><Link to="/daylight" className="galgrad" title="During Daylight">During<br />Daylight</Link></li>
-      <li className="galmenu-item no-app"><Link to="/install" className="galgrad" title="During Daylight">During<br />Daylight <FaLock  style={{position:'absolute', top:'0', right:'0', color:'#aaa',}} className="lock" /></Link></li>
+      <li className="galmenu-item has-app"><Link to="/vault/daylight" className="galgrad" title="During Daylight">During<br />Daylight</Link></li>
+      <li className="galmenu-item no-app"><Link to="/vault" className="galgrad" title="During Daylight">During<br />Daylight <FaLock  style={{position:'absolute', top:'0', right:'0', color:'#aaa',}} className="lock" /></Link></li>
       
 
 
@@ -91,11 +91,11 @@ const GalleryMenu = () => (
       <h4 style={{display:'none', textAlign:'center', fontSize:'70%', color:'#ddd',}}>Full Library:</h4>
 <ul className="galmenu">
       
-      <li className="galmenu-item"><Link to="/gallery1" className="galgrad" title="Gallery 1">I</Link></li>
-      <li className="galmenu-item"><Link to="/gallery2" className="galgrad" title="Gallery 2">II</Link></li>
-      <li className="galmenu-item"><Link to="/gallery3" className="galgrad" title="Gallery 3">III</Link></li>
-      <li className="galmenu-item"><Link to="/gallery4" className="galgrad" title="Gallery 4">IV</Link></li>
-      <li className="galmenu-item"><Link to="/gallery5" className="galgrad" title="Gallery 5">V</Link></li>
+      <li className="galmenu-item"><Link to="/galleries/gallery1" className="galgrad" title="Gallery 1">I</Link></li>
+      <li className="galmenu-item"><Link to="/galleries/gallery2" className="galgrad" title="Gallery 2">II</Link></li>
+      <li className="galmenu-item"><Link to="/galleries/gallery3" className="galgrad" title="Gallery 3">III</Link></li>
+      <li className="galmenu-item"><Link to="/galleries/gallery4" className="galgrad" title="Gallery 4">IV</Link></li>
+      <li className="galmenu-item"><Link to="/galleries/gallery5" className="galgrad" title="Gallery 5">V</Link></li>
       
       
       <li className="galmenu-item no-app">
@@ -105,11 +105,11 @@ const GalleryMenu = () => (
       <li className="galmenu-item no-app"><Link to="/install" className="galgrad" title="Gallery 9">IV<FaLock  style={{position:'absolute', top:'0', right:'0', color:'#aaa',}} className="lock" /></Link></li>
       <li className="galmenu-item no-app"><Link to="/install" className="galgrad" title="Gallery 10">X<FaLock  style={{position:'absolute', top:'0', right:'0', color:'#aaa',}} className="lock" /></Link></li>
       
-      <li className="galmenu-item has-app"><Link to="/gallery6" className="galgrad" title="Gallery 6">VI</Link></li>
-      <li className="galmenu-item has-app" has-app><Link to="/gallery7" className="galgrad" title="Gallery 7">VII</Link></li>
-      <li className="galmenu-item has-app" has-app><Link to="/gallery8" className="galgrad" title="Gallery 8" has-app>VIII</Link></li>
-      <li className="galmenu-item has-app" has-app><Link to="/gallery9" className="galgrad" title="Gallery 9">IX</Link></li>
-      <li className="galmenu-item has-app" has-app><Link to="/gallery10" className="galgrad" title="Gallery 10">X</Link></li>
+      <li className="galmenu-item has-app"><Link to="/vault/gallery6" className="galgrad" title="Gallery 6">VI</Link></li>
+      <li className="galmenu-item has-app" has-app><Link to="/vault/gallery7" className="galgrad" title="Gallery 7">VII</Link></li>
+      <li className="galmenu-item has-app" has-app><Link to="/vault/gallery8" className="galgrad" title="Gallery 8" has-app>VIII</Link></li>
+      <li className="galmenu-item has-app" has-app><Link to="/vault/gallery9" className="galgrad" title="Gallery 9">IX</Link></li>
+      <li className="galmenu-item has-app" has-app><Link to="/vault/gallery10" className="galgrad" title="Gallery 10">X</Link></li>
       </ul>
 
 </div>
