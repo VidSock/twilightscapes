@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from "styled-components"
 
+import Image from '../components/Image'
 import { FiShare } from 'react-icons/fi';
 import { FaRegPlusSquare } from 'react-icons/fa';
 import { FaTimesCircle } from 'react-icons/fa'
@@ -56,8 +57,8 @@ const CustomBox = styled.div`
   
     .modal-close {
 	  position:absolute;
-	  top:45px;
-	  right:105px;
+	  top:15px;
+	  right:15px;
 // 	  z-index:5;
 	  
     color: #999;
@@ -93,7 +94,7 @@ const CustomBox = styled.div`
     &:checked ~ .content {  
 	opacity: 1;
       background-color: transparent;
-	  width:auto !important;
+
       height: auto;
       padding:0 0 0 0 !important;
 	margin:0 auto;
@@ -125,7 +126,7 @@ const Popupsemi = () => (
 <CustomBox style={{}}>
 
 
-<div className="popsemicontainer" style={{position:'relative', padding: '0 0', marginTop: '0', display:'flex', justifyContent:'center', height:'auto', flexDirection:'column',}}>
+<div className="popsemicontainer" style={{position:'relative', padding: '0 0', marginTop: '0', display:'flex', justifyContent:'', height:'auto', flexDirection:'column',}}>
 <label className="txtshadow shadow grad" htmlFor="semitoggle" >Install Now</label>
 
   <input id="semitoggle" type="checkbox" style={{position: 'relative',}} />
@@ -134,11 +135,11 @@ const Popupsemi = () => (
 
 
    
-  <div className=" content" style={{}}>
+  <div className=" content" style={{width:'90%', maxWidth:'700px', position:'relative',}}>
 
-<label className="close" htmlFor="semitoggle" style={{position: 'absolute', right:'4%', top: '7%', fontSize:'24px', cursor:'pointer',}} title="Close this section"><FaTimesCircle /></label>
+<label className="close" htmlFor="semitoggle" style={{position: 'absolute', right:'20px', top: '20px', fontSize:'24px', cursor:'pointer',}} title="Close this section"><FaTimesCircle /></label>
     
-    <div className="container" style={{margin:'0', padding:'30px',}}>
+    <div className="container" style={{margin:'0', padding:'0px',}}>
     
     
     
@@ -148,7 +149,7 @@ const Popupsemi = () => (
 	
 	<h4 style={{textAlign:'center', fontSize:'140%',}}>Install App</h4>
 	<br />
-	<span style={{fontSize:'100%',}}>This website has app functionality. Add it to your home screen to get added features on-the-go, like exclusive content, fullscreen and offline capability.</span>
+
 	<br /><br />
 	<div style={{fontSize:'80%', textAlign:'center',}}>On your device, locate the browser menu:</div>
 	<br />
@@ -157,7 +158,8 @@ const Popupsemi = () => (
     
   <div style={{textAlign:'left', display:'flex', alignContent:'center', marginBottom:'1rem',}}>
  <FiShare style={{fontSize:'200%', marginLeft:'0', marginRight:'2%', float:'',}} />
-  1) Press the 'Share' button 
+
+  1) Press the 'Share'(iOS) or 'More'(Android) button 
 </div>
    
     
@@ -169,12 +171,22 @@ const Popupsemi = () => (
  
  </div>
  
-    <br />
-    <br />
-    </div>
 
     
+    
+    </div> 
  </div>
+<br />
+<br />
+
+<div style={{padding:'0 2rem',}}>
+<h4>Android OS</h4>
+<Image alt="How To Install This App" filename="install-android.jpg" />
+<br />
+<br />
+<h4>Apple iOS</h4>
+<Image alt="How To Install This App" filename="install-ios.jpg" />
+</div>
 
   </div> 
 </div>

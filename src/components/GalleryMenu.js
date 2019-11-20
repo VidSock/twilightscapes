@@ -16,11 +16,11 @@ border-radius:10px;
 border:1px solid #444;
 width:auto;
 }
-.galmenu li {width:30%; height:100%; padding:0; color:#fff; margin:0 3px; text-align: center; display:block !important;}
+.galmenu li {width:30%; height:100%; padding:0; color:#fff; margin:0 3px; text-align: center;}
 
 
 
-.galmenu .galgrad{display: block !important; padding:10px; border-radius:6px; border:1px solid #444; font-weight: bold; text-decoration: none; text-shadow: 1px 1px 1px black; height:100%;}
+.galmenu .galgrad{display: block; padding:10px; border-radius:6px; border:1px solid #444; font-weight: bold; text-decoration: none; text-shadow: 1px 1px 1px black; height:100%;}
 
 .galmenu .galgrad{
 background: rgb(125,126,125); /* Old browsers */
