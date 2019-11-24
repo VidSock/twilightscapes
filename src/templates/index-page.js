@@ -119,18 +119,19 @@ background:linear-gradient(to bottom, #cfc09f 22%,#634f2c 24%, #cfc09f 26%, #cfc
 
 
 .image-wrap {
-  width: 100%;
-  height: 100vw;
+  width: 100vw;
+  height: 100vh;
   margin: 0 auto;
   overflow: hidden;
   position: relative;
 }
 
-.zoomie {
+.image-wrap img {
   width: 100vw;
-  animation: move 25s infinite;
+  animation: move 15s ease;
   animation-direction:alternate-reverse;
-  overflow:hidden !important;
+  position: ;
+  z-index:0;
 }
 
 
@@ -145,9 +146,9 @@ background:linear-gradient(to bottom, #cfc09f 22%,#634f2c 24%, #cfc09f 26%, #cfc
 
 @media (min-width: 58rem) {
 
-  .full-width-image h1{font-size:500% !important;}
-  .full-width-image h2{font-size:300% !important;}
-  .full-width-image h3{font-size:200% !important;}
+  .image-wrap h1{font-size:450% !important;}
+  .image-wrap h2{font-size:280% !important;}
+  .image-wrap h3{font-size:550% !important;}
   
   #hero h1{font-size:650% !important; line-height:95%; margin-bottom:1rem;}
   #hero h3{font-size:880% !important;}
@@ -157,6 +158,12 @@ background:linear-gradient(to bottom, #cfc09f 22%,#634f2c 24%, #cfc09f 26%, #cfc
 }
 
 
+@media (max-width: 48rem) {
+
+  .image-wrap h1{font-size:250% !important;}
+  .image-wrap h2{font-size:180% !important;}
+  .image-wrap h3{font-size:280% !important;}
+}
 
 
 `
@@ -197,15 +204,17 @@ export const IndexPageTemplate = ({
 	
   <div className="outer intro">
   
-
-
+<div className="image-wrap" style={{position:'relative',}}>
+  
  
   
   
-  <div style={{position:'absolute', top:'80px', paddingTop:'0px', right:'5%', zIndex:'1',}}>
+  <div style={{position:'absolute', top:'0', height:'100vh', width:'100%', overflow:'clip', border:'0px solid red', zIndex:'1',}}>
   
   
-  <ScrollAnimation animateIn="bounceInDown" delay={1100} style={{position:'relative', top:'0', right:'15%',}}>
+  
+  
+  <ScrollAnimation animateIn="bounceInDown" delay={1100} style={{position:'relative', paddingTop:'40px', right:'10%',}}>
         <h1
           className="normal txtshadow-header hit-the-floor"
           style={{
@@ -215,7 +224,7 @@ export const IndexPageTemplate = ({
 //            top: '100px',
 //            right: '1%',
 //            backgroundColor: '#ff0000',
-            textAlign: 'left', 
+            textAlign: 'right', 
             float: 'none',
           }}
         >
@@ -224,8 +233,7 @@ export const IndexPageTemplate = ({
         </ScrollAnimation>
         
         
-        
-  <ScrollAnimation animateIn="bounceInRight" delay={1200} style={{position:'relative', top:'10px', right:'15%',}}>
+  <ScrollAnimation animateIn="bounceInRight" delay={1200} style={{position:'relative', top:'0px', right:'10%',}}>
         <h2
           className="narrow txtshadow mobile-txt"
           style={{
@@ -240,7 +248,7 @@ export const IndexPageTemplate = ({
         </ScrollAnimation>
         
         
-  <ScrollAnimation animateIn="bounceInUp" delay={1250} style={{position:'relative', top:'5px', right:'15%',}}>
+  <ScrollAnimation animateIn="bounceInUp" delay={1250} style={{position:'relative', top:'0', right:'10%',}}>
         <h3
           className="boom"
           style={{
@@ -256,29 +264,26 @@ export const IndexPageTemplate = ({
         </h3>
         </ScrollAnimation>
 
-<div className="mediacta1" style={{position: 'relative', margin:'0 auto', top: '30px', right:'10px', textAlign:'center', width:'auto',}}>
+
+        <ScrollAnimation animateIn="bounceInRight" delay={2000} style={{position:'relative', top:'0', right:'12%', display:'flex', justifyContent:'flex-end', alignItems:'center', margin:'0 auto', padding:'30px 0 0 0',  textAlign:'center',}}>
+   
 	<PopNewsletter />
-        </div>
-        
-        <ScrollAnimation animateOut="fadeOut" initiallyVisible={true} animateOnce={true} animatePreScroll={true} style={{position:'absolute', left:'40%', right:'40%', textAlign: 'center', top:'55%', fontSize: '80%', color: '#fff', zIndex: '0',}}>
-        <div className="scrolldown txtshadow-header">SCROLL <IoIosArrowDropdownCircle /> MORE</div></ScrollAnimation>
-        
-        
+           
+</ScrollAnimation>
+
         
         </div>
-        
-        
-        
-        
         
 
+        <Image alt="Todd Lambert Web development for photographers" filename="night283.jpg" style={{backgroundSize:'cover', zIndex:'0',}} />
+</div>
 
 
 
   
     <div id="hero"
       className="full-width-image zoomie"
-      style={{ display:'',
+      style={{ display:'none',
         backgroundImage: `url(${
           !!image.childImageSharp ? image.childImageSharp.fluid.src : image
         })`,
@@ -288,7 +293,7 @@ export const IndexPageTemplate = ({
         height: '100vh',
 		paddingTop:'20px',
         position: 'relative',
-        overflow: 'hidden',
+//         overflowX: 'scroll',
       }}
     >
     
@@ -301,11 +306,71 @@ export const IndexPageTemplate = ({
     
 
     
-            
+    <ScrollAnimation animateIn="bounceInDown" delay={1000}>
+        <h1
+          className="normal txtshadow-header hit-the-floor"
+          style={{
+            color: '#fff',
+            fontSize: '5rem',
+           position: 'relative',
+//            top: '100px',
+           right: '1%',
+//            backgroundColor: '#ff0000',
+            textAlign: 'right', 
+            float: 'none',
+          }}
+        >
+          Follow me
+        </h1>
+        </ScrollAnimation>
+        
+        <ScrollAnimation animateIn="bounceInRight" delay={1100}>
+        <h2
+          className="narrow txtshadow mobile-txt"
+          style={{
+           fontSize:'3rem',
+           color: 'white',
+           position: 'relative',
+        right: '5%',
+            textAlign: 'right', 
+          }}
+        >
+          into the
+        </h2>
+        </ScrollAnimation>
+        
+        
+        <ScrollAnimation animateIn="bounceInUp" delay={1200}>
+        <h3
+          className="boom"
+          style={{
+           fontSize:'6rem',
+           color: 'white',
+           position: 'relative',
+//            top: '230px',
+           right: '1%',
+            textAlign: 'right',
+            textTransform: 'uppercase', 
+          }}
+        >
+          Night
+        </h3>
+        </ScrollAnimation>
+        
+        
+
+        
+        
+        
+        <div className="mediacta1" style={{position: 'absolute', margin:'0 auto', top: '65%', textAlign:'center', width:'auto',}}>
+	<PopNewsletter />
+        </div>
         
         
         
         
+        <ScrollAnimation animateOut="fadeOut" initiallyVisible={true} animateOnce={true} animatePreScroll={true} style={{position:'absolute', left:'3%', right:'3%', textAlign: 'center', bottom:'15%', fontSize: '80%', color: '#fff', zIndex: '0',}}>
+        <div className="scrolldown txtshadow-header">SCROLL <IoIosArrowDropdownCircle /> MORE</div></ScrollAnimation>
         
         
         
