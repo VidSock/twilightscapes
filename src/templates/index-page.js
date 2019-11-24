@@ -26,7 +26,7 @@ const CustomBox = styled.div`
 .intro img{border-radius:6px !important;}
 
 .intro:before{
-	content: "Pioneering Night Photography";
+	content: "A pioneer in night photography";
 
 position:absolute;
 display: flex;
