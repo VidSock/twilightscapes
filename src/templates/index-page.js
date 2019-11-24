@@ -146,23 +146,25 @@ background:linear-gradient(to bottom, #cfc09f 22%,#634f2c 24%, #cfc09f 26%, #cfc
 
 @media (min-width: 58rem) {
 
-  .image-wrap h1{font-size:450% !important;}
-  .image-wrap h2{font-size:280% !important;}
-  .image-wrap h3{font-size:550% !important;}
+  .image-wrap h1.boom{font-size:450% !important;}
+  .image-wrap h2.boom{font-size:280% !important;}
+  .image-wrap h3.boom{font-size:550% !important;}
   
+/*
   #hero h1{font-size:650% !important; line-height:95%; margin-bottom:1rem;}
   #hero h3{font-size:880% !important;}
+*/
   
-  #hero .news-content h3{font-size:inherit !important;}
+//   #hero .news-content h3{font-size:inherit !important;}
 //   .special{font-size:200% !important;}
 }
 
 
 @media (max-width: 48rem) {
 
-  .image-wrap h1{font-size:250% !important;}
-  .image-wrap h2{font-size:180% !important;}
-  .image-wrap h3{font-size:280% !important;}
+  .image-wrap h1.boom{font-size:250% !important;}
+  .image-wrap h2.boom{font-size:180% !important;}
+  .image-wrap h3.boom{font-size:280% !important;}
 }
 
 
@@ -216,7 +218,7 @@ export const IndexPageTemplate = ({
   
   <ScrollAnimation animateIn="bounceInDown" delay={1100} style={{position:'relative', paddingTop:'40px', right:'10%',}}>
         <h1
-          className="normal txtshadow-header hit-the-floor"
+          className="boom normal txtshadow-header hit-the-floor"
           style={{
             color: '#fff',
             fontSize: '4rem',
@@ -233,9 +235,9 @@ export const IndexPageTemplate = ({
         </ScrollAnimation>
         
         
-  <ScrollAnimation animateIn="bounceInRight" delay={1200} style={{position:'relative', top:'0px', right:'10%',}}>
+  <ScrollAnimation animateIn="bounceInRight" delay={1200} style={{position:'relative', top:'0', right:'10%',}}>
         <h2
-          className="narrow txtshadow mobile-txt"
+          className="boom narrow txtshadow mobile-txt"
           style={{
            fontSize:'3rem',
            color: 'white',
@@ -265,7 +267,7 @@ export const IndexPageTemplate = ({
         </ScrollAnimation>
 
 
-        <ScrollAnimation animateIn="bounceInRight" delay={2000} style={{position:'relative', top:'0', right:'12%', display:'flex', justifyContent:'flex-end', alignItems:'center', margin:'0 auto', padding:'30px 0 0 0',  textAlign:'center',}}>
+        <ScrollAnimation animateIn="bounceInRight" delay={2000} style={{position:'relative', top:'-20px', right:'12%', float:'right', display:'inlineBlock', justifyContent:'', alignItems:'center', margin:'0 auto', padding:'30px 0 0 0',  textAlign:'center',}}>
    
 	<PopNewsletter />
            
