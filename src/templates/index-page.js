@@ -12,7 +12,8 @@ import { Link } from 'gatsby'
 // import BlogRoll from '../components/BlogRoll'
 import ScrollAnimation from 'react-animate-on-scroll'
 import { IoIosArrowDropdownCircle } from 'react-icons/io'
-import { FaAccessibleIcon, FaOdnoklassniki, FaBlind } from 'react-icons/fa'
+import { FaAccessibleIcon, FaRegAddressCard, FaOdnoklassniki, FaBlind } from 'react-icons/fa'
+import { GoGear, GoTelescope } from 'react-icons/go'
 
 // import PopMedical from '../components/PopMedical'
 import PopSemi from '../components/PopSemi'
@@ -127,7 +128,7 @@ background:linear-gradient(to bottom, #cfc09f 22%,#634f2c 24%, #cfc09f 26%, #cfc
   
   #hero h1{font-size:650% !important; line-height:95%; margin-bottom:1rem;}
   #hero h3{font-size:880% !important;}
-  .special{font-size:200% !important;}
+//   .special{font-size:200% !important;}
 }
 
 
@@ -292,8 +293,9 @@ export const IndexPageTemplate = ({
 <Image alt="Todd Lambert Web development for photographers" filename="workshop.jpg" /><br />
 <h2>Unique Night Photography</h2>
 <p>Finding obscure locations and unusual subject matter, Todd has excelled at capturing rarely seen moments of time. The night is misunderstood and often feared.  Let his award winning portfolio prove to you that the night is indeed beautiful.</p>
+<br />
+<Link className="special grad" to="/favorites" style={{color:'#fff', textDecoration:'none', display:'flex',  justifyContent:'center', width:'230px',  padding:'3px 1rem 0 1rem', margin:'0 auto',}}>View Galleries <span style={{fontSize:'120%', position:'relative', right:'-8px', top:'0', color:'#fff',}}><GoTelescope /></span></Link>
 
-<Link className="special grad" to="/favorites" style={{color:'#fff', textDecoration:'none', display:'flex', justifyContent:'center', maxWidth:'50%', margin:'0 auto',}}>View Galleries</Link>
 
 
 </div>
@@ -320,7 +322,11 @@ export const IndexPageTemplate = ({
 </div>
 
 </div>
-<Link className="special grad" to="/about" style={{color:'#fff', textDecoration:'none', display:'flex', justifyContent:'center', maxWidth:'50%', margin:'0 auto',}}>More About Todd</Link>
+
+
+<Link className="special grad" to="/about" style={{color:'#fff', textDecoration:'none', display:'flex',  justifyContent:'center', width:'250px',  padding:'3px 1.5rem 0 1rem', margin:'0 auto',}}>More About Todd <span style={{fontSize:'120%', position:'relative', right:'-8px', top:'0', color:'#fff',}}><FaRegAddressCard /></span></Link>
+
+
 </div>
 </ScrollAnimation>
 
@@ -346,7 +352,11 @@ export const IndexPageTemplate = ({
 </div>
 
 </div>
-<Link className="special grad" to="/capabilities" style={{color:'#fff', textDecoration:'none', display:'flex', justifyContent:'center', maxWidth:'50%', margin:'0 auto',}}>Todds Gear</Link>
+
+
+<Link className="special grad" to="/capabilities" style={{color:'#fff', textDecoration:'none', display:'flex',  justifyContent:'center', width:'200px',  padding:'3px .5rem 0 1rem', margin:'0 auto',}}>Todds Gear <span style={{fontSize:'120%', position:'relative', right:'-4px', top:'0', color:'#fff',}}><GoGear /></span></Link>
+
+
 </div>
 </ScrollAnimation>
 
