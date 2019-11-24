@@ -79,7 +79,8 @@ const Navbar = class extends React.Component {
 
               <li style={{position:'',}}>
              
-             <label className="modal-btn grad" htmlFor="modal-toggle" style={{textShadow: '1px 2px 0px black', paddingRight:'20px',}}>Contact <FaTelegramPlane className="txtshadow" style={{fontSize:'30px', position:'relative', right:'-6px', top:'12px',}}/></label> 
+             <label className="modal-btn grad" htmlFor="modal-toggle" style={{position:'relative', textShadow: '1px 2px 0px black', paddingRight:'20px',}}>Contact <FaTelegramPlane className="contact-icon txtshadow" style={{fontSize:'30px', position:'relative', right:'-6px', top:'12px',}}/></label> 
+             
               </li>
               
               
@@ -99,7 +100,7 @@ const Navbar = class extends React.Component {
               checked={theme === 'dark'}
             />{' '}
             
-          <label htmlFor="themeSlide" style={{color:'#222', textAlign:'center', padding:'0',}}>Theme</label></div>
+          <label htmlFor="themeSlide" style={{color:'#222', textAlign:'center', padding:'1px',}}>Theme</label></div>
         )}
       </ThemeToggler></div>
       
