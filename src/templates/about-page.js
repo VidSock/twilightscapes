@@ -23,6 +23,7 @@ font-size:380%; color:#f8f8fc; text-shadow: 12px 7px 15px 12px black;
 }
 
 
+
 .speech:after {
 	content: '';
 position: absolute;

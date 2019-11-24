@@ -1,5 +1,5 @@
 import React from 'react'
-import LayoutNoc from '../../components/Layout-noc'
+import LayoutNoc from '../../components/Layout'
 
 export default () => (
   <LayoutNoc>

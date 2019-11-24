@@ -894,7 +894,8 @@ body.dark .outer:after, body.light .outer:after{content: (''); background-image:
 
 
 // body.dark .about, body.light .about {background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%2319181a' fill-opacity='1' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");  background-position:fixed; animation: fadeIn 7s; background-position: right bottom;}
-body.dark .about:after, body.light .about:after{content: (''); background-image: url('../img/about-bg.jpg'); height: 100vh; width:100%; background-size: cover; background-position: right bottom; position:fixed; top:0; left:0; z-index:-1; animation: fadeIn 6s; }
+
+body.dark .about:after, body.light .about:after{content: (''); background-image: url('../img/about-bg.jpg'); height: 100vh; width:100%; background-size: cover; background-position: right bottom; position:fixed; top:0; left:0; z-index:-1; animation: fadeIn 4s; }
 
 
 

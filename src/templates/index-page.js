@@ -17,6 +17,7 @@ import { GoGear, GoTelescope } from 'react-icons/go'
 
 // import PopMedical from '../components/PopMedical'
 import PopSemi from '../components/PopSemi'
+import PopNewsletter from '../components/PopNewsletter'
 import styled from "styled-components"
 
 const CustomBox = styled.div`
@@ -78,47 +79,42 @@ background:linear-gradient(to bottom, #cfc09f 22%,#634f2c 24%, #cfc09f 26%, #cfc
 
 
 .fullscreen-bg {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  overflow: hidden;
-  z-index: -100;
-//   border:20px solid red !important;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
 }
 
 .fullscreen-bg__video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-@media (min-aspect-ratio: 16/9) {
-  .fullscreen-bg__video {
-    height: 300%;
-    top: -100%;
-  }
-}
-
-@media (max-aspect-ratio: 16/9) {
-  .fullscreen-bg__video {
-    width: 300%;
-    left: -100%;
-  }
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    -webkit-transform: translate(-50%, -50%);
+       -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+	    transform: translate(-50%, -50%);
 }
 
 @media (max-width: 767px) {
-  .fullscreen-bg {
-    background: url('../img/videoframe.jpg') center center / cover no-repeat;
-  }
+    .fullscreen-bg {
+        background: url('http://dev2.slicejack.com/fullscreen-video-demo/img/videoframe.jpg') center center / cover no-repeat;
+    }
 
-  .fullscreen-bg__video {
-    display: none;
-  }
+    .fullscreen-bg__video {
+        display: none;
+    }
 }
+
+
+
+
 
 @media (min-width: 58rem) {
 
@@ -128,6 +124,8 @@ background:linear-gradient(to bottom, #cfc09f 22%,#634f2c 24%, #cfc09f 26%, #cfc
   
   #hero h1{font-size:650% !important; line-height:95%; margin-bottom:1rem;}
   #hero h3{font-size:880% !important;}
+  
+  #hero .news-content h3{font-size:inherit !important;}
 //   .special{font-size:200% !important;}
 }
 
@@ -184,7 +182,7 @@ export const IndexPageTemplate = ({
         width: '100%',
         backgroundSize: 'cover',
         height: '100vh',
-
+		paddingTop:'20px',
         position: 'relative',
 //         overflowX: 'scroll',
       }}
@@ -207,7 +205,7 @@ export const IndexPageTemplate = ({
             fontSize: '5rem',
            position: 'relative',
 //            top: '100px',
-           right: '3%',
+           right: '1%',
 //            backgroundColor: '#ff0000',
             textAlign: 'right', 
             float: 'none',
@@ -237,11 +235,11 @@ export const IndexPageTemplate = ({
         <h3
           className="boom"
           style={{
-           fontSize:'7rem',
+           fontSize:'6rem',
            color: 'white',
            position: 'relative',
 //            top: '230px',
-           right: '3%',
+           right: '1%',
             textAlign: 'right',
             textTransform: 'uppercase', 
           }}
@@ -251,14 +249,13 @@ export const IndexPageTemplate = ({
         </ScrollAnimation>
         
         
+
         
         
         
-        
-        <ScrollAnimation animateIn="fadeIn" duration={2} delay={1000} animateOnce={false} className="mediacta" style={{position: 'absolute', right: '0', top: '50%',}}>
-        <br /><br />
-	
-        </ScrollAnimation>
+        <div className="mediacta1" style={{position: 'absolute', margin:'0 auto', top: '65%', textAlign:'center', width:'auto',}}>
+	<PopNewsletter />
+        </div>
         
         
         
