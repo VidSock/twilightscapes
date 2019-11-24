@@ -32,7 +32,7 @@ export default class Newsletter extends React.Component {
   }
 
   handleChange = e => {
-    this.setState({ [e.target.name]: e.target.value })
+    this.setState({ [e.target.email]: e.target.value })
   }
 
 
@@ -42,7 +42,7 @@ export default class Newsletter extends React.Component {
     fetch('/', {
       method: 'POST',
       body: encode({
-        'form-name': form.getAttribute('name'),
+        'form-name': form.getAttribute('email'),
         ...this.state,
       }),
     })
@@ -84,7 +84,7 @@ export default class Newsletter extends React.Component {
 
 <h3 style={{textAlign: 'center', fontSize: '1.5rem', padding: '.3rem 0 .5rem 0',}}>Follow Todd, Into The Night</h3>
 
-<label htmlFor="email" style={{ display: 'flex', justifyContent:'center', alignItems: 'center', padding: '0 2rem', margin: '0 auto', textAlign: 'center', fontSize: '90%', }}>Just enter your e-mail or phone number:</label>
+<label htmlFor="email" style={{ display: 'flex', justifyContent:'center', alignItems: 'center', padding: '0 2rem', margin: '0 auto', textAlign: 'center', fontSize: '90%', }}>Just enter your e-mail:</label>
 
                 <div className="form" style={{lineHeight: '1rem', height: 'auto', alignItems: 'center', display: 'flex', flexShrink: '1', paddingTop: '.2rem',}}>
                 
@@ -96,8 +96,8 @@ export default class Newsletter extends React.Component {
                       name={'email'}
                       onChange={this.handleChange}
                       id={'email'}
-                      required={true}
-                      placeholder="555-555-1212 / your@email.com"
+                      required={false}
+                      placeholder="your@email.com"
                       style={{margin: '0 1rem 0 0', width: '100%',}}
                     />
                     </div>
@@ -115,9 +115,9 @@ export default class Newsletter extends React.Component {
                 
                 
                 </div>
-                <div className="font" style={{fontSize: '100%', padding: '20px 3%', textAlign: 'center',}}> <label htmlFor={'consent'}><input type="checkbox" name={'consent'} required={true} style={{transform: 'scale(2)', margin: '0 10px 0 0', background:'#ff0000', color:'#ff0000',}} /> I want to participate by email or text.</label></div>
+                <div className="font" style={{fontSize: '100%', padding: '20px 3%', textAlign: 'center',}}> <label htmlFor={'consent'}><input type="checkbox" name={'consent'} required={true} style={{transform: 'scale(2)', margin: '0 10px 0 0', background:'#ff0000', color:'#ff0000',}} /> I want to follow by email.</label></div>
                 
-<div style={{fontSize: '80%', padding: '0px 3%', textAlign: 'center',}}><a style={{textAlign: 'center', paddingTop: '0px', paddingBottom: '0', textDecoration: 'underline',}} href="/privacy">We value your privacy (no spam!) </a>
+<div style={{fontSize: '80%', padding: '0px 3%', textAlign: 'center',}}><a style={{textAlign: 'center', paddingTop: '0px', paddingBottom: '0', textDecoration: 'underline',}} href="/privacy">Privacy Policy | (no spam! - unsubscribe anytime) </a>
                 </div>
               </form>
               

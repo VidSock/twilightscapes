@@ -79,7 +79,7 @@ const CustomBox = styled.div`
     display: none;  
     &.active ~ .news-backdrop,
     &:checked ~ .news-backdrop {
-      background-color:#000;
+      background-color:transparent;
       width: 100vw;
       height: 100%;
       position: fixed;

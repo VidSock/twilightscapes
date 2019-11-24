@@ -26,7 +26,7 @@ const CustomBox = styled.div`
 .intro img{border-radius:6px !important;}
 
 .intro:before{
-	content: "A Pioneer In Night Photography";
+	content: "Pioneering Night Photography";
 
 position:absolute;
 display: flex;
@@ -116,6 +116,33 @@ background:linear-gradient(to bottom, #cfc09f 22%,#634f2c 24%, #cfc09f 26%, #cfc
 
 
 
+
+
+.image-wrap {
+  width: 100%;
+  height: 100vw;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.zoomie {
+  width: 100vw;
+  animation: move 25s infinite;
+  animation-direction:alternate-reverse;
+  overflow:hidden !important;
+}
+
+
+
+
+
+
+
+
+
+
+
 @media (min-width: 58rem) {
 
   .full-width-image h1{font-size:500% !important;}
@@ -171,10 +198,87 @@ export const IndexPageTemplate = ({
   <div className="outer intro">
   
 
+
+ 
+  
+  
+  <div style={{position:'absolute', top:'80px', paddingTop:'0px', right:'5%', zIndex:'1',}}>
+  
+  
+  <ScrollAnimation animateIn="bounceInDown" delay={1100} style={{position:'relative', top:'0', right:'15%',}}>
+        <h1
+          className="normal txtshadow-header hit-the-floor"
+          style={{
+            color: '#fff',
+            fontSize: '4rem',
+           position: 'relative',
+//            top: '100px',
+//            right: '1%',
+//            backgroundColor: '#ff0000',
+            textAlign: 'left', 
+            float: 'none',
+          }}
+        >
+          Follow me
+        </h1>
+        </ScrollAnimation>
+        
+        
+        
+  <ScrollAnimation animateIn="bounceInRight" delay={1200} style={{position:'relative', top:'10px', right:'15%',}}>
+        <h2
+          className="narrow txtshadow mobile-txt"
+          style={{
+           fontSize:'3rem',
+           color: 'white',
+           position: 'relative',
+            textAlign: 'right', 
+          }}
+        >
+          into the
+        </h2>
+        </ScrollAnimation>
+        
+        
+  <ScrollAnimation animateIn="bounceInUp" delay={1250} style={{position:'relative', top:'5px', right:'15%',}}>
+        <h3
+          className="boom"
+          style={{
+           fontSize:'6rem',
+           color: 'white',
+           position: 'relative',
+//            top: '230px',
+            textAlign: 'right',
+            textTransform: 'uppercase', 
+          }}
+        >
+          Night
+        </h3>
+        </ScrollAnimation>
+
+<div className="mediacta1" style={{position: 'relative', margin:'0 auto', top: '30px', right:'10px', textAlign:'center', width:'auto',}}>
+	<PopNewsletter />
+        </div>
+        
+        <ScrollAnimation animateOut="fadeOut" initiallyVisible={true} animateOnce={true} animatePreScroll={true} style={{position:'absolute', left:'40%', right:'40%', textAlign: 'center', top:'55%', fontSize: '80%', color: '#fff', zIndex: '0',}}>
+        <div className="scrolldown txtshadow-header">SCROLL <IoIosArrowDropdownCircle /> MORE</div></ScrollAnimation>
+        
+        
+        
+        </div>
+        
+        
+        
+        
+        
+
+
+
+
   
     <div id="hero"
-      className="full-width-image"
-      style={{
+      className="full-width-image zoomie"
+      style={{ display:'',
         backgroundImage: `url(${
           !!image.childImageSharp ? image.childImageSharp.fluid.src : image
         })`,
@@ -184,7 +288,7 @@ export const IndexPageTemplate = ({
         height: '100vh',
 		paddingTop:'20px',
         position: 'relative',
-//         overflowX: 'scroll',
+        overflow: 'hidden',
       }}
     >
     
@@ -197,71 +301,11 @@ export const IndexPageTemplate = ({
     
 
     
-    <ScrollAnimation animateIn="bounceInDown" delay={1000}>
-        <h1
-          className="normal txtshadow-header hit-the-floor"
-          style={{
-            color: '#fff',
-            fontSize: '5rem',
-           position: 'relative',
-//            top: '100px',
-           right: '1%',
-//            backgroundColor: '#ff0000',
-            textAlign: 'right', 
-            float: 'none',
-          }}
-        >
-          Follow me
-        </h1>
-        </ScrollAnimation>
-        
-        <ScrollAnimation animateIn="bounceInRight" delay={1100}>
-        <h2
-          className="narrow txtshadow mobile-txt"
-          style={{
-           fontSize:'3rem',
-           color: 'white',
-           position: 'relative',
-        right: '5%',
-            textAlign: 'right', 
-          }}
-        >
-          into the
-        </h2>
-        </ScrollAnimation>
-        
-        
-        <ScrollAnimation animateIn="bounceInUp" delay={1200}>
-        <h3
-          className="boom"
-          style={{
-           fontSize:'6rem',
-           color: 'white',
-           position: 'relative',
-//            top: '230px',
-           right: '1%',
-            textAlign: 'right',
-            textTransform: 'uppercase', 
-          }}
-        >
-          Night
-        </h3>
-        </ScrollAnimation>
-        
-        
-
-        
-        
-        
-        <div className="mediacta1" style={{position: 'absolute', margin:'0 auto', top: '65%', textAlign:'center', width:'auto',}}>
-	<PopNewsletter />
-        </div>
+            
         
         
         
         
-        <ScrollAnimation animateOut="fadeOut" initiallyVisible={true} animateOnce={true} animatePreScroll={true} style={{position:'absolute', left:'3%', right:'3%', textAlign: 'center', bottom:'15%', fontSize: '80%', color: '#fff', zIndex: '0',}}>
-        <div className="scrolldown txtshadow-header">SCROLL <IoIosArrowDropdownCircle /> MORE</div></ScrollAnimation>
         
         
         
