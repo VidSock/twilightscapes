@@ -95,13 +95,6 @@ module.exports = {
     `gatsby-plugin-sitemap`,
     
     {
-    resolve: `gatsby-plugin-suscribers`,
-    options: {
-      id: '78ff82b9-bd63-4e20-9723-d83e6fd0682a',
-    },
-  },
-    
-    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Twilightscapes`,
@@ -118,6 +111,17 @@ module.exports = {
       options: {
         TrackingId: 'UA-49869143-1',
         respectDNT: true,
+      }
+    },
+        { 
+      resolve: `gatsby-plugin-purgecss`,
+      options: {
+        printRejected: true, // Print removed selectors and processed file names
+        develop: true, // Enable while using `gatsby develop`
+        // tailwind: true, // Enable tailwindcss support
+        // whitelist: ['headroom', 'headroom--unfixed'], // Don't remove this selector
+         //ignore: ['index.css'], // Ignore files/folders
+         purgeOnly : ['/animate.css'], // Purge only these files/folders
       }
     },
     `gatsby-plugin-offline`,

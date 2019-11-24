@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import { FaFacebookSquare, FaLinkedin, FaTwitterSquare, FaInstagram, FaPinterestSquare, FaYoutubeSquare } from 'react-icons/fa';
-import ScrollAnimation from 'react-animate-on-scroll';
+import { FaFacebookSquare, FaLinkedin, FaTwitterSquare, FaInstagram, FaPinterestSquare, FaYoutubeSquare } from 'react-icons/fa'
+import ScrollAnimation from 'react-animate-on-scroll'
 
 
 /*

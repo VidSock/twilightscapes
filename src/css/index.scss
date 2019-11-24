@@ -332,6 +332,22 @@ background-image: linear-gradient(#111212 40%, #232325  100%);
 	}
 }
 
+
+.zoomer{animation: zoomer 1s forwards;
+    animation-delay: 4s;}
+    
+@keyframes zoomer {
+0% {
+	height:100%;
+	opacity:100;
+	}
+	
+100% {
+	height:0;
+    opacity: 0;   	
+	}
+}
+
 /*
 .intro:after{
 position:absolute;

@@ -6,7 +6,7 @@ import { FiShare } from 'react-icons/fi';
 import { FaRegPlusSquare } from 'react-icons/fa';
 import { FaTimesCircle } from 'react-icons/fa'
 // import Newsletter from '../components/Newsletter'
-import ScrollAnimation from 'react-animate-on-scroll'
+// import ScrollAnimation from 'react-animate-on-scroll'
 
 const CustomBox = styled.div`
 
