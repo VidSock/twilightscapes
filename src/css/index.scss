@@ -314,7 +314,7 @@ background-position: left top;
 background-image: linear-gradient(#111212 40%, #232325  100%);
 	
     animation: poof 1.5s forwards;
-    animation-delay: .8s;
+    animation-delay: 1s;
     overflow: hidden;
 }
 
@@ -391,13 +391,13 @@ font-size:180%; color:#f8f8fc; text-shadow: 12px 7px 15px 12px black;
 @-webkit-keyframes move {
   0% {
 
-    transform-origin: bottom right;
+    transform-origin: 10% 80%;
     transform: scale(1.0);
 
   }
   100% {
-    transform: scale(1.8);
-    transform-origin: 60% 10%;
+    transform: scale(1.6);
+    transform-origin: 30% 100%;
 
   }
 }

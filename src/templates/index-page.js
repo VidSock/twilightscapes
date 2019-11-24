@@ -33,6 +33,8 @@ display: flex;
 align-items: center;
 justify-content: center;
 font-size:180%; color:#f8f8fc; text-shadow: 12px 7px 15px 12px black;
+animation: poof 1.5s forwards;
+animation-delay: 1.5s;
 }
 
 /*
@@ -128,7 +130,7 @@ background:linear-gradient(to bottom, #cfc09f 22%,#634f2c 24%, #cfc09f 26%, #cfc
 
 .image-wrap img {
   width: 100vw;
-  animation: move 15s ease;
+  animation: move 11s ease;
   animation-direction:alternate-reverse;
   position: ;
   z-index:0;
@@ -211,12 +213,12 @@ export const IndexPageTemplate = ({
  
   
   
-  <div style={{position:'absolute', top:'0', height:'100vh', width:'100%', overflow:'clip', border:'0px solid red', zIndex:'1',}}>
+  <div style={{position:'absolute', top:'0', height:'100vh', width:'100%', overflow:'hidden', border:'0px solid red', zIndex:'1',}}>
   
   
   
   
-  <ScrollAnimation animateIn="bounceInDown" delay={1100} style={{position:'relative', paddingTop:'40px', right:'10%',}}>
+  <ScrollAnimation animateIn="bounceInDown" delay={1400} style={{position:'relative', paddingTop:'40px', right:'10%',}}>
         <h1
           className="boom normal txtshadow-header hit-the-floor"
           style={{
@@ -235,7 +237,7 @@ export const IndexPageTemplate = ({
         </ScrollAnimation>
         
         
-  <ScrollAnimation animateIn="bounceInRight" delay={1200} style={{position:'relative', top:'0', right:'10%',}}>
+  <ScrollAnimation animateIn="bounceInRight" delay={1500} style={{position:'relative', top:'0', right:'10%',}}>
         <h2
           className="boom narrow txtshadow mobile-txt"
           style={{
@@ -250,7 +252,7 @@ export const IndexPageTemplate = ({
         </ScrollAnimation>
         
         
-  <ScrollAnimation animateIn="bounceInUp" delay={1250} style={{position:'relative', top:'0', right:'10%',}}>
+  <ScrollAnimation animateIn="bounceInUp" delay={1450} style={{position:'relative', top:'0', right:'10%',}}>
         <h3
           className="boom"
           style={{
@@ -276,8 +278,9 @@ export const IndexPageTemplate = ({
         
         </div>
         
-
+<ScrollAnimation animateIn="fadeIn" delay={1000} animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={true}>
         <Image alt="Todd Lambert Web development for photographers" filename="night283.jpg" style={{backgroundSize:'cover', zIndex:'0',}} />
+        </ScrollAnimation> 
 </div>
 
 
@@ -395,7 +398,7 @@ export const IndexPageTemplate = ({
 
 
 
-<ScrollAnimation animateIn="bounceInRight" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={false}>
+<ScrollAnimation animateIn="bounceInUp" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={false}>
 <div className="container">
 <div className="content" style={{padding:'1rem 1rem',}}>
 <Image alt="Todd Lambert Web development for photographers" filename="workshop.jpg" /><br />
@@ -415,7 +418,7 @@ export const IndexPageTemplate = ({
 
 
 
-<ScrollAnimation animateIn="bounceInLeft" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={false}>
+<ScrollAnimation animateIn="bounceInUp" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={false}>
 <div id="desc" className="container">
 <div className="content" style={{padding:'1rem 1rem', display:'flex', flexDirection:'row',}}>
 
@@ -444,7 +447,7 @@ export const IndexPageTemplate = ({
 
 
 
-<ScrollAnimation animateIn="bounceInRight" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={false}>
+<ScrollAnimation animateIn="bounceInUp" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={false}>
 
 <div className="container">
 <div className="content" style={{padding:'1rem 1rem', display:'flex', flexDirection:'row',}}>
