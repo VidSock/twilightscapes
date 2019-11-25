@@ -164,9 +164,11 @@ background:linear-gradient(to bottom, #cfc09f 22%,#634f2c 24%, #cfc09f 26%, #cfc
 
 @media (max-width: 48rem) {
 
+.image-wrap {height:auto !important;}
   .image-wrap h1.boom{font-size:250% !important;}
   .image-wrap h2.boom{font-size:180% !important;}
   .image-wrap h3.boom{font-size:280% !important;}
+  
 }
 
 
@@ -401,7 +403,7 @@ export const IndexPageTemplate = ({
 
 
 
-<ScrollAnimation animateIn="bounceInUp" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={false}>
+<ScrollAnimation animateIn="" animateOut="" initiallyVisible={true} animateOnce={true} animatePreScroll={true}>
 <div className="container">
 <div className="content" style={{padding:'1rem 1rem',}}>
 <Image alt="Todd Lambert Web development for photographers" filename="workshop.jpg" /><br />
