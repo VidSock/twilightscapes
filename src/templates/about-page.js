@@ -293,15 +293,15 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
 
 <p>It’s now many years later and Todd is fresh into the working world, after having busted his way out of high school with C- grades.</p>
 
- <p>Todd quickly followed that act with his encore performance of a drug and alchol-induced loss of his first two years of college.</p>
+ <p>Todd quickly followed that act with his encore performance of a drug and alcohol-induced loss of his first two years of college.</p>
  
-<p>Todd just never learned very well in a school environment and it always ended up just being a social thing for him. It was often where he seemed to get along with both the people and obstacles in his life, by faking it better than most.</p> 
+<p>He often seemed to get along with both the people and obstacles in his life, by faking it better than most.</p> 
 </div>
 </ScrollAnimation>
 
  <ScrollAnimation animateIn="slideInRight" animateOut="slideOutRight" animateOnce={false} delay={100} style={{width:'40%', padding:'0 auto 0 auto', order:'1',}}>    
 
-<div className="imgbox" style={{border:'0px solid black', position:'relative', margin:'0 0',}}><Image alt="Todd Lambert Web development for photographers" filename="todd-young-metal.jpg" />
+<div className="imgbox" style={{border:'0px solid black', position:'relative', margin:'0 0',}}><Image alt="Todd Lambert Web development for photographers" filename="todd-friends.jpg" />
 <div className="txtshadow" style={{position:'absolute', bottom:'5px', fontSize:'60%', color:'#ddd', textAlign:'center', width:'100%',}}>Yes, thats a Metallica hat</div>
 </div>
 </ScrollAnimation>
@@ -322,14 +322,13 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
 <h3 style={{textAlign:'center', color:'#169dc6', fontSize:'130%', padding:'0', margin:'0 0 1rem 0',}}>[Narrator]</h3>
 
 <h3>The Dawn Of The Internet</h3>
-<p>The Internet had just really started, but the amount of knowledge at Todds fingertips was quite addictive to him.</p>
+<p>The Internet had just really started, but it became a fountain of knowledge at Todds fingertips.</p>
 
-<p>Just as he’d been self-taught with most other things in his life, Todd immersed himself in multiple online personalities, each with intense work patterns and scope.</p>
-
-<p>He was trying to learn as much as he could about all aspects of...</p> 
+<p>Just as he’d been self-taught with most other things in his life, Todd immersed himself completely, trying to learn as much as he could about all aspects of...</p> 
 
 
-<h2 style={{textAlign:'center',}}> Website Design and Development</h2>
+<h2 style={{textAlign:'center', margin:'0 0 30px 0',}}> Website Design and Development</h2>
+
 </div>
 </ScrollAnimation>
 
@@ -346,8 +345,22 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
  
  
  
- <div className="spacer33"></div>  
+ <div className="spacer33"></div> 
+ 
+ 
+ 
+ 
+ 
+ 
+ <ScrollAnimation animateIn="fadeOut" duration={5} animateOnce={false} delay={0} style={{position:'relative', height:'100vh', margin:'100px 0',}}>
+       <div className="container scene" style={{backgroundImage:'linear-gradient(#222 10%, #000 80%)', height:'100%', width:'100%', position:'absolute', display:'flex', justifyContent:'center', alignItems:'center', opacity:'.9',}}>
+              <h2 style={{position:'absolute', bottom:'50%', fontSize:'200%', textAlign:'center', color:'#169dc6',}}>
+             [The ride to the top]
+             </h2>
+       </div>
+       </ScrollAnimation>
        
+
 
        
         <div className="split" style={{display:'flex', justifyContent:'center', alignItems:'center', position:'relative',  width:'92%', margin:'0 auto', padding:'1rem', borderRadius:'12px', overflow:'',}}>
@@ -437,7 +450,7 @@ It was my hey-day of web development. I had Jeffrey Zeldman and Eric Meyer liste
 
  <ScrollAnimation animateIn="slideInRight" animateOut="slideOutRight" animateOnce={false} delay={100} style={{width:'55%', padding:'0', order:'1',}}>    
 
-<div className="imgbox" style={{border:'0px solid black', position:'relative', margin:'0 1rem 0 0',}}><Image alt="Todd Lambert Web development for photographers" filename="hackthis.jpg" />
+<div className="imgbox" style={{border:'0px solid black', position:'relative', margin:'0 1rem 0 0',}}><Image alt="Todd Lambert Web development for photographers" filename="todd-cars.jpg" />
 <div className="txtshadow" style={{position:'absolute', bottom:'5px', fontSize:'60%', color:'#ddd', textAlign:'center', width:'100%',}}>Biopic film of my life at this point</div>
 </div>
 </ScrollAnimation>
@@ -485,6 +498,18 @@ I should have been on top of the world, yet I felt empty and felt as though I wa
  
  <div className="spacer33"></div>  
        
+       
+        <ScrollAnimation animateIn="fadeOut" duration={5} animateOnce={false} delay={0} style={{position:'relative', height:'100vh', margin:'100px 0',}}>
+       <div className="container scene" style={{backgroundImage:'linear-gradient(#222 10%, #000 80%)', height:'100%', width:'100%', position:'absolute', display:'flex', justifyContent:'center', alignItems:'center', opacity:'.9',}}>
+              <h2 style={{position:'absolute', bottom:'50%', fontSize:'200%', textAlign:'center', color:'#169dc6',}}>
+             [What goes up]
+             <br />
+             <span style={{color:'#fff', fontSize:'130%',}}>(Sometimes goes sideways)</span>
+             </h2>
+       </div>
+       </ScrollAnimation>
+       
+       
 
        
         <div className="split" style={{display:'flex', justifyContent:'center', alignItems:'center', position:'relative',  width:'92%', margin:'0 auto', padding:'1rem', borderRadius:'12px', overflow:'',}}>
@@ -502,7 +527,7 @@ I should have been on top of the world, yet I felt empty and felt as though I wa
 
  <ScrollAnimation animateIn="slideInRight" animateOut="slideOutRight" animateOnce={false} delay={100} style={{width:'40%', padding:'40px auto 40px auto',}}>    
 
-<div className="imgbox" style={{border:'0px solid black', position:'relative', margin:'0 0 0 0',}}><Image alt="Todd Lambert Web development for photographers" filename="todd-young-business.jpg" />
+<div className="imgbox" style={{border:'0px solid black', position:'relative', margin:'0 0 0 0',}}><Image alt="Todd Lambert Web development for photographers" filename="todd-grabs.jpg" />
 <div className="txtshadow" style={{position:'absolute', bottom:'5px', fontSize:'60%', color:'#ddd', textAlign:'center', width:'100%',}}>Clean cut and baby-faced</div>
 </div>
 </ScrollAnimation>
@@ -573,7 +598,7 @@ I once saw Todd eat an entire box of Krispie Kreme donuts and then he washed it 
 
  <ScrollAnimation animateIn="slideInRight" animateOut="slideOutRight" animateOnce={false} delay={100} style={{width:'55%', padding:'0', order:'1',}}>    
 
-<div className="imgbox" style={{border:'0px solid black', position:'relative', margin:'0 1rem 0 0',}}><Image alt="Todd Lambert Web development for photographers" filename="hackthis.jpg" />
+<div className="imgbox" style={{border:'0px solid black', position:'relative', margin:'0 1rem 0 0',}}><Image alt="Todd Lambert Web development for photographers" filename="bluebox-crash.jpg" />
 <div className="txtshadow" style={{position:'absolute', bottom:'5px', fontSize:'60%', color:'#ddd', textAlign:'center', width:'100%',}}>Biopic film of my life at this point</div>
 </div>
 </ScrollAnimation>
@@ -603,7 +628,7 @@ I once saw Todd eat an entire box of Krispie Kreme donuts and then he washed it 
 
  <ScrollAnimation animateIn="slideInRight" animateOut="slideOutRight" animateOnce={false} delay={100} style={{width:'40%', padding:'40px auto 40px auto',}}>    
 
-<div className="imgbox" style={{border:'0px solid black', position:'relative', margin:'0 0 0 0',}}><Image alt="Todd Lambert Web development for photographers" filename="todd-young-business.jpg" />
+<div className="imgbox" style={{border:'0px solid black', position:'relative', margin:'0 0 0 0',}}><Image alt="Todd Lambert Web development for photographers" filename="todd-camera.jpg" />
 <div className="txtshadow" style={{position:'absolute', bottom:'5px', fontSize:'60%', color:'#ddd', textAlign:'center', width:'100%',}}>Clean cut and baby-faced</div>
 </div>
 </ScrollAnimation>
@@ -669,7 +694,7 @@ I just found that I really enjoyed the peacefulness and tranquility when I photo
 
  <ScrollAnimation animateIn="slideInRight" animateOut="slideOutRight" animateOnce={false} delay={100} style={{width:'40%', padding:'40px auto 40px auto',}}>    
 
-<div className="imgbox" style={{border:'0px solid black', position:'relative', margin:'0 0 0 0',}}><Image alt="Todd Lambert Web development for photographers" filename="todd-young-business.jpg" />
+<div className="imgbox" style={{border:'0px solid black', position:'relative', margin:'0 0 0 0',}}><Image alt="Todd Lambert Web development for photographers" filename="mcmansion.jpg" />
 <div className="txtshadow" style={{position:'absolute', bottom:'5px', fontSize:'60%', color:'#ddd', textAlign:'center', width:'100%',}}>Clean cut and baby-faced</div>
 </div>
 </ScrollAnimation>
@@ -703,7 +728,7 @@ I just found that I really enjoyed the peacefulness and tranquility when I photo
 
  <ScrollAnimation animateIn="slideInRight" animateOut="slideOutRight" animateOnce={false} delay={100} style={{width:'40%', padding:'40px auto 40px auto',}}>    
 
-<div className="imgbox" style={{border:'0px solid black', position:'relative', margin:'0 0 0 0',}}><Image alt="Todd Lambert Web development for photographers" filename="todd-young-business.jpg" />
+<div className="imgbox" style={{border:'0px solid black', position:'relative', margin:'0 0 0 0',}}><Image alt="Todd Lambert Web development for photographers" filename="todd-abandoned.jpg" />
 <div className="txtshadow" style={{position:'absolute', bottom:'5px', fontSize:'60%', color:'#ddd', textAlign:'center', width:'100%',}}>Clean cut and baby-faced</div>
 </div>
 </ScrollAnimation>
@@ -754,7 +779,7 @@ There was actually several incidences of me pretending to be “sleep walking”
        
         <div className="split" style={{display:'flex', justifyContent:'center', alignItems:'center', position:'relative',  width:'92%', margin:'0 auto', padding:'1rem', borderRadius:'12px', overflow:'',}}>
 
- <ScrollAnimation animateIn="slideInLeft" animateOut="slideOutLeft" animateOnce={false} delay={0} style={{width:'60%',}}>    
+ <ScrollAnimation animateIn="slideInLeft" animateOut="slideOutLeft" animateOnce={false} delay={0} style={{width:'65%',}}>    
 <div className="container" style={{ width:'95%', borderRadius:'12px', margin:'0', padding:'',}}>
 <h3 style={{textAlign:'center', color:'#169dc6', fontSize:'130%', padding:'0', margin:'0 0 1rem 0',}}>[Narrator]</h3>
 
@@ -769,9 +794,9 @@ There was actually several incidences of me pretending to be “sleep walking”
 </div>
 </ScrollAnimation>
 
- <ScrollAnimation animateIn="slideInRight" animateOut="slideOutRight" animateOnce={false} delay={100} style={{width:'40%', padding:'40px auto 40px auto',}}>    
+ <ScrollAnimation animateIn="slideInRight" animateOut="slideOutRight" animateOnce={false} delay={100} style={{width:'35%', padding:'40px auto 40px auto',}}>    
 
-<div className="imgbox" style={{border:'0px solid black', position:'relative', margin:'0 0 0 0',}}><Image alt="Todd Lambert Web development for photographers" filename="todd-young-business.jpg" />
+<div className="imgbox" style={{border:'0px solid black', position:'relative', margin:'0 0 0 0',}}><Image alt="Todd Lambert Web development for photographers" filename="new-in-old.jpg" />
 <div className="txtshadow" style={{position:'absolute', bottom:'5px', fontSize:'60%', color:'#ddd', textAlign:'center', width:'100%',}}>Clean cut and baby-faced</div>
 </div>
 </ScrollAnimation>
@@ -834,7 +859,7 @@ The history of our past, seemed to call to me. I was enamored by ghosts of place
 
  <ScrollAnimation animateIn="slideInRight" animateOut="slideOutRight" animateOnce={false} delay={100} style={{width:'40%', padding:'40px auto 40px auto',}}>    
 
-<div className="imgbox" style={{border:'0px solid black', position:'relative', margin:'0 0 0 0',}}><Image alt="Todd Lambert Web development for photographers" filename="todd-young-business.jpg" />
+<div className="imgbox" style={{border:'0px solid black', position:'relative', margin:'0 0 0 0',}}><Image alt="Todd Lambert Web development for photographers" filename="todd-horizons.jpg" />
 <div className="txtshadow" style={{position:'absolute', bottom:'5px', fontSize:'60%', color:'#ddd', textAlign:'center', width:'100%',}}>Clean cut and baby-faced</div>
 </div>
 </ScrollAnimation>
