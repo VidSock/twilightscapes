@@ -1123,6 +1123,8 @@ body.dark * {
 .headroom {display: flex; justify-content: space-between; align-items: center;/*  width:100%; */ /* background:linear-gradient(#343435 0%, #131212 100%); */ height:auto;}
 // .headroom-wrapper{height:58px !important;}
 
+.headroom--unpinned .logo{display: none;}
+
 .back-to-top{display: none; position:fixed; bottom:25vh; right:45%; /* transform: translateY(100vh); */ padding:0; height:70px; width:70px; 
 z-index:1;
 color: #fff !important;

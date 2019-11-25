@@ -1,7 +1,8 @@
 import React from 'react'
 import { navigate } from 'gatsby-link'
-// import ScrollAnimation from 'react-animate-on-scroll'
-// import { FaEnvelope } from 'react-icons/fa';
+import { FaEnvelope } from 'react-icons/fa'
+
+
 // const Contact = class extends React.Component {
 //   render() {
 //     return (
@@ -25,16 +26,19 @@ function encode(data) {
   return formData
 }
 
-export default class Newsletter extends React.Component {
+export default class Contact extends React.Component {
   constructor(props) {
     super(props)
     this.state = {}
   }
 
   handleChange = e => {
-    this.setState({ [e.target.email]: e.target.value })
+    this.setState({ [e.target.name]: e.target.value })
   }
 
+  handleAttachment = e => {
+    this.setState({ [e.target.name]: e.target.files[0] })
+  }
 
   handleSubmit = e => {
     e.preventDefault()
@@ -42,7 +46,7 @@ export default class Newsletter extends React.Component {
     fetch('/', {
       method: 'POST',
       body: encode({
-        'form-name': form.getAttribute('email'),
+        'form-name': form.getAttribute('name'),
         ...this.state,
       }),
     })
@@ -53,8 +57,7 @@ export default class Newsletter extends React.Component {
   render() {
     return (
       
-      
-        <section className="outer section">
+        <section className="section">
           <div className="container" style={{padding: '5px 0 10px 0', textAlign: 'center', maxWidth: '600px', margin: '0 auto',}}>
           
             <div className="content innerpanel" style={{padding: '0 0 0 0', textAlign: 'left', width: '600px',}}>
@@ -124,7 +127,7 @@ export default class Newsletter extends React.Component {
             </div>
           </div>
         </section>      
-
+      
     )
   }
 }

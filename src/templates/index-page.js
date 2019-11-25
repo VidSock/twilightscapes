@@ -271,7 +271,10 @@ export const IndexPageTemplate = ({
 
         <ScrollAnimation animateIn="bounceInRight" delay={2000} style={{position:'relative', top:'-20px', right:'12%', float:'right', display:'inlineBlock', justifyContent:'', alignItems:'center', margin:'0 auto', padding:'30px 0 0 0',  textAlign:'center',}}>
    
-	<PopNewsletter />
+   
+   <PopNewsletter />
+
+	
            
 </ScrollAnimation>
 
@@ -368,7 +371,7 @@ export const IndexPageTemplate = ({
         
         
         <div className="mediacta1" style={{position: 'absolute', margin:'0 auto', top: '65%', textAlign:'center', width:'auto',}}>
-	<PopNewsletter />
+	Nothing
         </div>
         
         
@@ -706,6 +709,7 @@ export const IndexPageTemplate = ({
   </div>
   </CustomBox>
   <Install />
+  
 </>
 )
 
