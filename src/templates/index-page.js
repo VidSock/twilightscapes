@@ -121,7 +121,7 @@ background:linear-gradient(to bottom, #cfc09f 22%,#634f2c 24%, #cfc09f 26%, #cfc
 
 
 .image-wrap {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   margin: 0 auto;
   overflow: hidden;
@@ -215,12 +215,12 @@ export const IndexPageTemplate = ({
  
   
   
-  <div style={{position:'absolute', top:'0', height:'100vh', width:'100%', overflow:'hidden', border:'0px solid red', zIndex:'1',}}>
+  <div style={{position:'absolute', top:'0', height:'100vh', width:'100vw', overflow:'hidden', border:'0px solid red', zIndex:'1',}}>
   
   
   
   
-  <ScrollAnimation animateIn="bounceInDown" delay={1400} style={{position:'relative', paddingTop:'40px', right:'10%',}}>
+  <ScrollAnimation animateIn="bounceInDown" delay={1400} offset={0} style={{position:'relative', paddingTop:'40px', right:'10%',}}>
         <h1
           className="boom normal txtshadow-header hit-the-floor"
           style={{

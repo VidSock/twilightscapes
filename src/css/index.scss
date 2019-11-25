@@ -1077,12 +1077,14 @@ body.dark * {
 
 }
 .headroom--pinned {
-  transform: translateY(0%);
+  transform: translateY(-50%);
   transition: opacity .25s ease-in-out;
   opacity: 0.9;
 }
 .headroom--unpinned {
-  transform: translateY(-100%);
+  transform: translateY(-100%) !important;
+  transition: opacity .25s ease-in-out;
+  opacity: 0.9;
 }
 .headroom--pinned .back-to-top{ top:0; right:25%; background:transparent; display: block !important;}
 .headroom--pinned .back-to-top:after{content: ('Back to top'); font-size: 12px; top:0; position:absolute; height:20px;}
@@ -1128,10 +1130,14 @@ body.dark * {
 
 .headroom--unpinned .themer, .headroom--unpinned, .headroom--scrolled {display: none;}
 
+// .headroom--scrolled{transform: translateY(-200vh);}
+
+
+
 .headroom {display: flex; justify-content: space-between; align-items: center;/*  width:100%; */ /* background:linear-gradient(#343435 0%, #131212 100%); */ height:auto;}
 // .headroom-wrapper{height:58px !important;}
 
-.headroom--unpinned .logo{display: none;transform: translateY(-200vh);}
+// .headroom--unpinned .logo{display: none; transform: translateY(-200vh);}
 
 .back-to-top{display: none; position:fixed; bottom:25vh; right:45%; /* transform: translateY(100vh); */ padding:0; height:70px; width:70px; 
 z-index:1;
