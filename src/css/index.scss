@@ -302,7 +302,7 @@ background: linear-gradient(to right, rgba(3,73,127,1) 0%,rgba(65,145,186,1) 60%
 
 
 
-.intro:before{
+.intro:before, .poof{
 position:absolute;
 top:0;
 left:0;
@@ -394,19 +394,16 @@ font-size:180%; color:#f8f8fc; text-shadow: 12px 7px 15px 12px black;
     transform: scale(1.0);
   }
   
-  50% {
-    transform-origin: 50% 40%;
-    transform: scale(1.2);
-  }
+
   
-    50% {
-    transform-origin: 40% 40%;
-    transform: scale(1.6);
+    40% {
+    transform-origin: 30% 60%;
+    transform: scale(1.4);
   }
   
   100% {
     transform: scale(1.6);
-    transform-origin: 70% 10%;
+    transform-origin: 40% 10%;
   }
 }
 
