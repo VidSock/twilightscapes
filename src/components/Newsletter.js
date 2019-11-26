@@ -85,9 +85,9 @@ export default class Contact extends React.Component {
                   </label>
                 </div>
 
-<h3 style={{textAlign: 'center', fontSize: '1.5rem', padding: '.3rem 0 .5rem 0',}}>Follow Todd, Into The Night</h3>
+<h3 style={{textAlign: 'center', fontSize: '1.5rem', padding: '.3rem 0 .5rem 0',}}>Follow Todd</h3>
 
-<label htmlFor="email" style={{ display: 'flex', justifyContent:'center', alignItems: 'center', padding: '0 2rem', margin: '0 auto', textAlign: 'center', fontSize: '90%', }}>Just enter your e-mail:</label>
+<label htmlFor="email" style={{ display: 'flex', justifyContent:'center', alignItems: 'center', padding: '0 2rem', margin: '0 auto', textAlign: 'center', fontSize: '90%', }}>Enter your e-mail and click "Follow Now":</label>
 
                 <div className="form" style={{lineHeight: '1rem', height: 'auto', alignItems: 'center', display: 'flex', flexShrink: '1', paddingTop: '.2rem',}}>
                 

@@ -43,11 +43,11 @@ const Navbar = class extends React.Component {
               </li>
               
               
-              <li style={{position:'relative',}}>
+              {/*<li style={{position:'relative',}}>
               <Link id="vault" className="navbar-item" to="/vault" style={{paddingRight:'50px',}}>
                 The Vault <AiFillBank className="txtshadow" style={{fontSize:'30px', position:'absolute', right:'10px', top:'15px',}}/>
               </Link>
-              </li>
+              </li>*/}
               
             
             <li className="grad" style={{position:'relative',}}>

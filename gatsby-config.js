@@ -3,7 +3,7 @@ var proxy = require('http-proxy-middleware')
 module.exports = {
   siteMetadata: {
     title: 'Follow Me Into The Night | Unique Photography by Twilightscapes',
-    siteUrl: `https://twilightscapes.netlify.com`,
+    siteUrl: `https://twilightscapes.com`,
     description:
       'Twilightscapes brings new definitions to the genre of night photography. Experience some of the most remote, desolate locations photographed in the dead of night by world renown night photographer Todd Lambert.',
   },
@@ -117,7 +117,7 @@ module.exports = {
       resolve: `gatsby-plugin-purgecss`,
       options: {
         printRejected: true, // Print removed selectors and processed file names
-        develop: true, // Enable while using `gatsby develop`
+        develop: false, // Enable while using `gatsby develop`
         // tailwind: true, // Enable tailwindcss support
         // whitelist: ['headroom', 'headroom--unfixed'], // Don't remove this selector
          //ignore: ['index.css'], // Ignore files/folders
