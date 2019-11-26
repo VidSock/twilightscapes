@@ -4,7 +4,7 @@ import logo from '../img/tw-logo-white.svg'
 import Headroom from "react-headroom"
 import { ThemeToggler } from 'gatsby-plugin-dark-mode'
 import { GoArrowUp, GoTelescope } from 'react-icons/go'
-import { AiFillBank } from 'react-icons/ai'
+// import { AiFillBank } from 'react-icons/ai'
 import { FaRegAddressCard, FaQuestionCircle, FaTelegramPlane } from 'react-icons/fa'
 
 // import PopContact from '../components/PopContact'
@@ -36,7 +36,7 @@ const Navbar = class extends React.Component {
             <ul id="menu" className="menu">
             
             <li className="grad" style={{position:'relative',}}>
-              <Link id="galleries" className="navbar-item" to="/galleries"  aria-owns="galmenu" style={{paddingRight:'50px',}}>
+              <Link id="galleries" className="navbar-item" to="/galleries"  style={{paddingRight:'50px',}}>
                Galleries <GoTelescope className="txtshadow" style={{fontSize:'30px', position:'absolute', right:'4px', top:'12px',}}/>
               </Link>
               
