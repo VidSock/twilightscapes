@@ -52,6 +52,9 @@ p{line-height:150%;}
 body.light .speech p span{color:#fff;}
 
 
+
+
+
 @media (max-width: 48rem) {
 
 .split{flex-direction:column !important; width:100% !important;}
@@ -189,7 +192,7 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
  
  
  
- <div style={{margin:'30% auto', width:'80%', border:'3px solid #fff', transform:'rotate(-3deg)', color:'#fff', backgroundColor:'#000', padding:'0 1rem',}}>
+ <div className="btp" style={{margin:'30% auto', width:'100%', border:'3px solid #fff', transform:'rotate(-3deg)', color:'#fff', backgroundColor:'#000', padding:'0 1rem',}}>
  <h3>In the style of reality TV:</h3>
  <Image alt="Behind The Photos - VH1 " filename="behind-the-photos.png" />
  </div>
@@ -202,8 +205,8 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
  
  
  
- <ScrollAnimation animateIn="fadeOut" duration={8} animateOnce={false} delay={0} style={{position:'relative', height:'100vh',}}>
-       <div className="container scene" style={{backgroundImage:'linear-gradient(#222 10%, #000 80%)', height:'100%', width:'100%', position:'absolute', display:'flex', justifyContent:'center', alignItems:'center', opacity:'.9',}}>
+ <ScrollAnimation animateIn="fadeOut" duration={8} animateOnce={false} delay={2} style={{position:'relative', height:'100vh',}}>
+       <div className="container scene" style={{backgroundImage:'linear-gradient(#222 10%, #000 80%)', height:'100vh', width:'100vw', position:'absolute', display:'flex', justifyContent:'center', alignItems:'center', opacity:'.9', color:'#fff',}}>
               <h2 style={{position:'absolute', bottom:'50%', fontSize:'200%', textAlign:'center',}}>
              "Master of Night"<br />
              <span style={{fontSize:'16px',}}>(The story of Todd Lambert)</span>
@@ -259,7 +262,7 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
  
  
  
-  <ScrollAnimation animateIn="fadeOut" duration={5} animateOnce={false} delay={0} style={{position:'relative', height:'100vh',}}>
+  <ScrollAnimation animateIn="fadeOut" duration={5} animateOnce={false} delay={2} style={{position:'relative', height:'100vh',}}>
        <div className="container scene" style={{backgroundImage:'linear-gradient(#222 10%, #000 80%)', height:'100%', width:'100%', position:'absolute', display:'flex', justifyContent:'center', alignItems:'center', opacity:'.9',}}>
               <h2 style={{position:'absolute', bottom:'50%', fontSize:'200%', textAlign:'center', color:'#169dc6',}}>
              [Fast-Forwarding Childhood]</h2>
@@ -352,7 +355,7 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
  
  
  
- <ScrollAnimation animateIn="fadeOut" duration={5} animateOnce={false} delay={0} style={{position:'relative', height:'100vh', margin:'100px 0',}}>
+ <ScrollAnimation animateIn="fadeOut" duration={5} animateOnce={false} delay={2} style={{position:'relative', height:'100vh', margin:'100px 0',}}>
        <div className="container scene" style={{backgroundImage:'linear-gradient(#222 10%, #000 80%)', height:'100%', width:'100%', position:'absolute', display:'flex', justifyContent:'center', alignItems:'center', opacity:'.9',}}>
               <h2 style={{position:'absolute', bottom:'50%', fontSize:'200%', textAlign:'center', color:'#169dc6',}}>
              [The ride to the top]
@@ -400,8 +403,8 @@ Todd had worked hard and become one of the the once-vaunted “Webmasters” who
 <div className="container speech" style={{ width:'95%', borderRadius:'12px', margin:'0', padding:'', order:'1', position:'relative',}}>
 
 <p>
-<span className="txtshadow-header" style={{fontSize:'500%', color:'#ccc', position:'absolute', top:'-5px', left:'-10px',}}>&#10077;</span>
-<span className="txtshadow-header" style={{fontSize:'500%', color:'#ccc', position:'absolute', bottom:'-15px', right:'-10px',}}>&#10078;</span>
+<span className="txtshadow-header" style={{fontSize:'500%', color:'#ccc', position:'absolute', top:'-5px', left:'-10px',}}>&#10077;</span><br />
+<span className="txtshadow-header" style={{fontSize:'500%', color:'#ccc', position:'absolute', bottom:'-15px', right:'-10px',}}>&#10078;</span><br />
 
 It was my hey-day of web development. I had Jeffrey Zeldman and Eric Meyer listed as friends on my Flickr (pro) account. Yup, that was me.
 </p>
@@ -472,8 +475,8 @@ It was my hey-day of web development. I had Jeffrey Zeldman and Eric Meyer liste
 <div className="container speech" style={{ width:'95%', borderRadius:'12px', margin:'0', padding:'', order:'1', position:'relative',}}>
 
 <p>
-<span className="txtshadow-header" style={{fontSize:'500%', color:'#ccc', position:'absolute', top:'-5px', left:'-10px',}}>&#10077;</span>
-<span className="txtshadow-header" style={{fontSize:'500%', color:'#ccc', position:'absolute', bottom:'-15px', right:'-10px',}}>&#10078;</span>
+<span className="txtshadow-header" style={{fontSize:'500%', color:'#ccc', position:'absolute', top:'-5px', left:'-10px',}}>&#10077;</span><br />
+<span className="txtshadow-header" style={{fontSize:'500%', color:'#ccc', position:'absolute', bottom:'-15px', right:'-10px',}}>&#10078;</span><br />
 
 I should have been on top of the world, yet I felt empty and felt as though I was just going through the motions.
 </p>
@@ -499,7 +502,7 @@ I should have been on top of the world, yet I felt empty and felt as though I wa
  <div className="spacer33"></div>  
        
        
-        <ScrollAnimation animateIn="fadeOut" duration={5} animateOnce={false} delay={0} style={{position:'relative', height:'100vh', margin:'100px 0',}}>
+        <ScrollAnimation animateIn="fadeOut" duration={5} animateOnce={false} delay={2} style={{position:'relative', height:'100vh', margin:'100px 0',}}>
        <div className="container scene" style={{backgroundImage:'linear-gradient(#222 10%, #000 80%)', height:'100%', width:'100%', position:'absolute', display:'flex', justifyContent:'center', alignItems:'center', opacity:'.9',}}>
               <h2 style={{position:'absolute', bottom:'50%', fontSize:'200%', textAlign:'center', color:'#169dc6',}}>
              [What goes up]
@@ -521,7 +524,7 @@ I should have been on top of the world, yet I felt empty and felt as though I wa
 <h3>Wobbles in Web Town</h3>
 <p>But it all started to come crashing down for Todd. Eventually, his body succumbed from all of the years of excessive 1 and 0’s.</p>
 
-<p>The "stay-up-all-night-party-like-a-rock-star" type of life he’d always dreamed of was in fact, <br /> <span style={{color:'#ff0000',}}>now killing him.</span></p>
+<p>The "stay-up-all-night-party-like-a-rock-star" type of life he’d always dreamed of was in fact, <br /> <div style={{color:'#ff0000', fontSize:'200%', textAlign:'center',}}>now killing him.</div></p>
 </div>
 </ScrollAnimation>
 
@@ -553,8 +556,8 @@ I should have been on top of the world, yet I felt empty and felt as though I wa
 <div className="container speech" style={{ width:'95%', borderRadius:'12px', margin:'0', padding:'', order:'1', position:'relative',}}>
 
 <p>
-<span className="txtshadow-header" style={{fontSize:'500%', color:'#ccc', position:'absolute', top:'-5px', left:'-10px',}}>&#10077;</span>
-<span className="txtshadow-header" style={{fontSize:'500%', color:'#ccc', position:'absolute', bottom:'-15px', right:'-10px',}}>&#10078;</span>
+<span className="txtshadow-header" style={{fontSize:'500%', color:'#ccc', position:'absolute', top:'-5px', left:'-10px',}}>&#10077;</span><br />
+<span className="txtshadow-header" style={{fontSize:'500%', color:'#ccc', position:'absolute', bottom:'-15px', right:'-10px',}}>&#10078;</span><br /><br />
 I once saw Todd eat an entire box of Krispie Kreme donuts and then he washed it down with at least 2 gallons of Mountain Dew.
 <br /><br />And this was like, usually ever day...
 </p>
@@ -647,8 +650,8 @@ I once saw Todd eat an entire box of Krispie Kreme donuts and then he washed it 
 <div className="container speech" style={{ width:'95%', borderRadius:'12px', margin:'0', padding:'', order:'1', position:'relative',}}>
 
 <p>
-<span className="txtshadow-header" style={{fontSize:'500%', color:'#ccc', position:'absolute', top:'-5px', left:'-10px',}}>&#10077;</span>
-<span className="txtshadow-header" style={{fontSize:'500%', color:'#ccc', position:'absolute', bottom:'-15px', right:'-10px',}}>&#10078;</span>
+<span className="txtshadow-header" style={{fontSize:'500%', color:'#ccc', position:'absolute', top:'-5px', left:'-10px',}}>&#10077;</span><br />
+<span className="txtshadow-header" style={{fontSize:'500%', color:'#ccc', position:'absolute', bottom:'-15px', right:'-10px',}}>&#10078;</span><br />
 
 I really only had free time during the evenings which is why I initially learned to photograph at night.
 <br />
@@ -748,8 +751,8 @@ I just found that I really enjoyed the peacefulness and tranquility when I photo
 <div className="container speech" style={{ width:'95%', borderRadius:'12px', margin:'0', padding:'', order:'1', position:'relative',}}>
 
 <p>
-<span className="txtshadow-header" style={{fontSize:'500%', color:'#ccc', position:'absolute', top:'-5px', left:'-10px',}}>&#10077;</span>
-<span className="txtshadow-header" style={{fontSize:'500%', color:'#ccc', position:'absolute', bottom:'-15px', right:'-10px',}}>&#10078;</span>
+<span className="txtshadow-header" style={{fontSize:'500%', color:'#ccc', position:'absolute', top:'-5px', left:'-10px',}}>&#10077;</span><br />
+<span className="txtshadow-header" style={{fontSize:'500%', color:'#ccc', position:'absolute', bottom:'-15px', right:'-10px',}}>&#10078;</span><br />
 
 There was actually several incidences of me pretending to be “sleep walking”... in order to help explain my unusual nocturnal activities to my parents.
 </p>
@@ -815,8 +818,8 @@ There was actually several incidences of me pretending to be “sleep walking”
 <div className="container speech" style={{ width:'95%', borderRadius:'12px', margin:'0', padding:'', order:'1', position:'relative',}}>
 
 <p>
-<span className="txtshadow-header" style={{fontSize:'500%', color:'#ccc', position:'absolute', top:'-5px', left:'-10px',}}>&#10077;</span>
-<span className="txtshadow-header" style={{fontSize:'500%', color:'#ccc', position:'absolute', bottom:'-15px', right:'-10px',}}>&#10078;</span>
+<span className="txtshadow-header" style={{fontSize:'500%', color:'#ccc', position:'absolute', top:'-5px', left:'-10px',}}>&#10077;</span><br />
+<span className="txtshadow-header" style={{fontSize:'500%', color:'#ccc', position:'absolute', bottom:'-15px', right:'-10px',}}>&#10078;</span><br />
 
 The history of our past, seemed to call to me. I was enamored by ghosts of places that I’d never been, yet they felt like home when I got there.
 </p>
@@ -886,8 +889,8 @@ The history of our past, seemed to call to me. I was enamored by ghosts of place
 <div className="container speech" style={{ width:'95%', borderRadius:'12px', margin:'0', padding:'', order:'1', position:'relative',}}>
 
 <p>
-<span className="txtshadow-header" style={{fontSize:'500%', color:'#ccc', position:'absolute', top:'-5px', left:'-10px',}}>&#10077;</span>
-<span className="txtshadow-header" style={{fontSize:'500%', color:'#ccc', position:'absolute', bottom:'-15px', right:'-10px',}}>&#10078;</span>
+<span className="txtshadow-header" style={{fontSize:'500%', color:'#ccc', position:'absolute', top:'-5px', left:'-10px',}}>&#10077;</span><br />
+<span className="txtshadow-header" style={{fontSize:'500%', color:'#ccc', position:'absolute', bottom:'-15px', right:'-10px',}}>&#10078;</span><br />
 
 Traveling across the country in search of a beauty that is elusive and fading, often makes for some wild circumstances.<br />
 <br />I always find that the experiences are so worth it though.
