@@ -150,7 +150,8 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
  <ScrollAnimation animateIn="" animateOut="" initiallyVisible={true} animateOnce={true} animatePreScroll={true} style={{width:'40%', padding:'0',}}>    
 
 <div className="imgbox" style={{border:'0px solid black', position:'relative', margin:'0 0 0 0',}}><Image alt="Todd Lambert Web development for photographers" filename="todd.jpg" />
-<div style={{position:'absolute', bottom:'5px', fontSize:'60%', color:'#ddd', textAlign:'center', width:'100%',}}><span className="txtshadow">Todd Lambert on location</span></div>
+<div style={{position:'absolute', bottom:'5px', fontSize:'60%', color:'#ddd', textAlign:'center', width:'100%',}}><span className="txtshadow" style={{background:'#000', opacity:'.8', padding:'3px 5px',}}>
+Todd Lambert on location</span></div>
 </div>
 </ScrollAnimation>
 
@@ -304,8 +305,10 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
 
  <ScrollAnimation animateIn="slideInRight" animateOut="slideOutRight" animateOnce={false} delay={100} style={{width:'40%', padding:'0 auto 0 auto', order:'1',}}>    
 
-<div className="imgbox" style={{border:'0px solid black', position:'relative', margin:'0 0',}}><Image alt="Todd Lambert Web development for photographers" filename="todd-friends.jpg" />
-<div className="txtshadow" style={{position:'absolute', bottom:'5px', fontSize:'60%', color:'#ddd', textAlign:'center', width:'100%',}}>Yes, thats a Metallica hat</div>
+<div className="imgbox" style={{border:'0px solid black', position:'relative', margin:'0 0',}}><Image alt="Todd Lambert hanging with friends" filename="todd-friends.jpg" />
+<div className="txtshadow" style={{position:'absolute', bottom:'5px', fontSize:'60%', color:'#ddd', textAlign:'center', width:'100%',}}>
+<span style={{background:'#000', opacity:'.8', padding:'3px 5px',}}>Hanging with friends</span>
+</div>
 </div>
 </ScrollAnimation>
 
@@ -338,7 +341,9 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
  <ScrollAnimation animateIn="slideInRight" animateOut="slideOutRight" animateOnce={false} delay={100} style={{width:'40%', padding:'40px auto 40px auto',}}>    
 
 <div className="imgbox" style={{border:'0px solid black', position:'relative', margin:'0 0 0 0',}}><Image alt="Todd Lambert Web development for photographers" filename="todd-young-business.jpg" />
-<div className="txtshadow" style={{position:'absolute', bottom:'5px', fontSize:'60%', color:'#ddd', textAlign:'center', width:'100%',}}>Clean cut and baby-faced</div>
+<div className="txtshadow" style={{position:'absolute', bottom:'5px', fontSize:'60%', color:'#ddd', textAlign:'center', width:'100%',}}>
+<span style={{background:'#000', opacity:'.8', padding:'3px 5px',}}>Clean cut and baby-faced</span>
+</div>
 </div>
 </ScrollAnimation>
 
@@ -381,8 +386,10 @@ Todd had worked hard and become one of the the once-vaunted “Webmasters” who
 
  <ScrollAnimation animateIn="slideInRight" animateOut="slideOutRight" animateOnce={false} delay={100} style={{width:'55%', padding:'0', order:'1',}}>    
 
-<div className="imgbox" style={{border:'0px solid black', position:'relative', margin:'0 1rem 0 0',}}><Image alt="Todd Lambert Web development for photographers" filename="hackthis.jpg" />
-<div className="txtshadow" style={{position:'absolute', bottom:'5px', fontSize:'60%', color:'#ddd', textAlign:'center', width:'100%',}}>Biopic film of my life at this point</div>
+<div className="imgbox" style={{border:'0px solid black', position:'relative', margin:'0 1rem 0 0',}}><Image alt="Hackers Movie Poster" filename="hackthis.jpg" />
+<div className="txtshadow" style={{position:'absolute', bottom:'5px', fontSize:'60%', color:'#ddd', textAlign:'center', width:'100%',}}>
+<span style={{background:'#000', opacity:'.8', padding:'3px 5px',}}>Biopic film of Todds life at this point</span>
+</div>
 </div>
 </ScrollAnimation>
 
@@ -453,8 +460,10 @@ It was my hey-day of web development. I had Jeffrey Zeldman and Eric Meyer liste
 
  <ScrollAnimation animateIn="slideInRight" animateOut="slideOutRight" animateOnce={false} delay={100} style={{width:'55%', padding:'0', order:'1',}}>    
 
-<div className="imgbox" style={{border:'0px solid black', position:'relative', margin:'0 1rem 0 0',}}><Image alt="Todd Lambert Web development for photographers" filename="todd-cars.jpg" />
-<div className="txtshadow" style={{position:'absolute', bottom:'5px', fontSize:'60%', color:'#ddd', textAlign:'center', width:'100%',}}>Biopic film of my life at this point</div>
+<div className="imgbox" style={{border:'0px solid black', position:'relative', margin:'0 1rem 0 0',}}><Image alt="Todds garage and cars" filename="todd-cars.jpg" />
+<div className="txtshadow" style={{position:'absolute', bottom:'5px', fontSize:'60%', color:'#ddd', textAlign:'center', width:'100%',}}>
+<span style={{background:'#000', opacity:'.8', padding:'3px 5px',}}>Got the McMansion and new cars</span>
+</div>
 </div>
 </ScrollAnimation>
 
@@ -531,7 +540,9 @@ I should have been on top of the world, yet I felt empty and felt as though I wa
  <ScrollAnimation animateIn="slideInRight" animateOut="slideOutRight" animateOnce={false} delay={100} style={{width:'40%', padding:'40px auto 40px auto',}}>    
 
 <div className="imgbox" style={{border:'0px solid black', position:'relative', margin:'0 0 0 0',}}><Image alt="Todd Lambert Web development for photographers" filename="todd-grabs.jpg" />
-<div className="txtshadow" style={{position:'absolute', bottom:'5px', fontSize:'60%', color:'#ddd', textAlign:'center', width:'100%',}}>Clean cut and baby-faced</div>
+<div className="txtshadow" style={{position:'absolute', bottom:'5px', fontSize:'60%', color:'#ddd', textAlign:'center', width:'100%',}}>
+<span style={{background:'#000', opacity:'.8', padding:'3px 5px',}}>Life reachs out and grabs ya</span>
+</div>
 </div>
 </ScrollAnimation>
 
@@ -601,8 +612,10 @@ I once saw Todd eat an entire box of Krispie Kreme donuts and then he washed it 
 
  <ScrollAnimation animateIn="slideInRight" animateOut="slideOutRight" animateOnce={false} delay={100} style={{width:'55%', padding:'0', order:'1',}}>    
 
-<div className="imgbox" style={{border:'0px solid black', position:'relative', margin:'0 1rem 0 0',}}><Image alt="Todd Lambert Web development for photographers" filename="bluebox-crash.jpg" />
-<div className="txtshadow" style={{position:'absolute', bottom:'5px', fontSize:'60%', color:'#ddd', textAlign:'center', width:'100%',}}>Biopic film of my life at this point</div>
+<div className="imgbox" style={{border:'0px solid black', position:'relative', margin:'0 1rem 0 0',}}><Image alt="Todds old beater car and a funny scene" filename="bluebox-crash.jpg" />
+<div className="txtshadow" style={{position:'absolute', bottom:'5px', fontSize:'60%', color:'#ddd', textAlign:'center', width:'100%',}}>
+<span style={{background:'#000', opacity:'.8', padding:'3px 5px',}}>Sometimes the moment just sort of finds you. Here, I found it.</span>
+</div>
 </div>
 </ScrollAnimation>
 
@@ -632,7 +645,9 @@ I once saw Todd eat an entire box of Krispie Kreme donuts and then he washed it 
  <ScrollAnimation animateIn="slideInRight" animateOut="slideOutRight" animateOnce={false} delay={100} style={{width:'40%', padding:'40px auto 40px auto',}}>    
 
 <div className="imgbox" style={{border:'0px solid black', position:'relative', margin:'0 0 0 0',}}><Image alt="Todd Lambert Web development for photographers" filename="todd-camera.jpg" />
-<div className="txtshadow" style={{position:'absolute', bottom:'5px', fontSize:'60%', color:'#ddd', textAlign:'center', width:'100%',}}>Clean cut and baby-faced</div>
+<div className="txtshadow" style={{position:'absolute', bottom:'5px', fontSize:'60%', color:'#ddd', textAlign:'center', width:'100%',}}>
+<span style={{background:'#000', opacity:'.8', padding:'3px 5px',}}>Todd tries to smile when the skies wont cooperate</span>
+</div>
 </div>
 </ScrollAnimation>
 
@@ -697,8 +712,10 @@ I just found that I really enjoyed the peacefulness and tranquility when I photo
 
  <ScrollAnimation animateIn="slideInRight" animateOut="slideOutRight" animateOnce={false} delay={100} style={{width:'40%', padding:'40px auto 40px auto',}}>    
 
-<div className="imgbox" style={{border:'0px solid black', position:'relative', margin:'0 0 0 0',}}><Image alt="Todd Lambert Web development for photographers" filename="mcmansion.jpg" />
-<div className="txtshadow" style={{position:'absolute', bottom:'5px', fontSize:'60%', color:'#ddd', textAlign:'center', width:'100%',}}>Clean cut and baby-faced</div>
+<div className="imgbox" style={{border:'0px solid black', position:'relative', margin:'0 0 0 0',}}><Image alt="Sell your soul" filename="mcmansion.jpg" />
+<div className="txtshadow" style={{position:'absolute', bottom:'5px', fontSize:'60%', color:'#ddd', textAlign:'center',  width:'90%',  margin:'0 3%',}}>
+<span style={{background:'#000', opacity:'.8', padding:'3px 5px',}}>Sell Your Soul</span>
+</div>
 </div>
 </ScrollAnimation>
 
@@ -731,8 +748,10 @@ I just found that I really enjoyed the peacefulness and tranquility when I photo
 
  <ScrollAnimation animateIn="slideInRight" animateOut="slideOutRight" animateOnce={false} delay={100} style={{width:'40%', padding:'40px auto 40px auto',}}>    
 
-<div className="imgbox" style={{border:'0px solid black', position:'relative', margin:'0 0 0 0',}}><Image alt="Todd Lambert Web development for photographers" filename="todd-abandoned.jpg" />
-<div className="txtshadow" style={{position:'absolute', bottom:'5px', fontSize:'60%', color:'#ddd', textAlign:'center', width:'100%',}}>Clean cut and baby-faced</div>
+<div className="imgbox" style={{border:'0px solid black', position:'relative', margin:'0 0 0 0',}}><Image alt="Exploring the elevator shafts in an abandoned hotel" filename="todd-abandoned.jpg" />
+<div className="txtshadow" style={{position:'absolute', bottom:'5px', fontSize:'60%', color:'#ddd', textAlign:'center', width:'100%',}}>
+<span style={{background:'#000', opacity:'.8', padding:'3px 5px',}}>Exploring the elevator shafts in an abandoned hotel</span>
+</div>
 </div>
 </ScrollAnimation>
 
@@ -799,8 +818,10 @@ There was actually several incidences of me pretending to be “sleep walking”
 
  <ScrollAnimation animateIn="slideInRight" animateOut="slideOutRight" animateOnce={false} delay={100} style={{width:'35%', padding:'40px auto 40px auto',}}>    
 
-<div className="imgbox" style={{border:'0px solid black', position:'relative', margin:'0 0 0 0',}}><Image alt="Todd Lambert Web development for photographers" filename="new-in-old.jpg" />
-<div className="txtshadow" style={{position:'absolute', bottom:'5px', fontSize:'60%', color:'#ddd', textAlign:'center', width:'100%',}}>Clean cut and baby-faced</div>
+<div className="imgbox" style={{border:'0px solid black', position:'relative', margin:'0 0 0 0',}}><Image alt="Captive light from within" filename="new-in-old.jpg" />
+<div className="txtshadow" style={{position:'absolute', bottom:'5px', fontSize:'60%', color:'#ddd', textAlign:'center', width:'100%',}}>
+<span style={{background:'#000', opacity:'.8', padding:'3px 5px',}}>Preserving our past through photography</span>
+</div>
 </div>
 </ScrollAnimation>
 
@@ -862,8 +883,10 @@ The history of our past, seemed to call to me. I was enamored by ghosts of place
 
  <ScrollAnimation animateIn="slideInRight" animateOut="slideOutRight" animateOnce={false} delay={100} style={{width:'40%', padding:'40px auto 40px auto',}}>    
 
-<div className="imgbox" style={{border:'0px solid black', position:'relative', margin:'0 0 0 0',}}><Image alt="Todd Lambert Web development for photographers" filename="todd-horizons.jpg" />
-<div className="txtshadow" style={{position:'absolute', bottom:'5px', fontSize:'60%', color:'#ddd', textAlign:'center', width:'100%',}}>Clean cut and baby-faced</div>
+<div className="imgbox" style={{border:'0px solid black', position:'relative', margin:'0 0 0 0',}}><Image alt="Todd on location at Mono Lake" filename="todd-horizons.jpg" />
+<div className="txtshadow" style={{position:'absolute', bottom:'5px', fontSize:'60%', color:'#ddd', textAlign:'center', width:'100%',}}>
+<span style={{background:'#000', opacity:'.8', padding:'3px 5px',}}>Todd on location at Mono Lake</span>
+</div>
 </div>
 </ScrollAnimation>
 
@@ -916,7 +939,7 @@ Traveling across the country in search of a beauty that is elusive and fading, o
        
        <ScrollAnimation animateIn="fadeOut" duration={5} animateOnce={false} delay={100} style={{position:'relative', height:'300px',}}>
        <div className="container" style={{backgroundImage:'linear-gradient(#222 10%, #000 80%)', height:'100%', width:'100%', position:'absolute', display:'flex', justifyContent:'center', alignItems:'center', opacity:'.9',}}>
-              <h2 style={{position:'absolute', bottom:'20%', fontSize:'200%',}}>
+              <h2 style={{position:'absolute', bottom:'20%', fontSize:'200%', color:'#fff',}}>
               [fade to black]
               </h2>
        </div>
