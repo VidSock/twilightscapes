@@ -130,8 +130,10 @@ background:linear-gradient(to bottom, #cfc09f 22%,#634f2c 24%, #cfc09f 26%, #cfc
 
 .image-wrap img {
   width: 100vw;
+/*
   animation: move 11s ease;
   animation-direction:alternate-reverse;
+*/
   position: ;
   z-index:0;
 }
@@ -164,7 +166,7 @@ background:linear-gradient(to bottom, #cfc09f 22%,#634f2c 24%, #cfc09f 26%, #cfc
 
 @media (max-width: 48rem) {
 
-.image-wrap {height:auto !important;}
+.image-wrap {height:auto !important; min-height:300px !important;}
   .image-wrap h1.boom{font-size:250% !important;}
   .image-wrap h2.boom{font-size:180% !important;}
   .image-wrap h3.boom{font-size:280% !important;}
@@ -210,12 +212,12 @@ export const IndexPageTemplate = ({
 	
   <div className="outer intro">
   
-<div className="image-wrap" style={{position:'relative',}}>
+<div className="image-wrap" style={{position:'relative', overflow:'hidden',}}>
   
  
   
   
-  <div style={{position:'absolute', top:'0', height:'100vh', width:'100vw', overflow:'hidden', border:'0px solid red', zIndex:'1',}}>
+  <div className="" style={{position:'absolute', top:'0', width:'100vw', overflow:'hidden', border:'0px solid red', zIndex:'1',}}>
   
   
   
@@ -272,27 +274,24 @@ export const IndexPageTemplate = ({
 
 
         <ScrollAnimation animateIn="bounceInRight" delay={2000} style={{position:'relative', top:'-20px', right:'12%', float:'right', display:'inlineBlock', justifyContent:'', alignItems:'center', margin:'0 auto', padding:'30px 0 0 0',  textAlign:'center',}}>
-   
-   
-   <PopNewsletter />
-
-	
-           
+   <PopNewsletter />      
 </ScrollAnimation>
 
         
         </div>
         
-<ScrollAnimation animateIn="fadeIn" delay={1000} animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={true}>
-        <Image alt="Todd Lambert Web development for photographers" filename="night283.jpg" style={{backgroundSize:'cover', zIndex:'0',}} />
-        </ScrollAnimation> 
+
+<div className=" kenburns-bottom-right" style={{position:'absolute', top:'0', width:'100vw', overflow:'hidden', border:'0px solid red', zIndex:'0',}}>
+        <Image className="" alt="Todd Lambert Web development for photographers" filename="night283.jpg" style={{backgroundSize:'cover', zIndex:'0',}} />
+        </div>
+
 </div>
 
 
 
   
     <div id="hero"
-      className="full-width-image zoomie"
+      className="full-width-image kenburns-top"
       style={{ display:'none',
         backgroundImage: `url(${
           !!image.childImageSharp ? image.childImageSharp.fluid.src : image
