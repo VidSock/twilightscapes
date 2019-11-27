@@ -168,7 +168,7 @@ Todd Lambert on location</span></div>
  
  <GiPlainArrow className="" style={{padding:'1rem', color:'#169dc6', borderRadius:'10px',}} />
  
- <span className="txtshadow-header" style={{position:'relative', top:'-25px', fontSize:'80%', fontWeight:'bold', color:'#fff', margin:'0 1rem 0 1rem',}}>SCROLL</span>
+ <span className="txtshadow-header" style={{position:'relative', top:'-25px', fontSize:'50%', fontWeight:'bold', color:'#fff', margin:'0 1rem 0 1rem',}}>SCROLL</span>
  
  <GiPlainArrow className="" style={{padding:'1rem', color:'#169dc6', borderRadius:'10px',}} />
  
