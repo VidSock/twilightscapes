@@ -133,7 +133,7 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
 <p style={{position:'relative',}}>My name is Todd Lambert, and this is my story. It all began when the country was a different place, my parents were wanting to have a family, and I was born.
 
 <ScrollAnimation animateIn="fadeIn" animateOnce={false} animatePreScroll={true} delay={1800}> 
-<div className="txtshadow-header" style={{position:'absolute', top:'30px', left:'0', width:'100%', borderBottom:'12px solid ', transform:'rotate(8deg)', textAlign:'center', fontSize:'350%', zIndex:'1',}}><span style={{ color:'#169dc6',}}>NOPE!</span></div>
+<div className="txtshadow-header" style={{position:'absolute', top:'30px', left:'0', width:'100%', borderBottom:'12px solid ', transform:'rotate(8deg)', textAlign:'center', fontSize:'450%', zIndex:'1',}}><div className="txtshadow-3d" style={{color:'#ff0000', transform:'rotate(-10deg)', fontWeight:'bold',}}>NOPE!</div></div>
 <div style={{position:'absolute', top:'30px', left:'0', width:'100%', borderBottom:'12px solid ', transform:'rotate(-8deg)', textAlign:'center',}}> &nbsp;</div>
 </ScrollAnimation> 
 </p>
@@ -168,7 +168,7 @@ Todd Lambert on location</span></div>
  
  <GiPlainArrow className="" style={{padding:'1rem', color:'#169dc6', borderRadius:'10px',}} />
  
- <span className="txtshadow-header" style={{position:'relative', top:'-25px', fontSize:'50%', fontWeight:'bold', margin:'0 1rem 0 1rem',}}>SCROLL</span>
+ <span className="txtshadow-header" style={{position:'relative', top:'-25px', fontSize:'80%', fontWeight:'bold', margin:'0 1rem 0 1rem',}}>SCROLL</span>
  
  <GiPlainArrow className="" style={{padding:'1rem', color:'#169dc6', borderRadius:'10px',}} />
  
@@ -193,7 +193,7 @@ Todd Lambert on location</span></div>
  
  
  
- <div className="btp" style={{margin:'30% auto', width:'100%', border:'3px solid #fff', transform:'rotate(-3deg)', color:'#fff', backgroundColor:'#000', padding:'0 1rem',}}>
+ <div className="btp" style={{margin:'30% auto', width:'90%', border:'3px solid #fff', transform:'rotate(-3deg)', color:'#fff', backgroundColor:'#000', padding:'0 1rem',}}>
  <h3>In the style of reality TV:</h3>
  <Image alt="Behind The Photos - VH1 " filename="behind-the-photos.png" />
  </div>
@@ -249,7 +249,7 @@ Todd Lambert on location</span></div>
 </div>
 </ScrollAnimation>
 
-<h2 style={{textAlign:'center', color:'#fff', transform:'rotate(-10deg)', fontSize:'200%', width:'40%', marginBottom:'1rem',}}>Todd was a cool kid!</h2>
+
 
  <ScrollAnimation animateIn="rotateIn" animateOut="rotateOut" animateOnce={false} delay={500} style={{width:'50%', padding:'0',}}>    
 
@@ -535,7 +535,7 @@ I should have been on top of the world, yet I felt empty and felt as though I wa
 <h3>Wobbles in Web Town</h3>
 <p>But it all started to come crashing down for Todd. Eventually, his body succumbed from all of the years of excessive 1 and 0’s.</p>
 
-<p>The "stay-up-all-night-party-like-a-rock-star" type of life he’d always dreamed of was in fact, <br /> <div className="txtshadow" style={{color:'#ff0000', margin:'1rem 0', fontSize:'250%', textAlign:'center',}}>killing him.</div></p>
+<p>The "stay-up-all-night-party-like-a-rock-star" type of life he’d always dreamed of was in fact, <br /> <div className="txtshadow" style={{margin:'1rem 0', fontSize:'250%', textAlign:'center',}}>killing him.</div></p>
 </div>
 </ScrollAnimation>
 

@@ -223,10 +223,10 @@ main{min-height: 60vh;}//force v-scroll
 
 .menu li:first-child [aria-current]{border-left:1px solid #000}
   
- [aria-current].logolink {
-  background-color: none;
-  padding: 0; cursor: default;
-  border:none;
+ [aria-current].logolink, [aria-current].logolink:before  {
+  background: none !important;
+  padding: 0; cursor: default !important;
+  border:none !important;
   }
   
   
