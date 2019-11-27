@@ -13,7 +13,6 @@ module.exports = {
     `gatsby-plugin-styled-components`,
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
-    
     {
       resolve: 'gatsby-source-filesystem',
       options: {
@@ -21,6 +20,7 @@ module.exports = {
         name: 'images',
       },
     },
+    
    
     
     {
@@ -87,7 +87,13 @@ module.exports = {
     
     
     
-    
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        TrackingId: 'UA-49869143-1',
+        respectDNT: false,
+      }
+    },
     
     
     
@@ -106,13 +112,7 @@ module.exports = {
         icon: `src/img/tw-logo-white.svg`,
       },
     },
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        TrackingId: 'UA-49869143-1',
-        respectDNT: false,
-      }
-    },
+    
         { 
       resolve: `gatsby-plugin-purgecss`,
       options: {
