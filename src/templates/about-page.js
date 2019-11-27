@@ -133,7 +133,7 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
 <p style={{position:'relative',}}>My name is Todd Lambert, and this is my story. It all began when the country was a different place, my parents were wanting to have a family, and I was born.
 
 <ScrollAnimation animateIn="fadeIn" animateOnce={false} animatePreScroll={true} delay={1800}> 
-<div className="txtshadow-header" style={{position:'absolute', top:'30px', left:'0', width:'100%', borderBottom:'12px solid ', transform:'rotate(8deg)', textAlign:'center', fontSize:'250%', zIndex:'1',}}><span style={{color:'#169dc6',}}>NOPE!</span></div>
+<div className="txtshadow-header" style={{position:'absolute', top:'30px', left:'0', width:'100%', borderBottom:'12px solid ', transform:'rotate(8deg)', textAlign:'center', fontSize:'350%', zIndex:'1',}}><span style={{ color:'#169dc6',}}>NOPE!</span></div>
 <div style={{position:'absolute', top:'30px', left:'0', width:'100%', borderBottom:'12px solid ', transform:'rotate(-8deg)', textAlign:'center',}}> &nbsp;</div>
 </ScrollAnimation> 
 </p>
@@ -166,11 +166,11 @@ Todd Lambert on location</span></div>
   
  <div className="spacer33 bounce txtshadow-header" style={{fontSize:'500%', color:'#fff', textAlign:'center', position:'relative',}}>
  
- <GiPlainArrow className="" style={{padding:'1rem', borderRadius:'10px',}} />
+ <GiPlainArrow className="" style={{padding:'1rem', color:'#169dc6', borderRadius:'10px',}} />
  
- <span className="txtshadow-header" style={{position:'relative', top:'-25px', color:'#169dc6', fontSize:'50%', fontWeight:'bold', margin:'0 1rem 0 1rem',}}>SCROLL</span>
+ <span className="txtshadow-header" style={{position:'relative', top:'-25px', fontSize:'50%', fontWeight:'bold', margin:'0 1rem 0 1rem',}}>SCROLL</span>
  
- <GiPlainArrow className="" style={{padding:'1rem', borderRadius:'10px',}} />
+ <GiPlainArrow className="" style={{padding:'1rem', color:'#169dc6', borderRadius:'10px',}} />
  
  </div>
   </ScrollAnimation>  
@@ -222,7 +222,7 @@ Todd Lambert on location</span></div>
 {/* Show Intro */}
  
 
- <h2 style={{textAlign:'center', color:'#169dc6', fontSize:'180%', margin:'2rem auto 0 auto', padding:'0',}}>[Narrator Voice]</h2>
+ <h2 style={{textAlign:'center', fontSize:'180%', margin:'2rem auto 0 auto', padding:'0',}}>[Narrator Voice]</h2>
  
  <div className="container" style={{width:'80%', margin:'0 auto',}}>
  <p>Tonight, we look at Twilightscapes by Todd Lambert. Todd is best-known for his incredible night photography and unusual photo locations.</p>
@@ -247,7 +247,7 @@ Todd Lambert on location</span></div>
 </div>
 </ScrollAnimation>
 
-<h2 style={{textAlign:'center', color:'#fff', transform:'rotate(-10deg)', fontSize:'150%', width:'40%', marginBottom:'1rem',}}>Todd was a cool kid!</h2>
+<h2 style={{textAlign:'center', color:'#fff', transform:'rotate(-10deg)', fontSize:'200%', width:'40%', marginBottom:'1rem',}}>Todd was a cool kid!</h2>
 
  <ScrollAnimation animateIn="rotateIn" animateOut="rotateOut" animateOnce={false} delay={500} style={{width:'50%', padding:'0',}}>    
 
@@ -265,7 +265,7 @@ Todd Lambert on location</span></div>
  
   <ScrollAnimation animateIn="fadeOut" duration={5} animateOnce={false} delay={2} style={{position:'relative', height:'100vh',}}>
        <div className="container scene" style={{backgroundImage:'linear-gradient(#222 10%, #000 80%)', height:'100%', width:'100%', position:'absolute', display:'flex', justifyContent:'center', alignItems:'center', opacity:'.9',}}>
-              <h2 style={{position:'absolute', bottom:'50%', fontSize:'200%', textAlign:'center', color:'#169dc6',}}>
+              <h2 style={{position:'absolute', bottom:'50%', fontSize:'200%', textAlign:'center',}}>
              [Fast-Forwarding Childhood]</h2>
               
 
@@ -293,7 +293,7 @@ Todd Lambert on location</span></div>
 
  <ScrollAnimation animateIn="slideInLeft" animateOut="slideOutLeft" animateOnce={false} delay={0} style={{width:'60%', order:'2',}}>    
 <div className="container" style={{ width:'95%', borderRadius:'12px', margin:'0 0 0 -10px', padding:'1rem 2rem',}}>
-<h2 style={{textAlign:'center', color:'#169dc6', fontSize:'130%', padding:'0',}}>[Narrator]</h2>
+<h2 style={{textAlign:'center', fontSize:'130%', padding:'0',}}>[Narrator]</h2>
 
 <p>It’s now many years later and Todd is fresh into the working world, after having busted his way out of high school with C- grades.</p>
 
@@ -325,7 +325,7 @@ Todd Lambert on location</span></div>
 
  <ScrollAnimation animateIn="slideInLeft" animateOut="slideOutLeft" animateOnce={false} delay={0} style={{width:'60%',}}>    
 <div className="container" style={{ width:'95%', borderRadius:'12px', margin:'0', padding:'',}}>
-<h3 style={{textAlign:'center', color:'#169dc6', fontSize:'130%', padding:'0', margin:'0 0 1rem 0',}}>[Narrator]</h3>
+<h3 style={{textAlign:'center', fontSize:'130%', padding:'0', margin:'0 0 1rem 0',}}>[Narrator]</h3>
 
 <h3>The Dawn Of The Internet</h3>
 <p>The Internet had just really started, but it became a fountain of knowledge at Todds fingertips.</p>
@@ -362,7 +362,7 @@ Todd Lambert on location</span></div>
  
  <ScrollAnimation animateIn="fadeOut" duration={5} animateOnce={false} delay={2} style={{position:'relative', height:'100vh', margin:'100px 0',}}>
        <div className="container scene" style={{backgroundImage:'linear-gradient(#222 10%, #000 80%)', height:'100%', width:'100%', position:'absolute', display:'flex', justifyContent:'center', alignItems:'center', opacity:'.9',}}>
-              <h2 style={{position:'absolute', bottom:'50%', fontSize:'200%', textAlign:'center', color:'#169dc6',}}>
+              <h2 style={{position:'absolute', bottom:'50%', fontSize:'200%', textAlign:'center',}}>
              [The ride to the top]
              </h2>
        </div>
@@ -375,7 +375,7 @@ Todd Lambert on location</span></div>
 
  <ScrollAnimation animateIn="slideInLeft" animateOut="slideOutLeft" animateOnce={false} delay={0} style={{width:'45%', order:'2',}}>    
 <div className="container" style={{ width:'95%', borderRadius:'12px', margin:'0 0 0 0', padding:'',}}>
-<h3 style={{textAlign:'center', color:'#169dc6', fontSize:'130%', padding:'0', margin:'0 0 1rem 0',}}>[Narrator]</h3>
+<h3 style={{textAlign:'center', fontSize:'130%', padding:'0', margin:'0 0 1rem 0',}}>[Narrator]</h3>
 <h3>Todd becomes a new pioneer on the frontiers of the World Wide Web</h3>
 <p>
 Todd had worked hard and become one of the the once-vaunted “Webmasters” who controlled the Internet.</p>
@@ -446,7 +446,7 @@ It was my hey-day of web development. I had Jeffrey Zeldman and Eric Meyer liste
 
  <ScrollAnimation animateIn="slideInLeft" animateOut="slideOutLeft" animateOnce={false} delay={0} style={{width:'45%', order:'2',}}>    
 <div className="container" style={{ width:'95%', borderRadius:'12px', margin:'0 0 0 0', padding:'',}}>
-<h3 style={{textAlign:'center', color:'#169dc6', fontSize:'130%', padding:'0', margin:'0 0 1rem 0',}}>[Narrator]</h3>
+<h3 style={{textAlign:'center', fontSize:'130%', padding:'0', margin:'0 0 1rem 0',}}>[Narrator]</h3>
 <h3>The view was great!</h3>
 
 <p>It was at this point that Todd was shining while he was sinking. He’d reached a great peak in his career, and he should have been basking in what that brought.</p>
@@ -513,7 +513,7 @@ I should have been on top of the world, yet I felt empty and felt as though I wa
        
         <ScrollAnimation animateIn="fadeOut" duration={5} animateOnce={false} delay={2} style={{position:'relative', height:'100vh', margin:'100px 0',}}>
        <div className="container scene" style={{backgroundImage:'linear-gradient(#222 10%, #000 80%)', height:'100%', width:'100%', position:'absolute', display:'flex', justifyContent:'center', alignItems:'center', opacity:'.9',}}>
-              <h2 style={{position:'absolute', bottom:'50%', fontSize:'200%', textAlign:'center', color:'#169dc6',}}>
+              <h2 style={{position:'absolute', bottom:'50%', fontSize:'200%', textAlign:'center',}}>
              [What goes up]
              <br />
              <span style={{color:'#fff', fontSize:'130%',}}>(Sometimes goes sideways)</span>
@@ -528,12 +528,12 @@ I should have been on top of the world, yet I felt empty and felt as though I wa
 
  <ScrollAnimation animateIn="slideInLeft" animateOut="slideOutLeft" animateOnce={false} delay={0} style={{width:'60%',}}>    
 <div className="container" style={{ width:'95%', borderRadius:'12px', margin:'0', padding:'',}}>
-<h3 style={{textAlign:'center', color:'#169dc6', fontSize:'130%', padding:'0', margin:'0 0 1rem 0',}}>[Narrator]</h3>
+<h3 style={{textAlign:'center', fontSize:'130%', padding:'0', margin:'0 0 1rem 0',}}>[Narrator]</h3>
 
 <h3>Wobbles in Web Town</h3>
 <p>But it all started to come crashing down for Todd. Eventually, his body succumbed from all of the years of excessive 1 and 0’s.</p>
 
-<p>The "stay-up-all-night-party-like-a-rock-star" type of life he’d always dreamed of was in fact, <br /> <div style={{color:'#ff0000', fontSize:'200%', textAlign:'center',}}>now killing him.</div></p>
+<p>The "stay-up-all-night-party-like-a-rock-star" type of life he’d always dreamed of was in fact, <br /> <div className="txtshadow" style={{color:'#ff0000', margin:'1rem 0', fontSize:'250%', textAlign:'center',}}>killing him.</div></p>
 </div>
 </ScrollAnimation>
 
@@ -600,7 +600,7 @@ I once saw Todd eat an entire box of Krispie Kreme donuts and then he washed it 
 
  <ScrollAnimation animateIn="slideInLeft" animateOut="slideOutLeft" animateOnce={false} delay={0} style={{width:'45%', order:'2',}}>    
 <div className="container" style={{ width:'95%', borderRadius:'12px', margin:'0 0 0 0', padding:'',}}>
-<h3 style={{textAlign:'center', color:'#169dc6', fontSize:'130%', padding:'0', margin:'0 0 1rem 0',}}>[Narrator]</h3>
+<h3 style={{textAlign:'center', fontSize:'130%', padding:'0', margin:'0 0 1rem 0',}}>[Narrator]</h3>
 <h3>Then it all came crashing down</h3>
 
 <p>With all of this power and great responsibility comes great lethargy, gluttony and ultimately, Diabetes Type II, a heart condition, unknown gastric issues, horrible near-sightedness and of course all the debt and other normal stresses of life.</p>
@@ -631,7 +631,7 @@ I once saw Todd eat an entire box of Krispie Kreme donuts and then he washed it 
 
  <ScrollAnimation animateIn="slideInLeft" animateOut="slideOutLeft" animateOnce={false} delay={0} style={{width:'60%',}}>    
 <div className="container" style={{ width:'95%', borderRadius:'12px', margin:'0', padding:'',}}>
-<h3 style={{textAlign:'center', color:'#169dc6', fontSize:'130%', padding:'0', margin:'0 0 1rem 0',}}>[Narrator]</h3>
+<h3 style={{textAlign:'center', fontSize:'130%', padding:'0', margin:'0 0 1rem 0',}}>[Narrator]</h3>
 
 <h3>The camera saves Todds life</h3>
 <p>In his free time, Todd had begun playing around with photography as a hobby. </p>
@@ -697,7 +697,7 @@ I just found that I really enjoyed the peacefulness and tranquility when I photo
 
  <ScrollAnimation animateIn="slideInLeft" animateOut="slideOutLeft" animateOnce={false} delay={0} style={{width:'60%',}}>    
 <div className="container" style={{ width:'95%', borderRadius:'12px', margin:'0', padding:'',}}>
-<h3 style={{textAlign:'center', color:'#169dc6', fontSize:'130%', padding:'0', margin:'0 0 1rem 0',}}>[Narrator]</h3>
+<h3 style={{textAlign:'center', fontSize:'130%', padding:'0', margin:'0 0 1rem 0',}}>[Narrator]</h3>
 
 <h3>Drastic times - Drastic measures</h3>
 <p>Todd proceeded to sell all of his earthly possessions. His house, cars, tvs, everything. He downsized his life to fit into an on-the-road lifestyle.</p>
@@ -733,7 +733,7 @@ I just found that I really enjoyed the peacefulness and tranquility when I photo
 
  <ScrollAnimation animateIn="slideInLeft" animateOut="slideOutLeft" animateOnce={false} delay={0} style={{width:'60%',}}>    
 <div className="container" style={{ width:'95%', borderRadius:'12px', margin:'0', padding:'',}}>
-<h3 style={{textAlign:'center', color:'#169dc6', fontSize:'130%', padding:'0', margin:'0 0 1rem 0',}}>[Narrator]</h3>
+<h3 style={{textAlign:'center', fontSize:'130%', padding:'0', margin:'0 0 1rem 0',}}>[Narrator]</h3>
 
 <h3>A dangerous hobby</h3>
 <p>Over the years, Todd had always been intrigued by being places where he wasn’t supposed to be.</p>
@@ -803,7 +803,7 @@ There was actually several incidences of me pretending to be “sleep walking”
 
  <ScrollAnimation animateIn="slideInLeft" animateOut="slideOutLeft" animateOnce={false} delay={0} style={{width:'65%',}}>    
 <div className="container" style={{ width:'95%', borderRadius:'12px', margin:'0', padding:'',}}>
-<h3 style={{textAlign:'center', color:'#169dc6', fontSize:'130%', padding:'0', margin:'0 0 1rem 0',}}>[Narrator]</h3>
+<h3 style={{textAlign:'center', fontSize:'130%', padding:'0', margin:'0 0 1rem 0',}}>[Narrator]</h3>
 
 <h3>A new destiny in the old</h3>
 <p>In trying to find his lost soul inside these decrepit and crumbling vestiges of our American past, Todd had finally found something that actually tickled all his special spots.</p>
@@ -868,7 +868,7 @@ The history of our past, seemed to call to me. I was enamored by ghosts of place
 
  <ScrollAnimation animateIn="slideInLeft" animateOut="slideOutLeft" animateOnce={false} delay={0} style={{width:'60%',}}>    
 <div className="container" style={{ width:'95%', borderRadius:'12px', margin:'0', padding:'',}}>
-<h3 style={{textAlign:'center', color:'#169dc6', fontSize:'130%', padding:'0', margin:'0 0 1rem 0',}}>[Narrator]</h3>
+<h3 style={{textAlign:'center', fontSize:'130%', padding:'0', margin:'0 0 1rem 0',}}>[Narrator]</h3>
 
 <h3>Wide horizons with wide smiles</h3>
 <p>Todds mind has became much clearer and his views are endless and the world has become his back porch. He has no schedules, he has no agendas other than his own.</p>
