@@ -206,9 +206,9 @@ Todd Lambert on location</span></div>
  
  
  
- <ScrollAnimation animateIn="fadeOut" duration={8} animateOnce={false} delay={2} style={{position:'relative', height:'100vh',}}>
-       <div className="container scene" style={{backgroundImage:'linear-gradient(#222 10%, #000 80%)', height:'100vh', width:'100vw', position:'absolute', display:'flex', justifyContent:'center', alignItems:'center', opacity:'.9', color:'#fff',}}>
-              <h2 style={{position:'absolute', bottom:'50%', fontSize:'200%', textAlign:'center',}}>
+<ScrollAnimation animateIn="fadeOut" duration={6} animateOnce={false} animatePreScroll={false} delay={4} style={{position:'relative', height:'100vh', margin:'100px 0',}}>
+       <div className="container scene" style={{backgroundImage:'linear-gradient(#222 10%, #000 80%)', height:'100%', width:'100%', position:'absolute', display:'flex', justifyContent:'center', alignItems:'center',}}>
+              <h2 style={{position:'absolute', bottom:'50%', fontSize:'200%', textAlign:'center', color:'#fff',}}>
              "Master of Night"<br />
              <span style={{fontSize:'16px',}}>(The story of Todd Lambert)</span>
               </h2>
@@ -222,9 +222,11 @@ Todd Lambert on location</span></div>
 {/* Show Intro */}
  
 
- <h2 style={{textAlign:'center', fontSize:'180%', margin:'2rem auto 0 auto', padding:'0',}}>[Narrator Voice]</h2>
+ <div className="spacer33"></div>
  
  <div className="container" style={{width:'80%', margin:'0 auto',}}>
+ <h2 style={{textAlign:'center',  fontSize:'180%', margin:'2rem auto 0 auto', padding:'0',}}>[Narrator Voice]</h2>
+ 
  <p>Tonight, we look at Twilightscapes by Todd Lambert. Todd is best-known for his incredible night photography and unusual photo locations.</p>
  
  <h3 style={{textAlign:'center',}}>Now, Lets Go Behind The Photos</h3>
@@ -263,9 +265,9 @@ Todd Lambert on location</span></div>
  
  
  
-  <ScrollAnimation animateIn="fadeOut" duration={5} animateOnce={false} delay={2} style={{position:'relative', height:'100vh',}}>
-       <div className="container scene" style={{backgroundImage:'linear-gradient(#222 10%, #000 80%)', height:'100%', width:'100%', position:'absolute', display:'flex', justifyContent:'center', alignItems:'center', opacity:'.9',}}>
-              <h2 style={{position:'absolute', bottom:'50%', fontSize:'200%', textAlign:'center',}}>
+  <ScrollAnimation animateIn="fadeOut" duration={6} animateOnce={false}  animatePreScroll={false} delay={3} style={{position:'relative', height:'100vh', margin:'100px 0',}}>
+       <div className="container scene" style={{backgroundImage:'linear-gradient(#222 10%, #000 80%)', height:'100%', width:'100%', position:'absolute', display:'flex', justifyContent:'center', alignItems:'center',}}>
+              <h2 style={{position:'absolute', bottom:'50%', fontSize:'200%', textAlign:'center', color:'#fff',}}>
              [Fast-Forwarding Childhood]</h2>
               
 
@@ -360,9 +362,9 @@ Todd Lambert on location</span></div>
  
  
  
- <ScrollAnimation animateIn="fadeOut" duration={5} animateOnce={false} delay={2} style={{position:'relative', height:'100vh', margin:'100px 0',}}>
-       <div className="container scene" style={{backgroundImage:'linear-gradient(#222 10%, #000 80%)', height:'100%', width:'100%', position:'absolute', display:'flex', justifyContent:'center', alignItems:'center', opacity:'.9',}}>
-              <h2 style={{position:'absolute', bottom:'50%', fontSize:'200%', textAlign:'center',}}>
+<ScrollAnimation animateIn="fadeOut" duration={6} animateOnce={false}  animatePreScroll={false} delay={3} style={{position:'relative', height:'100vh', margin:'100px 0',}}>
+       <div className="container scene" style={{backgroundImage:'linear-gradient(#222 10%, #000 80%)', height:'100%', width:'100%', position:'absolute', display:'flex', justifyContent:'center', alignItems:'center',}}>
+              <h2 style={{position:'absolute', bottom:'50%', fontSize:'200%', textAlign:'center', color:'#fff',}}>
              [The ride to the top]
              </h2>
        </div>
@@ -511,12 +513,12 @@ I should have been on top of the world, yet I felt empty and felt as though I wa
  <div className="spacer33"></div>  
        
        
-        <ScrollAnimation animateIn="fadeOut" duration={5} animateOnce={false} delay={2} style={{position:'relative', height:'100vh', margin:'100px 0',}}>
+        <ScrollAnimation animateIn="fadeOut" duration={6} animateOnce={false}  animatePreScroll={false} delay={3} style={{position:'relative', height:'100vh', margin:'100px 0',}}>
        <div className="container scene" style={{backgroundImage:'linear-gradient(#222 10%, #000 80%)', height:'100%', width:'100%', position:'absolute', display:'flex', justifyContent:'center', alignItems:'center', opacity:'.9',}}>
-              <h2 style={{position:'absolute', bottom:'50%', fontSize:'200%', textAlign:'center',}}>
+              <h2 style={{position:'absolute', color:'#fff', bottom:'50%', fontSize:'300%', textAlign:'center',}}>
              [What goes up]
              <br />
-             <span style={{color:'#fff', fontSize:'130%',}}>(Sometimes goes sideways)</span>
+             <span style={{color:'#fff', fontSize:'60%',}}>(Sometimes goes sideways)</span>
              </h2>
        </div>
        </ScrollAnimation>
