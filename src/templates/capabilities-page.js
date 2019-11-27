@@ -10,7 +10,7 @@ import styled from 'styled-components'
 const CustomBox = styled.div`
 
 .intro:before{
-	content: "FAQs";
+	content: "Gear";
 
 position:absolute;
 display: flex;

@@ -4,8 +4,10 @@ import logo from '../img/tw-logo-white.svg'
 import Headroom from "react-headroom"
 import { ThemeToggler } from 'gatsby-plugin-dark-mode'
 import { GoArrowUp, GoTelescope } from 'react-icons/go'
+import { GoGear } from 'react-icons/go'
+// import { FaQuestionCircle } from 'react-icons/fa'
 // import { AiFillBank } from 'react-icons/ai'
-import { FaRegAddressCard, FaQuestionCircle, FaTelegramPlane } from 'react-icons/fa'
+import { FaRegAddressCard, FaTelegramPlane } from 'react-icons/fa'
 
 // import PopContact from '../components/PopContact'
 // import ScrollAnimation from 'react-animate-on-scroll'
@@ -58,7 +60,7 @@ const Navbar = class extends React.Component {
               
                <li className="grad" style={{position:'relative',}}>
               <Link className="navbar-item" to="/capabilities" style={{paddingRight:'50px',}}>
-                FAQs <FaQuestionCircle className="txtshadow" style={{fontSize:'30px', position:'absolute', right:'10px', top:'15px',}}/>
+                Gear <GoGear className="txtshadow" style={{fontSize:'30px', position:'absolute', right:'10px', top:'15px',}}/>
               </Link>
               </li>
               
