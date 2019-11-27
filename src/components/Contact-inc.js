@@ -150,7 +150,7 @@ export default class Contact extends React.Component {
                 
                 </div>
                 
-                <div style={{fontSize: '70%', padding: '0px 3%', marginTop:'10px', textAlign: 'center',}}><a style={{textAlign: 'center', paddingTop: '0', paddingBottom: '0', textDecoration: 'underline',}} href="/privacy">Privacy Policy</a>
+                <div style={{fontSize: '70%', padding: '0px 3%', marginTop:'20px', textAlign: 'center',}}><a style={{textAlign: 'center', paddingTop: '0', paddingBottom: '0', textDecoration: 'underline', color:'inherit',}} href="/privacy">Privacy Policy</a>
                 </div>
                 
                 

@@ -62,7 +62,7 @@ const GalleryMenu = () => (
     
 <h2 style={{textAlign:'center', fontSize:'80%', margin:'0', padding:'0 0 5px 0', color:'#ddd',}}>Available Galleries <span className="no-app" style={{fontSize:'90%',}}><FaLock /> ( requires free<Link to="/install"> app installation here</Link> )</span></h2>
 
-<ul id="galmenu" className="galmenu custom-gal" style={{}}>
+<ul className="galmenu custom-gal" style={{}}>
       
       <li className="galmenu-item"><Link to="/galleries/favorites" className="galgrad" title="Favorites">Popular<br />Favorites</Link></li>
       
