@@ -97,7 +97,7 @@ export default class Contact extends React.Component {
                       required={true}
                       placeholder="Name"
                     />
-                <label htmlFor="email" style={{padding: '0', margin: '0',}}>Phone or Email:</label>
+                <label htmlFor="email" style={{padding: '0', margin: '0',}}>Your email:</label>
                     <input
                       className="input"
                       type={'email'}
@@ -105,9 +105,9 @@ export default class Contact extends React.Component {
                       onChange={this.handleChange}
                       id={'email'}
                       required={true}
-                      placeholder="555-555-1212 / your@email.com"
+                      placeholder="your@email.com"
                     />
-                    <label htmlFor="attachment" style={{padding: '0', margin: '0',}}>Upload File:</label>
+                    <label htmlFor="attachment" style={{padding: '0', margin: '0',}}>Upload file:</label>
                     <div className="upload" style={{ border: '0px solid', padding: '12px', borderRadius: '5px', boxShadow: '0px 0px 1px 1px #999', color: '#999',}}>
                     <label htmlFor="attachment" style={{padding: '0', margin: '0 2.5% 0 0', float: 'left', width: '58%', color: '#333',}}>
                     ZIP files preferred
@@ -120,12 +120,12 @@ export default class Contact extends React.Component {
                       />
                       </label>
                       
-<label className="upload" htmlFor="attachment" style={{background: '#eee', width: '48%', justifyContent: 'center', color: '#333', padding: '5px 15px', textAlign: 'center', borderRadius:'4px', margin: '0 auto', fontSize: '70%', whiteSpace: 'nowrap',}}  >Select File</label></div>
+<label className="upload" htmlFor="attachment" style={{background: '#eee', width: '48%', justifyContent: 'center', color: '#333', padding: '5px 15px', textAlign: 'center', borderRadius:'4px', margin: '0 auto', fontSize: '70%', whiteSpace: 'nowrap',}}  >Select file</label></div>
                 </div>
 
                 <div className="field half right">
 <label className="label" htmlFor={'message'} style={{padding: '0', margin: '0',}}>
-                    Your Message
+                    Your message
                   </label>
                     <textarea
                       className="textarea"
@@ -150,7 +150,7 @@ export default class Contact extends React.Component {
                 
                 </div>
                 
-                <div style={{fontSize: '70%', padding: '0px 3%', marginTop:'20px', textAlign: 'center',}}><a style={{textAlign: 'center', paddingTop: '0', paddingBottom: '0', textDecoration: 'underline', color:'inherit',}} href="/privacy">Privacy Policy</a>
+                <div style={{fontSize: '70%', padding: '0px 3%', marginTop:'20px', textAlign: 'center',}}><a style={{textAlign: 'center', paddingTop: '0', paddingBottom: '0', textDecoration: 'underline', color:'inherit',}} href="/privacy">Privacy policy</a>
                 </div>
                 
                 

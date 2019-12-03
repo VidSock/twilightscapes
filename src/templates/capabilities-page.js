@@ -4,7 +4,7 @@ import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
 import ScrollAnimation from 'react-animate-on-scroll';
-
+import Install from '../components/Install'
 import styled from 'styled-components'
 
 const CustomBox = styled.div`
@@ -122,8 +122,9 @@ export const CapabilitiesPageTemplate = ({ title, content, contentComponent }) =
 
        </div>
        </ScrollAnimation>
-       
+       <Install/>
     </section>
+    
   )
 }
 

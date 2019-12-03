@@ -97,7 +97,7 @@ export default class Contact extends React.Component {
                       required={true}
                       placeholder="Name"
                     />
-                <label htmlFor="email" style={{padding: '0', margin: '0',}}>Phone or Email:</label>
+                <label htmlFor="email" style={{padding: '0', margin: '0',}}>Your email:</label>
                     <input
                       className="input"
                       type={'email'}
@@ -105,9 +105,9 @@ export default class Contact extends React.Component {
                       onChange={this.handleChange}
                       id={'email'}
                       required={true}
-                      placeholder="555-555-1212 / your@email.com"
+                      placeholder="your@email.com"
                     />
-                    <label htmlFor="attachment" style={{padding: '0', margin: '0',}}>Upload File:</label>
+                    <label htmlFor="attachment" style={{padding: '0', margin: '0',}}>Upload file:</label>
                     <div className="upload" style={{ border: '0px solid', padding: '12px', borderRadius: '5px', boxShadow: '0px 0px 1px 1px #999', color: '#999',}}>
                     <label htmlFor="attachment" style={{padding: '0', margin: '0 2.5% 0 0', float: 'left', width: '58%', color: '#333',}}>
                     ZIP files preferred
@@ -125,7 +125,7 @@ export default class Contact extends React.Component {
 
                 <div className="field half right">
 <label className="label" htmlFor={'message'} style={{padding: '0', margin: '0',}}>
-                    Your Message
+                    Your message
                   </label>
                     <textarea
                       className="textarea"

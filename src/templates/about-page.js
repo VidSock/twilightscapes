@@ -6,7 +6,7 @@ import Image from '../components/Image'
 import Content, { HTMLContent } from '../components/Content'
 import { GiPlainArrow } from 'react-icons/gi'
 // import { GoQuote } from 'react-icons/go'
-
+import Install from '../components/Install'
 import ScrollAnimation from 'react-animate-on-scroll'
 
 import styled from 'styled-components'
@@ -959,7 +959,7 @@ Traveling across the country in search of a beauty that is elusive and fading, o
        
        
        
-      
+      <Install/>
       
     </section>
   )
@@ -983,7 +983,9 @@ const AboutPage = ({ data }) => {
         content={post.html}
       />
     </Layout>
+    
     </CustomBox>
+    
   )
 }
 

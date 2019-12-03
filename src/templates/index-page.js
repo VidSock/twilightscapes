@@ -6,7 +6,7 @@ import Image from '../components/Image';
 // import Intro from '../components/intro-home'
 //  import Gallery1 from '../components/Gallery1'
 import Layout from '../components/Layout'
-import Install from '../components/Install'
+// import Install from '../components/Install'
 import { Link } from 'gatsby'
 // import Features from '../components/Features'
 // import BlogRoll from '../components/BlogRoll'
@@ -497,7 +497,7 @@ export const IndexPageTemplate = ({
     
   </div>
   </CustomBox>
-  <Install />
+
   
 </>
 )
