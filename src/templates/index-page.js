@@ -493,11 +493,11 @@ export const IndexPageTemplate = ({
 <h2 className="pitch">Like this site?</h2>
 
 <div>
-<p>I build websites as my day job, and would love to build your dream site, custom for you.</p>
+<p>Todd builds websites as his day job, and he would love to build your dream site, custom for you.</p>
 
-<p>I use state-of-the-art technologies that deliver ultra-fast, super flexible, and modern designed websites that work great everywhere.</p>
+<p>An ultra-fast website that uses state-of-the-art technology, is super flexible, and modern designed to work great everywhere.</p>
 
-<h3 style={{textAlign:'center',}}>Let me build your site today!</h3>
+<h3 style={{textAlign:'center',}}>Let Todd build your site today!</h3>
 </div>
 </div>
 </div>
