@@ -79,6 +79,8 @@ background:linear-gradient(to bottom, #cfc09f 22%,#634f2c 24%, #cfc09f 26%, #cfc
 }
 
 
+  	
+
 
 
 .fullscreen-bg {
@@ -173,7 +175,8 @@ background:linear-gradient(to bottom, #cfc09f 22%,#634f2c 24%, #cfc09f 26%, #cfc
   .image-wrap h3.boom{font-size:280% !important;}
   .intro:before{font-size:150% !important}
   .content{flex-direction:column !important;}
-  .content div{width:100% !important;}
+  .content .stack{width:100% !important; margin:0 !important;}
+  .pitch{font-size:250% !important; text-align:center;}
   
 }
 
@@ -430,13 +433,13 @@ export const IndexPageTemplate = ({
 <div id="desc" className="container">
 <div className="content" style={{padding:'1rem 1rem', display:'flex', flexDirection:'row',}}>
 
-<div style={{width:'60%',}}>
+<div className="stack" style={{width:'60%',}}>
 <h2>Meet Todd Lambert</h2>
 <p>Todd is a new breed of photographer focusing on remote and mostly "unknown" locations such as graveyards and other abandoned places at night. Todd is an adventurous spirit who lives full-time on the road while traveling across the country.
 </p>
 </div>
 
-<div style={{width:'40%', margin:'0 0 0 1rem', }}>
+<div className="stack" style={{width:'40%', margin:'0 0 0 1rem', }}>
 <Image alt="Todd Lambert Web development for photographers" filename="todd.jpg" />Todd Lambert on location
 </div>
 
@@ -460,11 +463,11 @@ export const IndexPageTemplate = ({
 <div className="container">
 <div className="content" style={{padding:'1rem 1rem', display:'flex', flexDirection:'row',}}>
 
-<div style={{width:'40%', margin:'0 1rem 0 0', }}>
+<div className="stack" style={{width:'40%', margin:'0 1rem 0 0', }}>
 <Image alt="Todd Lambert Web development for photographers" filename="twilightscapes-rig.jpg" />Subaru Outback with 18-foot Aliner trailer coming out of Devils Peak, UT.
 </div>
 
-<div style={{width:'60%',}}>
+<div className="stack" style={{width:'60%',}}>
 <h2>Always on the hunt</h2>
 <p>Todd scours the Internet, drives countless miles and lives and works in his unique overlanding road trip setup. You see, Todd is a photographer that specializes in photographing vintage cars, abandoned places and other pieces of unique American history.
 </p>
@@ -484,7 +487,21 @@ export const IndexPageTemplate = ({
 
     
        
-    
+    <ScrollAnimation animateIn="bounceInUp" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={false}>
+    <div className="container" style={{marginTop:'',}}>
+<div className="content" style={{padding:'1rem 1rem 1rem 1rem', display:'flex', flexDirection:'row',}}>
+<h2 className="pitch">Like this site?</h2>
+
+<div>
+<p>I build websites as my day job, and would love to build your dream site, custom for you.</p>
+
+<p>I use state-of-the-art technologies that deliver ultra-fast, super flexible, and modern designed websites that work great everywhere.</p>
+
+<h3 style={{textAlign:'center',}}>Let me build your site today!</h3>
+</div>
+</div>
+</div>
+</ScrollAnimation>
     
     
     
