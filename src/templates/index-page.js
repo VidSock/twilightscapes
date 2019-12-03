@@ -439,7 +439,7 @@ export const IndexPageTemplate = ({
 </p>
 </div>
 
-<div className="stack" style={{width:'40%', margin:'0 0 0 1rem', }}>
+<div className="stack" style={{width:'40%', margin:'0 0 0 1rem', fontSize:'70%', }}>
 <Image alt="Todd Lambert Web development for photographers" filename="todd.jpg" />Todd Lambert on location
 </div>
 
@@ -463,10 +463,10 @@ export const IndexPageTemplate = ({
 <div className="container">
 <div className="content" style={{padding:'1rem 1rem', display:'flex', flexDirection:'row',}}>
 
-<div className="stack" style={{width:'40%', margin:'0 1rem 0 0', }}>
-<Image alt="Todd Lambert Web development for photographers" filename="twilightscapes-rig.jpg" />Subaru Outback with 18-foot Aliner trailer coming out of Devils Peak, UT.
+<div className="stack" style={{width:'40%', margin:'0 1rem 0 0', fontSize:'70%', }}>
+<Image alt="Todd Lambert Web development for photographers" filename="twilightscapes-rig.jpg" />Subaru Outback with 18-foot Aliner trailer coming out of Hideout Canyon, UT.
 </div>
-
+< br />
 <div className="stack" style={{width:'60%',}}>
 <h2>Always on the hunt</h2>
 <p>Todd scours the Internet, drives countless miles and lives and works in his unique overlanding road trip setup. You see, Todd is a photographer that specializes in photographing vintage cars, abandoned places and other pieces of unique American history.
