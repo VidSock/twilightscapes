@@ -33,7 +33,7 @@ position:absolute;
 display: flex;
 align-items: center;
 justify-content: center;
-font-size:180%; color:#f8f8fc; text-shadow: 12px 7px 15px 12px black;
+font-size:280%; color:#f8f8fc; text-shadow: 12px 7px 15px 12px black;
 animation: poof 1.5s forwards;
 animation-delay: 1.5s;
 }
@@ -171,6 +171,9 @@ background:linear-gradient(to bottom, #cfc09f 22%,#634f2c 24%, #cfc09f 26%, #cfc
   .image-wrap h1.boom{font-size:250% !important;}
   .image-wrap h2.boom{font-size:180% !important;}
   .image-wrap h3.boom{font-size:280% !important;}
+  .intro:before{font-size:150% !important}
+  .content{flex-direction:column !important;}
+  .content div{width:100% !important;}
   
 }
 

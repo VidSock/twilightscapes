@@ -86,6 +86,8 @@ height: 0;
 	 z-index:2;
 }
 
+.intro:before{font-size:200%;}
+
 }
 
 @media (min-width: 58rem) {

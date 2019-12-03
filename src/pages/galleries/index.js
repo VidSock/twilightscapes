@@ -22,6 +22,13 @@ justify-content: center;
 font-size:350%; color:#f8f8fc; text-shadow: 12px 7px 15px 12px black;
 }
 
+
+
+
+@media (max-width: 48rem) {
+.intro:before{font-size:200%;}
+}
+
 @media (hover: hover) {
 .gatsby-image-wrapper{transform: scale(1.25);}
 }
@@ -33,6 +40,10 @@ font-size:350%; color:#f8f8fc; text-shadow: 12px 7px 15px 12px black;
 	color:#fff;
 	}
 */
+
+
+
+
 
 `
 
