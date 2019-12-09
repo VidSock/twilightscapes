@@ -46,6 +46,7 @@
     "smooth-scroll": "^16.1.0",
     "styled-components": "^4.4.1",
     "typeface-francois-one": "0.0.71",
+    "typeface-hammersmith-one": "0.0.72",
     "uuid": "^3.2.1"
   },
   "keywords": [
