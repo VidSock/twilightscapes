@@ -11,7 +11,7 @@ import { FiZoomIn } from 'react-icons/fi'
 import styled from "styled-components"
 const CustomBox = styled.div`
 
-#vault {
+#galleries {
 	position:relative;
 background: rgb(126,209,234);
 background: -moz-radial-gradient(center,ellipse cover,rgba(126,209,234,1) 0%,rgba(65,145,186,1) 40%,rgba(3,73,127,1) 100%);
@@ -20,7 +20,7 @@ background: radial-gradient(ellipse at center,rgba(126,209,234,1) 0%,rgba(65,145
 }
 
 .intro:before{
-	content: "Gallery 7";
+	content: "Gallery 6";
 
 position:absolute;
 display: flex;
@@ -45,8 +45,8 @@ font-size:480%; color:#f8f8fc; text-shadow: 12px 7px 15px 12px black;
 
 
 const gal1Query = graphql`
-  query gal7Query {
-    allFile(filter: { relativeDirectory: { eq: "gallery7" } }) {
+  query gal6Query {
+    allFile(filter: { relativeDirectory: { eq: "gallery6" } }) {
       edges {
         node {
           childImageSharp {
@@ -66,7 +66,7 @@ const gal1Query = graphql`
   }
 `
 
-const Gal7Page = () => {
+const Gal6Page = () => {
   const data = useStaticQuery(gal1Query)
   return (
 	  <CustomBox>
@@ -87,7 +87,6 @@ const Gal7Page = () => {
       </ScrollAnimation>
       
       
-      
 <GalleryMenu />
 
     </Layout>
@@ -95,4 +94,4 @@ const Gal7Page = () => {
   )
 }
 
-export default Gal7Page
+export default Gal6Page
