@@ -12,6 +12,19 @@ import { FiZoomIn } from 'react-icons/fi'
 import styled from "styled-components"
 const CustomBox = styled.div`
 
+
+
+#favorites {
+	position:relative;
+background: rgb(126,209,234); /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover, rgba(126,209,234,1) 0%, rgba(65,145,186,1) 40%, rgba(3,73,127,1) 100%); /* FF3.6-15 */
+background: -webkit-radial-gradient(center, ellipse cover, rgba(126,209,234,1) 0%,rgba(65,145,186,1) 40%,rgba(3,73,127,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: radial-gradient(ellipse at center, rgba(126,209,234,1) 0%,rgba(65,145,186,1) 40%,rgba(3,73,127,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+
+
+
 .intro:before{
 	content: "Galleries: Popular Favorites";
 
