@@ -28,7 +28,7 @@ font-size:380%; color:#f8f8fc; text-shadow: 12px 7px 15px 12px black;
 	content: '';
 position: absolute;
 top: 30%;
-right: -18px;
+right: -48px;
 width: 0;
 height: 0;
 	border: 60px solid transparent;
