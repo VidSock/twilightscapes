@@ -11,3 +11,77 @@
   to = "/galleries/ghosttowns"
   status = 301
   force = false
+
+
+ [[redirects]]
+ from = "/gallery1/van-down-by-the-river/3521"
+  to = "/galleries/cars"
+  status = 301
+  force = false
+
+ [[redirects]]
+ from = "/gallery3/chevy-to-the-levy/3692/"
+  to = "/galleries/cars"
+  status = 301
+  force = false
+  
+   [[redirects]]
+ from = "/favorites/disciple-rocks/3328"
+  to = "/galleries/favorites"
+  status = 301
+  force = false
+
+   [[redirects]]
+ from = "/about/overlanding-road-setup"
+  to = "/capabilities"
+  status = 301
+  force = false
+
+
+   [[redirects]]
+ from = "/about/*"
+  to = "/about"
+  status = 301
+  force = false
+  
+     [[redirects]]
+ from = "/gallery1/*"
+  to = "/galleries/gallery1"
+  status = 301
+  force = false
+  
+       [[redirects]]
+ from = "/gallery2/*"
+  to = "/galleries/gallery2"
+  status = 301
+  force = false
+  
+       [[redirects]]
+ from = "/gallery3/*"
+  to = "/galleries/gallery3"
+  status = 301
+  force = false
+  
+       [[redirects]]
+ from = "/gallery4/*"
+  to = "/galleries/gallery4"
+  status = 301
+  force = false
+  
+       [[redirects]]
+ from = "/gallery5/*"
+  to = "/galleries/gallery5"
+  status = 301
+  force = false
+  
+       [[redirects]]
+ from = "/gallery6/*"
+  to = "/galleries/gallery6"
+  status = 301
+  force = false
+  
+       [[redirects]]
+ from = "/favorites/*"
+  to = "/galleries/favorites"
+  status = 301
+  force = false
