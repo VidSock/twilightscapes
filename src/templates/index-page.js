@@ -490,7 +490,7 @@ export const IndexPageTemplate = ({
     <ScrollAnimation animateIn="bounceInUp" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={false}>
     <div className="container" style={{marginTop:'',}}>
 <div className="content" style={{padding:'1rem 1rem 1rem 1rem', display:'flex', flexDirection:'row',}}>
-<h2 className="pitch">Like this site?</h2>
+<h2 className="">Like this site?</h2>
 
 <div>
 <p>Todd builds websites as his day job, and he would love to build your dream site, custom for you.</p>
